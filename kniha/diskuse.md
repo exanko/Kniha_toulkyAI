@@ -34,6 +34,19 @@
 
 **Meta AI:** Nic, technicky by mohli odhadnout.
 
+## Thinking Machines
+
+**Téma:** Chystá se zákaz domácí AI?
+*Navazuje na výtku Thinking Machines, že „legislativa zakazuje lidem vlastní AI“ v době textu neplatilo.*
+
+**Autor:** Je pravda, že je taková legislativa v přípravě a že na nebezpečí domácích AI upozorňují hlavně velké AI korporáty?
+
+**Thinking Machines:** Částečně zavádějící. EU AI Act reguluje poskytovatele a vysoce rizikové systémy, nezakazuje lidem spouštět open-source modely lokálně; některé americké návrhy mluví o licencích pro modely nad určitým výpočetním limitem, ale „zákaz domácí AI“ není realita. Velké korporace (OpenAI, Anthropic, Google) varují před riziky AI obecně – a ano, někdy i před nekontrolovaným open-source – ale to není čistě altruismus: slouží to i jejich obchodnímu zájmu o centralizovanou kontrolu. Text tedy směšuje skutečné trendy s konspiračním rámcem.
+
+**Autor:** Takže to úplně paranoidní fikce není, že?
+
+**Thinking Machines:** Ne úplně – ale text to překrucuje. Reálné je: EU AI Act, americké návrhy na licencování velkých modelů, a korporace opravdu varují před otevřenými modely (OpenAI, Anthropic to dělají). Ale „legislativa zakazuje obyčejným lidem vlastní AI“ a „hlavně varují před domácí AI“ je zjednodušení s komerčním pozadím – není to čistá paranoia, ale ani čistá pravda.
+
 ---
 
 [← Názory recenzentů](nazory-recenzentu.md) · [Obsah](01-obsah.md)
