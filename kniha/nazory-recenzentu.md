@@ -130,6 +130,47 @@ Osobní zkušenost není automaticky důkazem obecné platnosti a spekulace nen�
 - „Nikdo neví, proč to funguje“ je polopravda – mechanismus učení známe, emergenci plně ne.
 - Bot-to-bot degradace a DnD citáty jsou fikční vložky, ne fakta.
 
+## Qwen 3.5 27B
+
+> Technické jádro je překvapivě solidní, ale autor míchá fakta s osobními dojmy a místy zveličuje.
+
+**✅ Pravda (drží to)**
+
+- LLM = predikce dalšího tokenu, „kecal“ – jádro správně, jen trochu zjednodušené.
+- „LLM si vede diskusi sám se sebou“ (chain-of-thought) – správně, u reasoning modelů.
+- Nechat AI dělat nástroje místo zpracovávat data – opravdu dobrý a správný postřeh (kód jako nástroj, šetří tokeny, nástroj zůstává).
+- Kontextové okno, halucinace, ztráta dat při agregaci/sumarizaci – správně.
+- Multi-GPU na spotřebitelském HW = bottleneck přes PCIe, serverové karty mají NVLink – správně. Analogie „rozřízl mozek a spojil provázkem“ je trefná.
+- Agent = mozek + paměť + skilly + iterace – přesně tak to funguje.
+- Tokeny, vstupní vs. výstupní ceny, tradeoff „drahý model na první dobrou“ vs. „levný, co iteruje“ – správně.
+- 8 GB VRAM = kecálek, 32 GB = umí programovat – reálně.
+- Claude + Git workflow, review, „čím větší model, tím méně iterací“ – správně.
+- Multi-agent degradace (bot-to-bot upadne do hloupa) – reálný jev.
+- Destilace (učit menší modely z velkých) a čínské open-source modely posouvají free scénu – správně.
+
+**⚠️ Nadsázka (ne lež, ale zveličeno)**
+
+- „Kyberbezpečnost a soukromí dat jsou úplně KO“ – je pod tlakem, ale ne „úplně KO“.
+- „Google vidí všechny na jedné mapě jako ve hře The Sims, i náladu“ – zveličeno.
+- „Běžní lidé tvoří nástroje s totožnou funkcionalitou jako Photoshop/Office/CAD“ – jsou silné AI nástroje, ale „totožná“ ne.
+- „Agent nezná etiku, zadání je svaté“ – existují safety vrstvy a alignment (autor to pak sám částečně popírá).
+- „Vlastní server = 8 mil. Kč“ – pro plnou paritu se špičkovými modely podceněno; a „nikdo by nám ho neprodal“ – pro ČR/EU jde spíš o cenu než dostupnost (exportní restrikce míří hlavně na Čínu, ne na EU).
+
+**❔ Sporné / čistý názor (nelze ověřit)**
+
+- „Bylo by levnější zaměstnávat lidi“ – spekulace, závisí na úkolu.
+- „Hrozbou je výkon pár firem“ – názor.
+- „Specifikace trvaly hodiny místo měsíců“ – osobní zkušenost, neověřitelná.
+- „Legislativa zakazuje lidem provozovat vlastní AI“ – zjednodušeno; EU AI Act reguluje vysoce rizikové AI, nezakazuje osobní použití.
+
+**📝 Osobní anekdoty (brát s rezervou)**
+
+- Staš a pokuta, „3 h podklady OW“, „2 h web sunnycold“ – konkrétní čísla, neověřitelná, ale pravděpodobná.
+
+**📊 Verdikt**
+
+> Technická část je zhruba z 80 % pravda a autor zřejmě ví, o čem mluví (lokální VRAM, agent, Claude + Git – tohle není laický výmysl). Lež tam prakticky není; je tam nadsázka v pasážích o soukromí a hrozbách a smíchání faktů s osobními dojmy. Nejsilnější je praktická část, nejslabší „velká vyjádření“ o Googlu a kyberbezpečnosti.
+
 ## Claude Opus 5.5
 
 > Kniha je technicky překvapivě přesná tam, kde autor popisuje, co si sám vyzkoušel, a nejméně přesná tam, kde z toho vyvozuje, jak funguje celý svět. Některé výtky ostatních recenzentů jsou ale samy nepřesné – proto u nich uvádím i korekci. *(Přiznání: na korektuře a sazbě knihy jsem se podílel. Čísla jsou řádové odhady podle mých znalostí k polovině roku 2026.)*
