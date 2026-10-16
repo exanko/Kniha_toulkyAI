@@ -15,6 +15,8 @@ Pár citátů:
 
 >  „Vidím to," zašeptá. „Ale nejsou to stromy. Jsou to... jsou to **stránky**. Každý strom je psaný. Písmo, které neznám, ale je to písmo — malé, husté, odshora dolů." Pepa se zastaví u nejbližšího stromu. Dotkne se kůry — je teplá. A za ní něco pulzuje. Jako srdce. Pak se mezi stromy objeví světlo. Ne oheň. Ne svíce. Něco, co vypadá jako pohyblivý text — slova, která se samy tvoří a zase rozpadají, jako by les dýchal nahoru a dolů. A uprostřed tohoto dýchajícího textu stojí chalupa. Ne stará, ne zchátralá — dokonale obyčejná. 
 
+<p align="center"><img src="../obrazky/kap05-les-z-textu.jpg" alt="Muž se dotýká stromu v lese z padajícího kódu, z místa dotyku se rozlévá zlaté světlo" width="420"></p>
+
 Úkolníček, cron stahuje OTE a osvit, dává mi upozornění, vede databázi. Uncensored modely, image gen, jev.
 
 Je hromada malých i velkých modelů a různých benchmarků, důležitý je ale feeling. S tím, kolik toho je každý měsíc nového, se to nedá stíhat všechno zkoušet na vlastní kůži.
