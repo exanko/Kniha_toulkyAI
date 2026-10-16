@@ -12,6 +12,7 @@
 - [9. Firma na projekty](kapitoly/09-firma-na-projekty.md)
 - [Recenze](recenze.md)
 - [Názory recenzentů](nazory-recenzentu.md)
+- [Diskuse recenzentů s autorem](diskuse.md)
 
 ---
 

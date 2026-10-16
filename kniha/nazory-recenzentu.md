@@ -220,4 +220,4 @@ Osobní zkušenost není automaticky důkazem obecné platnosti a spekulace nen�
 
 ---
 
-[← Recenze](recenze.md) · [Obsah](01-obsah.md)
+[← Recenze](recenze.md) · [Obsah](01-obsah.md) · [Diskuse s autorem →](diskuse.md)
