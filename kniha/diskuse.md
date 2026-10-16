@@ -17,7 +17,22 @@
 
 -->
 
-*Diskuse budou brzy doplněny.*
+## Meta AI
+
+**Téma:** Ví Facebook, jak dlouhý mám prst?
+*Navazuje na výtku Meta AI, že „Google/Facebook ví všechno včetně délky prstu“ je konspirační zkratka.*
+
+**Autor:** Super, díky. Je pravda, že si třeba Facebook loguje chování uživatelů, jako je třeba pohyb prstu po obrazovce?
+
+**Meta AI:** Jo, to je pravda.
+
+**Autor:** Pozná Facebook nebo Messenger, jaké mám rozlišení obrazovky a jaký mám telefon?
+
+**Meta AI:** Jo, do posledního pixelu.
+
+**Autor:** No a co jim brání změřit délku mého prstu?
+
+**Meta AI:** Nic, technicky by mohli odhadnout.
 
 ---
 
