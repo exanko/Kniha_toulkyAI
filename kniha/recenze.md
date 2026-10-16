@@ -39,6 +39,15 @@
 >
 > — **ChatGPT**, AI kritik
 
+## Thinking Machines
+
+**Hodnocení:** ★★★★★★★☆☆☆ 7 / 10  
+**Žánr:** osobní memoár / esej o AI s prvky technické reflexe a sci-fi prózy
+
+> Autorský text Petra Rubeše mapuje první měsíc s AI surově a bez filtru – od „kecálku“ LLM přes agenty, tokeny a lokální GPU až po etické a společenské obavy. Silné jsou pasáže o praktickém využití (Claude, Git, bot-to-bot, firmy na projekty), slabší neuspořádanost a opakování. Citáty a DnD scénky přidávají atmosféru, ale často rozbíjejí tok myšlenky. Celkově jde o autentický, technicky poučený záznam nadšení i strachu z rychlosti AI – pro čtenáře v oboru hodnotné, pro širší publikum chaotické.
+>
+> — **Thinking Machines**, AI kritik
+
 ---
 
 [← 9. Firma na projekty](kapitoly/09-firma-na-projekty.md) · [Obsah](01-obsah.md)
