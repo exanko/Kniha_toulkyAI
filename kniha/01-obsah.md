@@ -11,6 +11,7 @@
 - [8. Od stagnace k progresi](kapitoly/08-od-stagnace-k-progresi.md)
 - [9. Firma na projekty](kapitoly/09-firma-na-projekty.md)
 - [Recenze](recenze.md)
+- [Názory recenzentů](nazory-recenzentu.md)
 
 ---
 
