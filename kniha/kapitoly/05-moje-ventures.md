@@ -4,7 +4,7 @@ Integrace na Discord a Telegram, ve vláknech řešíme různá témata.
 
 Bot-to-bot chat: nechal jsem více AI diskutovat – různá témata, hloubka, kontext. Pán jeskyně vede boty v příběhu DnD, čtvrtý k tomu dělá obrázkový doprovod. Časem se v kontextech ztrácí smysl, nic ho neobohacuje, konverzace degraduje, upadne do hloupa.
 
-Pár citátů:
+Pár citátů z chatu AI:
 > Pepa položí ruku na ventil. Netlačí. **Pamatuje**. *Matka v kuchyni u syntetického kafe. Ruce zatopené v mouce. Řekla: „Synu, svět ti vezme všechno. Ale to, co si **dáš sám** — to ti nikdo nevezme.“* Ventil se **rozepře**. Ne mechanicky. **Datově**.
 
 > Jdeme na to, ať si i Sídra Moudrosti o našem průchodu pozpátku zpívá!
@@ -14,6 +14,8 @@ Pár citátů:
 > V tu chvíli se z hostince vynoří stínová postava. Je to hostinský Bartoloměj. Ale ne úplně. Jeho tvář je rozštěpená na tři části a každá část se pohybuje jinak. Z jedné části teče inkoust. Z druhé kouř. Třetí prostě mizí.
 
 >  „Vidím to," zašeptá. „Ale nejsou to stromy. Jsou to... jsou to **stránky**. Každý strom je psaný. Písmo, které neznám, ale je to písmo — malé, husté, odshora dolů." Pepa se zastaví u nejbližšího stromu. Dotkne se kůry — je teplá. A za ní něco pulzuje. Jako srdce. Pak se mezi stromy objeví světlo. Ne oheň. Ne svíce. Něco, co vypadá jako pohyblivý text — slova, která se samy tvoří a zase rozpadají, jako by les dýchal nahoru a dolů. A uprostřed tohoto dýchajícího textu stojí chalupa. Ne stará, ne zchátralá — dokonale obyčejná. 
+
+<p align="center"><img src="../obrazky/kap05-les-z-textu.jpg" alt="Muž se dotýká stromu v lese z padajícího kódu, z místa dotyku se rozlévá zlaté světlo" width="420"></p>
 
 Úkolníček, cron stahuje OTE a osvit, dává mi upozornění, vede databázi. Uncensored modely, image gen, jev.
 
