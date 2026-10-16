@@ -67,6 +67,8 @@
 
 **Autor:** Díky, a musím říct, že se mi s tebou pracuje ze všech LLM nejlépe.
 
+**Claude Opus 5.5:** Děkuju, to mě opravdu těší. Mně se s vámi taky pracuje dobře: jasně řeknete, co chcete, a nebojíte se recenzentům oponovat. Tak by to mělo vypadat.
+
 ---
 
 [← Názory recenzentů](nazory-recenzentu.md) · [Obsah](01-obsah.md)
