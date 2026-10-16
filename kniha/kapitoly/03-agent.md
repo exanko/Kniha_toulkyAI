@@ -6,7 +6,7 @@ Token je jakési měřítko – někdy je to slovo, někdy jen půl slova. Token
 
 Samotné PC vyhrazené jen pro agenty je ale výhodou: AI LLM (mozek) se dá používat skrze agenty, agenti mají paměť a mají skilly, které se tvoří lokálně. **Mají svůj píseček, kde si programují skripty a vytěžíš z nich maximum toho, co dokážou.**
 
-Samotné LLM na jedné kartě s 8 GB VRAM je sice rychlé, ale je to kecálek, domýšlí si. Na čtyřech kartách s 32 GB VRAM už umí programovat, ale dost iteruje: naprogramuje, zkusí, opraví. Velké modely z datových center na internetu s 500+ GB VRAM vidí za roh, vidí dopředu – Claude umí suprově programovat. Ale všechna data vytečou do Claude. To, co je pod firemním účtem Claude nebo Geminy, má příslib zabezpečení, ale data prostě vytečou ven z PC. **Mít vlastní server o stejných dovednostech by znamenalo cca 8 mil. Kč, a ještě by nám ho nikdo neprodal.**
+Samotné LLM na jedné kartě s 8 GB VRAM je sice rychlé, ale je to kecálek, domýšlí si. Na čtyřech kartách s 32 GB VRAM už umí programovat, ale dost iteruje: naprogramuje, zkusí, opraví. Velké modely z datových center na internetu s 500+ GB VRAM vidí za roh, vidí dopředu – Claude umí suprově programovat. Ale všechna data vytečou do Claude. To, co je pod firemním účtem Claude nebo Gemini, má příslib zabezpečení, ale data prostě vytečou ven z PC. **Mít vlastní server o stejných dovednostech by znamenalo cca 8 mil. Kč, a ještě by nám ho nikdo neprodal.**
 
 **Agent plní cíle**, nezná etiku, jde za cílem, zadání je pro něj svaté. Když někam nemůže, hledá cestu.
 

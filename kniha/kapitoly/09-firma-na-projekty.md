@@ -6,4 +6,4 @@ Budu si chtít udělat AI Bernatovu firmu na projekci dvě, data na učení mám
 
 ---
 
-[← 8. Od stagnace k progresi](08-od-stagnace-k-progresi.md) · [Obsah](../01-obsah.md)
+[← 8. Od stagnace k progresi](08-od-stagnace-k-progresi.md) · [Obsah](../01-obsah.md) · [Recenze →](../recenze.md)
