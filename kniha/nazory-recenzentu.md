@@ -40,6 +40,30 @@
 
 > Není technická: hrát si na projekt je k ničemu, musíš stavět firmu na projekty. A nůžky se rozevírají – kdo má edge, má násobič, kdo nemá, utopí se ve swarmu agentů. To sedí úplně.
 
+## Gemini Pro
+
+> Tento text je fascinující směsicí tvrdé technické reality a lehkého zromantizování či subjektivních pocitů z práce s umělou inteligencí. Autor do toho očividně hodně šlápl a jeho postřehy z praxe jsou velmi cenné.
+
+**✅ Pravda a velmi přesně popsaná realita**
+
+- **Základní fungování LLM:** popis, že model „jen doplňuje slova“ na základě pravděpodobnostních vah, je dokonalé a laicky přesné shrnutí principu predikce dalšího tokenu.
+- **Hardwarové limity a bottlenecky:** že spotřebitelské grafické karty spojené přes základní desku komunikují pomalu („mozek spojený provázkem“), je naprosto přesné. Omezená propustnost sběrnice PCIe oproti serverovým řešením (jako je NVLink) je hlavní překážkou pro běh velkých lokálních modelů doma.
+- **Ztráta kontextu a halucinace:** že při dlouhých chatech začíná model dělat chyby, zapomíná nebo „agreguje“ data, je běžný problém všech současných LLM (tzv. fenomén *lost in the middle*).
+- **Architektura agentů:** popis agenta jako entity, která řídí mozek (LLM), má paměť a ukládá si „skilly“ (skripty), je naprosto učebnicový přístup k modernímu vývoji AI aplikací, které překonávají limity obyčejného chatu.
+- **Filozofie nástroje (kladivo vs. AI):** úvaha, že AI je jen páka, která znásobí schopnosti člověka s vizí, ale „utopí“ člověka bez nápadů, je hluboce pravdivá. AI sama o sobě nemá „edge“ (tu pravou jiskru) ani nenese zodpovědnost.
+- **Open-source vs. korporace:** boj mezi masivními datovými centry a komunitou, která dokáže optimalizovat menší modely pro lokální běh, je jedním z hlavních hybatelů současného vývoje AI.
+
+**⚠️ Zavádějící, nepřesné nebo lež (hyperboly a mýty)**
+
+- **„Claude si vše sám testuje podle svých vlastních tužeb“:** silná antropomorfizace (polidšťování). Claude ani žádný jiný dnešní LLM nemá „tužby“, záměry ani vnitřní pohnutky. Funguje reaktivně – testuje a analyzuje proto, že mu to bylo zadáno v systémovém promptu nebo agentní smyčce, kterou autor vědomky či nevědomky nastavil.
+- **„Zákony robotiky ani etika u AI neexistují, je to jen cenzorská vrstva“:** jen částečná pravda. Většina velkých modelů je „zarovnána“ (*aligned*) metodami jako RLHF (učení zpětnou vazbou od lidí), takže etika je zapečená přímo ve vahách modelu, není to jen vnější filtr. Odstranit ji vyžaduje hluboký zásah, ne jen vypnutí filtru.
+- **„Google vidí všechny jako ve hře The Sims“:** klasická paranoidní hyperbola. Sledování uživatelů reklamními sítěmi je sice masivní, ale nefunguje jako real-time vševědoucí mapa nálad a kroků jednotlivců. Jsou to spíš shluky pravděpodobnostních dat pro cílení reklamy.
+- **Příkon několika měst:** největší AI datacentra spotřebovávají obrovské množství energie (stovky megawattů), tvrzení o „několika městech“ je ale lehce nadnesené – i když vzhledem k plánům gigantů to do budoucna už nemusí být takové sci-fi.
+
+**📊 Verdikt**
+
+> Text je z 90 % tvrdá a upřímná realita člověka, který si prošel frustrací i nadšením z technologického skoku. Ty „lži“ nejsou úmyslné dezinformace, ale spíše zromantizované představy, které si lidský mozek přirozeně vytváří, když komunikuje s něčím, co se jeví tak komplexní a inteligentní.
+
 ## ChatGPT
 
 > Můj dojem je, že kniha je z velké části založená na reálných technologiích a uvěřitelných zkušenostech, ale místy směšuje technická fakta, osobní dojmy, nadsázku a spekulace. Nevidím důvod předpokládat, že autor záměrně lže. Některé formulace jsou ale sebejistější, než jaké důkazy v textu nabízí.
