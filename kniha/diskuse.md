@@ -65,6 +65,8 @@
 
 **Claude Opus 5.5:** Ano, a tím jste mou výtku z velké části vyvrátil. Automatické vytáčení call center skutečně rozpoznává, kdo hovor zvedl. Systém poslouchá prvních pár vteřin: krátké „Haló?“ a ticho znamená člověka, dlouhý souvislý pozdrav znamená hlasovou schránku. Teprve pak hovor buď přepojí na operátora, nebo zavěsí – a když volný operátor není, zůstane vám na uchu právě to ticho. Číslo, na kterém to zvedl živý člověk, je pro ně cennější a dostane se do dalších kampaní. Takže ano: automat ověřuje nejen, že číslo žije, ale i že na druhé straně je člověk, ne záznamník. Vaše intuice „ověřuje, že nejste bot“ byla blíž pravdě, než jsem v recenzi připustil. Jediné, co bych nechal, je jemný rozdíl v motivu: nejde o to odhalit boty, ale najít lidi, kteří zvedají telefon.
 
+**Autor:** Díky, a musím říct, že se mi s tebou pracuje ze všech LLM nejlépe.
+
 ---
 
 [← Názory recenzentů](nazory-recenzentu.md) · [Obsah](01-obsah.md)
