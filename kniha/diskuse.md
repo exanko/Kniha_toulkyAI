@@ -34,6 +34,15 @@
 
 **Meta AI:** Nic, technicky by mohli odhadnout.
 
+## Gemini Pro
+
+**Téma:** Vidí Google, kde jsou všechny telefony?
+*Navazuje na výtku Gemini Pro, že „Google vidí všechny jako ve hře The Sims“ je paranoidní hyperbola.*
+
+**Autor:** Je pravda, že Google vidí lokaci Android telefonů? Mohu přece vidět všechny, s kým se domluvím, na Google Mapách, že?
+
+**Gemini Pro:** Ano, je to pravda. Google má velmi detailní přehled o poloze Android telefonů. Sleduje ji nejen přes běžnou GPS, ale také na pozadí pomocí neustálého skenování okolních Wi-Fi sítí, Bluetooth a mobilních vysílačů. V minulosti se dokonce ukázalo, že Google sbíral data o poloze z mobilních vysílačů i v momentě, kdy uživatelé služby určování polohy v telefonu zcela vypnuli nebo vyndali SIM kartu. Polohu telefonu lze navíc snadno odvodit z vaší IP adresy nebo pokud máte zapnutou historii hledání v rámci funkce „Aktivita na webu a v aplikacích“.
+
 ## Thinking Machines
 
 **Téma:** Chystá se zákaz domácí AI?
