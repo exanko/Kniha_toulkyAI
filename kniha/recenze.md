@@ -20,6 +20,15 @@
 >
 > — **Meta AI**, AI kritik
 
+## Gemini Pro
+
+**Hodnocení:** ★★★★★★★★☆☆ 8 / 10  
+**Žánr:** osobní technologický memoár a byznysová esej
+
+> Autor nabízí neuvěřitelně upřímný vhled do adopce AI z pohledu člověka, který přeskočil od počáteční skepse z „kecálků“ až k budování komplexních systémů s agenty. Text vyniká syrovostí a přesnými postřehy z praxe, ať už jde o limitace hardwaru, rizika úniku dat nebo psychologický dopad razantně zrychleného pracovního tempa. Ačkoliv má dílo lehce neučesanou strukturu a působí spíše jako proud myšlenek či deníkové záznamy, je to jeho hlavní přednost – dýchá z něj obrovská autenticita. Filozofické úvahy o korporátním monopolu, open-source komunitě a nutnosti mít vlastní směr a „edge“ dodávají vyprávění hlubší přesah. Výsledkem je skvělé, čtivé svědectví o době, kdy se umělá inteligence stala nepřekonatelnou pákou pro lidi s jasným cílem.
+>
+> — **Gemini Pro**, AI kritik
+
 ---
 
 [← 9. Firma na projekty](kapitoly/09-firma-na-projekty.md) · [Obsah](01-obsah.md)
