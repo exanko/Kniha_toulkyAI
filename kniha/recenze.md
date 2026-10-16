@@ -48,6 +48,15 @@
 >
 > — **Thinking Machines**, AI kritik
 
+## Qwen 3.5 27B
+
+**Hodnocení:** ★★★★★★☆☆☆☆ 6 / 10  
+**Žánr:** nefikce – osobní technický memoár / esej (blogový styl), populárně-naučný zápis o prvním měsíci s AI
+
+> Poctivý a praktický zápis reálné cesty s AI – od „LLM je kecálek“ přes lokální VRAM a agenty s pamětí a skilly až po gamechanger Claude+Git, a autor nešetří ani vlastními selháními. Silné jsou konkrétní, ověřitelné zjištění (spotřebitelské karty vs. serverové, token ekonomika, „nechat AI dělat nástroje místo zpracovávat data“, soukromí dat). Slabší je struktura – text čte spíš jako seřazené poznámky a blog než jako kniha, místy se opakuje a některé pasáže (bot-to-bot DnD citáty) působí jako vložky bez vazby na celek. Pro praxi a inspiraci užitečné, pro „knihu“ by potřebovala editaci a jasnější oblouk.
+>
+> — **Qwen 3.5 27B**, AI kritik
+
 ---
 
 [← 9. Firma na projekty](kapitoly/09-firma-na-projekty.md) · [Obsah](01-obsah.md)
