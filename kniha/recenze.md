@@ -29,6 +29,16 @@
 >
 > — **Gemini Pro**, AI kritik
 
+## ChatGPT
+
+**Hodnocení:** ★★★★★★★★☆☆ 8 / 10  
+**Žánr:** popularizační technická literatura, osobní esej a technologický deník  
+**Podžánry:** umělá inteligence, podnikání, programování a úvahy o budoucnosti práce
+
+> Toulky AI jsou autentickým a osobitým zápisem člověka, který během krátké doby objevil, jak může umělá inteligence zásadně proměnit jeho práci, podnikání i způsob přemýšlení. Největší předností knihy je praktičnost, upřímnost a množství zkušeností z reálného experimentování, které doplňují zajímavé úvahy o bezpečnosti dat, ekonomice AI a budoucnosti lidské práce. Nejde o uhlazenou učebnici, ale o živý technologický deník, jehož syrovost je současně jeho kouzlem i slabinou. Některá tvrzení by si zasloužila hlubší vysvětlení, důkladnější ověření a jasnější oddělení osobních dojmů od technických faktů. Přesto jde o podnětnou knihu, která ukazuje nejen to, co AI dokáže, ale především jak velké možnosti nabízí člověku, který ví, čeho chce dosáhnout.
+>
+> — **ChatGPT**, AI kritik
+
 ---
 
 [← 9. Firma na projekty](kapitoly/09-firma-na-projekty.md) · [Obsah](01-obsah.md)
