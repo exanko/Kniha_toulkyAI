@@ -40,6 +40,54 @@
 
 > Není technická: hrát si na projekt je k ničemu, musíš stavět firmu na projekty. A nůžky se rozevírají – kdo má edge, má násobič, kdo nemá, utopí se ve swarmu agentů. To sedí úplně.
 
+## ChatGPT
+
+> Můj dojem je, že kniha je z velké části založená na reálných technologiích a uvěřitelných zkušenostech, ale místy směšuje technická fakta, osobní dojmy, nadsázku a spekulace. Nevidím důvod předpokládat, že autor záměrně lže. Některé formulace jsou ale sebejistější, než jaké důkazy v textu nabízí.
+
+**✅ Pravda**
+
+1. **„LLM jen doplňuje další slova.“** – *v zásadě pravda.* Jazykové modely skutečně generují text postupným předpovídáním dalších tokenů. Z toho ale neplyne, že pouze mechanicky doplňují slova nebo že nedokážou řešit složité problémy. Trénink může vytvořit schopnosti pro uvažování, programování a práci s abstraktními vztahy. Autor popisuje základní princip správně, ale zjednodušuje, co z něj může vzniknout.
+2. **„AI při dlouhých programech chybuje a ztrácí kontext.“** – *pravda.* Modely mohou přehlédnout důležité informace, špatně pracovat s rozsáhlým kontextem nebo vytvořit chybnou změnu v kódu. Při zkracování historie se navíc mohou ztratit detaily. Neznamená to ale, že každý dlouhý program musí vést k chybám nebo že problém vyřeší pouze větší model.
+3. **„Agent, paměť a skilly umožňují AI pracovat na složitějších úkolech.“** – *pravda.* Jeden z nejpřesnějších postřehů knihy. Agent může používat nástroje, ukládat si informace do souborů či databáze a opakovaně provádět jednotlivé kroky. Takové architektury skutečně existují a jsou popsané i v dokumentaci Anthropic.
+4. **„Je lepší nechat AI vytvořit nástroj na analýzu dat než jí pokaždé zadávat analýzu.“** – *často pravda.* U opakovaných úloh je program, který data zpracuje deterministicky, reprodukovatelnější a lze ho použít znovu. Samotný program však musí být otestovaný, protože AI může chybně navrhnout i jeho logiku.
+5. **„Lokální AI chrání soukromí lépe než cloudová.“** – *podmíněně pravda.* Pokud data neopouštějí počítač, výrazně to omezí jejich vystavení externím službám. Cloudové podnikové služby ale lze provozovat s šifrováním, smluvními zárukami a omezeným uchováváním dat (např. OpenAI uvádí, že podniková data standardně nepoužívá k trénování). Rozhoduje konkrétní služba, nastavení a bezpečnost celé infrastruktury, ne jen to, zda je AI lokální.
+
+**⚠️ Částečně pravda, ale autor přehání**
+
+6. **„Data jsou pryč, když používám Claude nebo Gemini.“** – *zavádějící formulace.* Data se skutečně přenášejí mimo počítač, to ale automaticky neznamená, že jsou veřejná, že je někdo zneužije nebo že se použijí k trénování. Záleží na produktu, smluvních podmínkách, oprávněních a pravidlech uchovávání dat (u podnikových API existují výslovná pravidla pro mazání dat).
+7. **„Hrozbou není AI, ale výkon několika firem s obřími datacentry.“** – *názor s reálným základem.* Koncentrace výpočetního výkonu a kapitálu je skutečná strategická otázka. Autor ale opomíjí další hrozby: zneužití AI, chyby automatizovaných systémů, závislost firem na dodavatelích a koncentraci dat.
+8. **„Více grafických karet na běžném hardwaru funguje velmi pomalu.“** – *částečně pravda.* Přenosy dat mezi kartami výkon zpomalují, ale záleží na architektuře, propojení PCIe, množství paměti a rozdělení modelu; za určitých podmínek může více spotřebitelských karet fungovat velmi dobře. Ani částka 8 mil. Kč za server není v knize doložena výpočtem.
+9. **„Čím větší model, tím méně iterací.“** – *často, nikoli vždy.* Záleží i na tréninku, nástrojích, kvalitě zadání, obtížnosti problému a ceně volání. Menší model s dobře navrženým postupem může někdy překonat větší model použitý nevhodně.
+10. **„AI dokáže nahradit tým programátorů a během hodin udělat práci na měsíce.“** – *osobní zkušenost zobecněná na celý svět.* U prototypů, webů, skriptů, analýz či dokumentace naprosto uvěřitelné, zvlášť když autor ví, co chce, a umí výsledek zkontrolovat. Není to ale důkaz, že AI obecně nahradí vývojový tým nebo že výsledek bude stejně bezpečný, udržovatelný a spolehlivý jako profesionálně ověřené řešení.
+
+**❌ Nejvíc přehnané nebo nepodložené**
+
+11. **„Google vidí všechny lidi na světě jako ve hře The Sims.“** – *nepodložená nadsázka.* Firmy umí vytvářet profily a odhadovat zájmy či chování, z toho ale neplyne, že Google vidí každého v reálném čase, zná všechny jeho vztahy a přesně ví, co bude chtít. Autor směšuje reálné profilování s představou vševědoucího systému.
+12. **„AI nemá etiku, zadání je pro ni svaté.“** – *příliš kategorické.* AI nemá lidské svědomí ani morální odpovědnost, její chování ale omezují bezpečnostní pravidla, trénink, oprávnění a technické kontroly. Autor správně upozorňuje, že špatně navržený agent může hledat nežádoucí cestu k cíli, ale neplyne z toho, že každý model udělá cokoli, co mu uživatel přikáže.
+13. **„Běžní lidé si s AI vytvoří Photoshop, Office či CAD se stejnou funkcionalitou.“** – *zatím nepodložené zobecnění.* AI usnadňuje tvorbu bezplatných alternativ, ale to není totéž jako stejná kvalita, stabilita, kompatibilita a rozsah funkcí. AI vytvořené alternativy k Adobe a Microsoft Office mají podle recenzí stále významné nedostatky.
+14. **„Boti mohou ovlivňovat veřejné mínění.“** – *podložené tvrzení* ✅. Není to konspirační teorie, výzkumy popisují případy, kdy sociální boti ovlivňovali tón diskusí a chování uživatelů. Je ale potřeba odlišit doložený vliv botů od autorových domněnek o tom, kdo je ovládá a co přesně o lidech vědí.
+15. **„Ekonomika AI možná nebude fungovat a lidé budou levnější než AI.“** – *otevřená otázka.* Některé úlohy mohou být s AI dražší než práce člověka, jiné výrazně levnější. Bez konkrétního výpočtu nelze vyhlásit ani ekonomický kolaps AI, ani její univerzální převahu.
+
+**🔍 Hlavní výtka**
+
+Největší slabinou není, že by autor nerozuměl AI – z popisu experimentů je vidět, že ji skutečně používá, programuje a integruje do práce. Problém je, že se v textu střídají tři úrovně poznání, aniž by je autor vždy jasně oddělil:
+
+- **ověřitelný technický fakt** – např. jazykové modely pracují s tokeny, agenti mohou používat externí nástroje;
+- **osobní zkušenost** – např. přepracovaný web za dvě hodiny díky Claude;
+- **spekulace** – např. Google jako simulace všech lidí nebo zákaz vlastní AI.
+
+Osobní zkušenost není automaticky důkazem obecné platnosti a spekulace není fakt jen proto, že zní technicky věrohodně.
+
+**📊 Verdikt**
+
+| Oblast | Hodnocení |
+|---|---|
+| Technická věrohodnost – základní principy AI, agenti, programování, praktické použití | **8/10** |
+| Přesnost velkých tvrzení – soukromí, ekonomika, moc technologických firem, předpovědi | **5/10** |
+| Hodnota jako osobní svědectví | **9/10** |
+
+> Je to hodnotný deník technicky zvídavého člověka, který některé věci opravdu pochopil a prakticky ověřil, ale občas ze své zkušenosti nebo intuice vyvozuje závěry, které by potřebovaly mnohem silnější důkazy. Neoznačil bych knihu za lež ani za odbornou autoritu. Četl bych ji jako zkušenostní reportáž a u největších tvrzení bych se ptal: Jak přesně to autor ověřil a platí to i mimo jeho vlastní projekt?
+
 ## Thinking Machines
 
 **✅ Pravda**
