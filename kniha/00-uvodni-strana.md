@@ -6,8 +6,13 @@
 
 ### Moje cesta s umělou inteligencí
 
+<br>
+
+<img src="obrazky/titulni-ilustrace.jpg" alt="Lidský mozek omotaný provázkem a propojený světelnými vlákny s řadou grafických karet" width="420">
+
 <br><br>
-*Myšlenkový pochod a neb můj první měsíc s AI*
+
+*Myšlenkový pochod aneb můj první měsíc s AI*
 
 <br><br><br>
 
