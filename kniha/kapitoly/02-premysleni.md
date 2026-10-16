@@ -1,8 +1,8 @@
 # 2. Přemýšlení
 
-LLM si nejprve vede diskusi sám se sebou, než odpoví.
+LLM si nejprve vede diskusi sám se sebou, než odpoví. Netuším, jak t ofunguje, ale je to zajímavé.
 
-Pak jsem zjistil, že Gemini je součástí vyhledávání Google a umí programovat weby a webové kalkulačky.
+Pak jsem zjistil, že Gemini je součástí vyhledávání Google a umí programovat weby a webové kalkulačky. Vytvořil jsem jich celou hromadu,
 
 Gemini pod firemním účtem toho umí víc. Zjistil jsem, že je lepší nenechávat AI zpracovávat data, ale nechat ji vytvořit nástroje pro zpracování dat. Nečerpá to tolik tokenů a nástroj mi zůstane.
 
