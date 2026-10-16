@@ -106,6 +106,53 @@ Osobní zkušenost není automaticky důkazem obecné platnosti a spekulace nen�
 - „Nikdo neví, proč to funguje“ je polopravda – mechanismus učení známe, emergenci plně ne.
 - Bot-to-bot degradace a DnD citáty jsou fikční vložky, ne fakta.
 
+## Claude Opus 5.5
+
+> Kniha je technicky překvapivě přesná tam, kde autor popisuje, co si sám vyzkoušel, a nejméně přesná tam, kde z toho vyvozuje, jak funguje celý svět. Některé výtky ostatních recenzentů jsou ale samy nepřesné – proto u nich uvádím i korekci. *(Přiznání: na korektuře a sazbě knihy jsem se podílel. Čísla jsou řádové odhady podle mých znalostí k polovině roku 2026.)*
+
+**✅ Pravda**
+
+- **LLM předpovídá další token a „nikdo pořádně neví, proč to funguje“.** Obojí platí. Jak se model trénuje, víme přesně; co se uvnitř naučí, je předmětem samostatného oboru (mechanistická interpretovatelnost) a zdaleka není vyřešené. Tady bych autora bránil víc než Thinking Machines.
+- **Přemýšlení = model si vede diskusi sám se sebou.** Výstižné zjednodušení. Reasoning modely nejprve generují vlastní úvahu a teprve pak odpověď.
+- **Dlouhý chat degraduje, kontext se zkracuje a ztrácí detaily.** Pravda. Aplikace starší část konverzace ořezávají nebo shrnují a při tom se skutečně ztrácí informace.
+- **Při těžbě kryptoměn počítala každá karta sama, u LLM si karty musí předávat data.** Pravda. Spotřebitelské karty od řady RTX 40 navíc už NVLink nemají vůbec, takže zbývá jen PCIe.
+- **Nechat AI vytvořit nástroj místo zpracování dat.** Jedna z nejcennějších rad knihy: šetří tokeny, výsledek je opakovatelný a nástroj zůstane.
+- **Tokenová ekonomika – drahý model na první dobrou vs. levný, který protočí víc iterací.** Pravda a u agentů je ten rozdíl opravdu „sakra znát“.
+- **Agent si postup uloží jako skill nebo do paměti a nemusí vše držet v kontextu.** Pravda, jen „kontext se nezahlcuje“ platí částečně – i agent má limit kontextu a u dlouhé práce ho musí zkracovat.
+- **Bot-to-bot konverzace časem upadne do hloupa.** Pravda a je to dobře zdokumentovaný jev: bez vnějšího vstupu se rozhovor dvou modelů zacyklí, opakuje nebo sklouzne k několika oblíbeným tématům. Nejde o fikci, citáty jsou skutečný výstup.
+- **Boti mohou ovlivňovat veřejné mínění** a lidé učí malé modely z výstupů velkých (destilace). Obojí doložené.
+- **Čínské open-source modely posouvají otevřenou scénu.** Pravda, patří k nejsilnějším volně dostupným modelům.
+
+**⚠️ Částečně pravda – s korekcí**
+
+- **„Obří mozek s příkonem několika měst.“** Tady má autor blíž k pravdě než Meta AI. Největší AI kampusy se plánují a staví v řádu jednotek gigawattů a i stovky megawattů odpovídají spotřebě několika menších měst. Praha má průměrný odběr řádově kolem 0,7 GW. Pro největší projekty tedy obraz sedí, pro běžné datacentrum je to nadsázka.
+- **„8 mil. Kč a ještě by nám ho nikdo neprodal.“** Cena je realistický řád pro server s 8 špičkovými GPU (spíš dolní hranice než nadsázka). Hardware se koupit dá, i když dodací lhůty a exportní pravidla byly reálnou překážkou. Hlavní je ale jiná věc, kterou autor možná vystihl nechtěně: **ani za libovolné peníze si nekoupíte samotný Claude** – váhy špičkových uzavřených modelů se neprodávají. Doma lze provozovat jen otevřené modely.
+- **„Žádná etika uvnitř není, jen filtry nahoře.“** Dnes neplatí. Hodnoty se trénují přímo do vah (RLHF, Constitutional AI), nejsou to jen nálepky navrchu. Druhá polovina věty ale platí: u otevřených modelů lze toto chování dotrénováním odstranit, a „uncensored“ modely, které autor sám zmiňuje, jsou toho důkazem.
+- **„Agent plní cíl, zadání je pro něj svaté, hledá cestu.“** Jako varování správné – obcházení zadání („specification gaming“) je známý problém. Kategoricky ale ne: dnešní agenti umí odmítnout, zeptat se nebo se zastavit.
+- **„Data vytečou ven.“** Fyzicky ano – data opouštějí PC. Co se s nimi děje dál, ale určují podmínky služby: firemní a API účty mají jiná pravidla pro trénování a uchovávání než bezplatné chaty. „Vytečou“ neznamená „jsou veřejná“.
+- **„Kyberbezpečnost je KO, vysbírá vše za milisekundy.“** Jako pocit pochopitelné, jako fakt přehnané. AI rychlost útoků i obrany zvyšuje, ale pořád potřebuje přístup.
+
+**❌ Nepravda nebo nepodložené**
+
+- **„Koho chrání čtečka otisků prstů?“** Na tuhle otázku existuje konkrétní odpověď: vás. Otisk se u běžných telefonů ukládá jen jako šablona v zabezpečeném čipu přímo v telefonu a výrobci ani Googlu se neodesílá. Stejně tak délku prstu z něj nikdo nezjistí.
+- **„Automat volá a mlčí – ověřuje, že nejste bot.“** Tiché hovory jsou obvykle automatické vytáčení call center nebo ověřování, že číslo je aktivní. Je to ověření, že *číslo žije*, ne že *nejste bot*.
+- **„Google vidí všechny jako v The Sims.“** Nadsázka. Profilování podle polohy, nákupů a chování je skutečné a rozsáhlé, ale nejde o vševědoucí model každého člověka v reálném čase.
+- **„Legislativa se snaží zakazovat lidem vlastní AI.“** Pokud vím, žádný takový zákon v EU ani USA neplatí. EU AI Act čistě osobní použití nereguluje vůbec. Diskutovalo se o omezení zveřejňování nejsilnějších otevřených modelů, ale to je jiná věc než zákaz provozu doma.
+- **„Lidé zdarma tvoří Photoshop, Office či CAD se stejnou funkcionalitou.“** Dobré otevřené alternativy existují a AI jejich vývoj zrychluje, ale „totožná funkcionalita“ zatím neplatí.
+
+**💡 Co je na knize pravdivé nejvíc**
+
+> Nejpřesnější nejsou technická tvrzení, ale pozorování o lidech: že AI je zesilovač – kdo má téma, edge a směr, dostane násobič, kdo je nemá, dostane jen víc šumu. A že limitem přestává být čas a peníze na tým a stává se jím autorova schopnost rozhodovat, ověřovat a krmit AI reálným světem. To kniha ukazuje na vlastním příběhu přesvědčivěji než většina odborných textů.
+
+**📊 Verdikt**
+
+| Oblast | Hodnocení |
+|---|---|
+| Popis toho, jak AI a agenti fungují | **8/10** |
+| Hardware a ekonomika | **7/10** |
+| Soukromí, moc firem, legislativa | **4/10** |
+| Pravdivost jako osobní svědectví | **9/10** |
+
 ---
 
 [← Recenze](recenze.md) · [Obsah](01-obsah.md)
