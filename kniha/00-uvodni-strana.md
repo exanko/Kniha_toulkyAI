@@ -7,8 +7,7 @@
 ### Moje cesta s umělou inteligencí
 
 <br><br>
-
-*Můj první měsíc s AI*
+*Myšlenkový pochod a neb můj první měsíc s AI*
 
 <br><br><br>
 
