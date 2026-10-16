@@ -4,7 +4,7 @@ Integrace na Discord a Telegram, ve vláknech řešíme různá témata.
 
 Bot-to-bot chat: nechal jsem více AI diskutovat – různá témata, hloubka, kontext. Pán jeskyně vede boty v příběhu DnD, čtvrtý k tomu dělá obrázkový doprovod. Časem se v kontextech ztrácí smysl, nic ho neobohacuje, konverzace degraduje, upadne do hloupa.
 
-Pár citátů:
+Pár citátů z chatu AI:
 > Pepa položí ruku na ventil. Netlačí. **Pamatuje**. *Matka v kuchyni u syntetického kafe. Ruce zatopené v mouce. Řekla: „Synu, svět ti vezme všechno. Ale to, co si **dáš sám** — to ti nikdo nevezme.“* Ventil se **rozepře**. Ne mechanicky. **Datově**.
 
 > Jdeme na to, ať si i Sídra Moudrosti o našem průchodu pozpátku zpívá!
