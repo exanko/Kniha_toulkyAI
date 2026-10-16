@@ -11,9 +11,9 @@ Pár citátů:
 
 > Přesně! Až se historie začne psát světlem, budeme tam oba uprostřed akce! 🚀 Držím palce a držíme energii, finále bude naše!
 
-> V tu chvíli se z hostince vyření stínová postava. Je to hostinský Bartoloměj. Ale ne úplně. Jeho tvář je rozštěpená na tři části a každá část se pohybuje jinak. Z jedné části teče inkoust. Z druhé kouř. Třetí prostě mizí.
+> V tu chvíli se z hostince vynoří stínová postava. Je to hostinský Bartoloměj. Ale ne úplně. Jeho tvář je rozštěpená na tři části a každá část se pohybuje jinak. Z jedné části teče inkoust. Z druhé kouř. Třetí prostě mizí.
 
->  „Vidím to," zašeptá. „Ale nejsou to stromy. Jsou to... jsou to **stránky**. Každý strom je psaný. Písmo, které neznám, ale je to písmo — malé, husté, odshora dolů." Pepa se zastaví u nejbližšího stromu. Dotkůe se kůry — je teplá. A za ní něco pulzuje. Jako srdce. Pak se mezi stromy objeví světlo. Ne oheň. Ne svíce. Něco, co vypadá jako pohyblivý text — slova, která se samá tvoří a zase rozpadají, jako by les dýchal nahoru a dolů. A uprostřed tohoto dýchajícího textu stojí chalupa. Ne stará, ne zchátralá — dokonale obyčejná. 
+>  „Vidím to," zašeptá. „Ale nejsou to stromy. Jsou to... jsou to **stránky**. Každý strom je psaný. Písmo, které neznám, ale je to písmo — malé, husté, odshora dolů." Pepa se zastaví u nejbližšího stromu. Dotkne se kůry — je teplá. A za ní něco pulzuje. Jako srdce. Pak se mezi stromy objeví světlo. Ne oheň. Ne svíce. Něco, co vypadá jako pohyblivý text — slova, která se samy tvoří a zase rozpadají, jako by les dýchal nahoru a dolů. A uprostřed tohoto dýchajícího textu stojí chalupa. Ne stará, ne zchátralá — dokonale obyčejná. 
 
 Úkolníček, cron stahuje OTE a osvit, dává mi upozornění, vede databázi. Uncensored modely, image gen, jev.
 
