@@ -12,7 +12,7 @@ Claude si ke všem datům, co mu dám, hned vede analýzu a programuje si skript
 
 Zásek: nasbírat data z reálného světa zase trvá dny.
 
-Každopádně všechno pak mám lusknutím prstu nalezené. Volal Staš, že dostal pokutu. Šel jsem za Claudem, tedy za svým agentem, Staše jsem ani nezmínil, jen jsem mu navrhnul novou funkcionalitu – a hned přišla reakce, že tohle se může dít třeba na Stako. Vymysleli jsme pak spolu dobrou nápravu.
+Každopádně všechno pak mám lusknutím prstu nalezené. Volal zákazník, že dostal pokutu. Šel jsem za Claudem, tedy za svým agentem, zákazníka jsem ani nezmínil, jen jsem mu navrhnul novou funkcionalitu – a hned přišla reakce, že tohle se může dít třeba na instalaci tohoto zákazníka. Vymysleli jsme pak spolu dobrou nápravu.
 
 Mezitím za tři hodiny kompletně předělané podklady OW, za dvě hodiny předělaný web sunnycold včetně 3D vizualizací a toků dat nad nimi, s texty už nové architektury DT1, kde to zase brázdím já a nestíhám to krmit referencemi a 3D modely.
 
