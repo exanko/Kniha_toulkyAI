@@ -1,6 +1,6 @@
 # 2. Přemýšlení
 
-LLM si nejprve vede diskusi sám se sebou, než odpoví. Netuším, jak t ofunguje, ale je to zajímavé.
+LLM si nejprve vede diskusi sám se sebou, než odpoví. Netuším, jak to funguje, ale je to zajímavé.
 
 Pak jsem zjistil, že Gemini je součástí vyhledávání Google a umí programovat weby a webové kalkulačky. Vytvořil jsem jich celou hromadu,
 
