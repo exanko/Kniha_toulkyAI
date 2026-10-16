@@ -1,6 +1,6 @@
 # 4. Obří mozek s příkonem několika měst
 
-Zjištění: v AI datových centrech jsou opravdu obří investice, výkon je obří a na tom to celé stojí. A možná to také celé padne, protože to nebude mít ekonomiku – pokud by nám účtovali reálné ceny, bude možná zase levnější zaměstnávat lidi.
+Zjištění: **v AI datových centrech jsou opravdu obří investice, výkon je obří a na tom to celé stojí.** A možná to také celé padne, protože to nebude mít ekonomiku – pokud by nám účtovali reálné ceny, bude možná zase levnější zaměstnávat lidi.
 
 Hrozbou není AI, hrozbou je ten výkon, který drží těch pár firem.
 
