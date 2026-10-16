@@ -165,7 +165,7 @@ Osobní zkušenost není automaticky důkazem obecné platnosti a spekulace nen�
 
 **📝 Osobní anekdoty (brát s rezervou)**
 
-- Staš a pokuta, „3 h podklady OW“, „2 h web sunnycold“ – konkrétní čísla, neověřitelná, ale pravděpodobná.
+- Zákazník a pokuta, „3 h podklady OW“, „2 h web sunnycold“ – konkrétní čísla, neověřitelná, ale pravděpodobná.
 
 **📊 Verdikt**
 
