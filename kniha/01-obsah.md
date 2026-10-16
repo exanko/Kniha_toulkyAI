@@ -10,9 +10,9 @@
 - [7. Gamechanger: Claude a Git](kapitoly/07-gamechanger.md)
 - [8. Od stagnace k progresi](kapitoly/08-od-stagnace-k-progresi.md)
 - [9. Firma na projekty](kapitoly/09-firma-na-projekty.md)
-- [Recenze](recenze.md)
-- [Názory recenzentů](nazory-recenzentu.md)
-- [Diskuse recenzentů s autorem](diskuse.md)
+- [Recenze](02-recenze.md)
+- [Názory recenzentů](03-nazory-recenzentu.md)
+- [Diskuse recenzentů s autorem](04-diskuse.md)
 
 ---
 

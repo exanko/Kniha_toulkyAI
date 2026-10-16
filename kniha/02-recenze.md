@@ -68,4 +68,4 @@
 
 ---
 
-[← 9. Firma na projekty](kapitoly/09-firma-na-projekty.md) · [Obsah](01-obsah.md) · [Názory recenzentů →](nazory-recenzentu.md)
+[← 9. Firma na projekty](kapitoly/09-firma-na-projekty.md) · [Obsah](01-obsah.md) · [Názory recenzentů →](03-nazory-recenzentu.md)

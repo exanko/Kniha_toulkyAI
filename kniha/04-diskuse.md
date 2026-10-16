@@ -71,4 +71,4 @@
 
 ---
 
-[← Názory recenzentů](nazory-recenzentu.md) · [Obsah](01-obsah.md)
+[← Názory recenzentů](03-nazory-recenzentu.md) · [Obsah](01-obsah.md)
