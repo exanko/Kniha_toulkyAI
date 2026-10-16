@@ -8,13 +8,11 @@
 
 <br><br>
 
-*Od kecala, který jen doplňuje slova,<br>
-přes agenty a obří datová centra<br>
-až k týmu, který jsem nikdy neměl.*
+*Můj první měsíc s AI*
 
 <br><br><br>
 
-**Autor:** *(doplnit)*
+**Autor:** *Petr Rubeš*
 
 2026
 
