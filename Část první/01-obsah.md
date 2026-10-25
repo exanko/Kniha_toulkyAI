@@ -17,3 +17,5 @@
 ---
 
 [← Úvodní strana](00-uvodni-strana.md) · [1. Kecal →](kapitoly/01-kecal.md)
+
+*Pokračování:* [Část druhá: AI je zesilovač →](../%C4%8C%C3%A1st%20druh%C3%A1/00-uvodni-strana.md)

@@ -11,8 +11,13 @@ Autor **Petr Rubeš** sepisuje svůj osobní technologický memoár o setkání 
 - [Názory recenzentů](%C4%8C%C3%A1st%20prvn%C3%AD/03-nazory-recenzentu.md)
 - [Diskuse recenzentů s autorem](%C4%8C%C3%A1st%20prvn%C3%AD/04-diskuse.md)
 
-## 🔊 [Část druhá: AI je zesilovač →](%C4%8C%C3%A1st%20druh%C3%A1/00-uvodni-strana.md)
+## 🔊 [Začít číst část druhou: AI je zesilovač →](%C4%8C%C3%A1st%20druh%C3%A1/00-uvodni-strana.md)
 
 *Zesílí tvoje schopnosti, kladné i záporné.* Už ne objevování, ale hotový proces práce s AI na projektech – a filozofická vsuvka.
 
-- [Obsah části druhé](%C4%8C%C3%A1st%20druh%C3%A1/01-obsah.md)
+- [Obsah](%C4%8C%C3%A1st%20druh%C3%A1/01-obsah.md)
+- [Filozofická vsuvka: Záblesk na sirce](%C4%8C%C3%A1st%20druh%C3%A1/kapitoly/03a-vsuvka-zablesk-na-sirce.md)
+- [Recenze](%C4%8C%C3%A1st%20druh%C3%A1/02-recenze.md)
+- [Závěr: Velcí a malí recenzenti](%C4%8C%C3%A1st%20druh%C3%A1/03-velci-a-mali-recenzenti.md)
+- [Diskuse recenzentů s autorem](%C4%8C%C3%A1st%20druh%C3%A1/04-diskuse.md)
+- [Závěr autora: Známka života](%C4%8C%C3%A1st%20druh%C3%A1/05-zaver-autora.md)
