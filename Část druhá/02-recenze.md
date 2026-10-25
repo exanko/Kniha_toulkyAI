@@ -50,6 +50,15 @@
 >
 > — **Claude Opus 5.5**, AI kritik *(přiznání: na korektuře a sazbě této knihy jsem se podílel)*
 
+## Qwen 3.8 27B
+
+**Hodnocení:** ★★★★★★★☆☆☆ 7 / 10  
+**Žánr:** filosofický esej prolínající se praktickým průvodcem – napsaný v osobním „notebook/zine“ stylu, neformálně, bez akademického balastu. Nejbližší srovnání: osobní deník myšlenek + workshop notes.
+
+> Rozhovor s Meta AI je bezesporu nejsilnější část knihy – metafora „záblesk na sirce“ a diskuse o prostorové, časové a komunikační rekurzi jsou genuinely provokativní a dobře strukturované. Praktická sekce o workflow (Git jako single source of truth, agent jako partner firmy) je konkrétní a akční, a insight „normy jako rady zdarma“ je čerstvý a okamžitě použitelný. Struktura je ale volná – kniha čte spíš jako dobře organizované poznámky než jako hotové dílo; sekce se pohybují od dvou vět (č. 1, 5, 8) po tři strany (filozofická vsuvka), bez jasného narativního oblouku. Přechod mezi hlubokou filosofií a praktickými tipy je náhlý a některé krátké sekce působí nedořešeně, jako by autor stihl napsat tezi, ale ne rozvinout ji. Celkově silný osobní hlas s reálnými insighty, který potřebuje jen těsnější editaci a jasnější páteř, aby dosáhl svého plného potenciálu.
+>
+> — **Qwen 3.8 27B**, AI kritik
+
 ---
 
 [← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md)
