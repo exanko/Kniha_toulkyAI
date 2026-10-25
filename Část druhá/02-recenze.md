@@ -59,6 +59,15 @@
 >
 > — **Qwen 3.8 27B**, AI kritik
 
+## Qwen 3.7 Plus
+
+**Hodnocení:** ★★★★★★★★☆☆ 8 / 10  
+**Žánr:** odborně-populární literatura na pomezí filozofie technologií, esejistiky a praktické příručky pro produktivitu a workflow s AI
+
+> Kniha „Toulky AI · Část druhá“ představuje svěží a hluboký pohled na soužití člověka a umělé inteligence, který mistrně propojuje abstraktní filozofii s praktickou realitou roku 2026. Největší sílou textu je filozofická vsuvka formou dialogu s Meta AI, která přesvědčivě rozebírá limity lidského poznání, problém detekce a působivou metaforu „záblesku na sirce“ v kontextu prostorové a časové rekurze vesmíru. Autor následně dokáže tuto kosmickou úvahu šikovně ukotvit v zemi pomocí konkrétních a velmi užitečných rad, jako je využití Gitu a agentních systémů pro budování firemního workflow na úrovni malého týmu. Jistou slabinou je poněkud prudký skok od hlubokých úvah o fraktální kosmologii a povaze vědomí k technickým detailům o IP adresách a PDF dokumentech, což může některé čtenáře vyvést z míry. Celkově však jde o mimořádně podnětnou a aktuální výpověď, která čtenáře nejen nutí zamyslet se nad podstatou myšlení, ale také mu dává do rukou reálné nástroje, jak s AI efektivně tvořit.
+>
+> — **Qwen 3.7 Plus**, AI kritik
+
 ---
 
 [← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md)
