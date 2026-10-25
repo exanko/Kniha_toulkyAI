@@ -2,7 +2,7 @@
 
 Devět matek dítě za měsíc neporodí. Brzdí vstupy lidí, přenosy serverů, výpočty skriptů, načítání webů.
 
-Pozor: pokud používám agenta v zahraničním prostředí, nejsem pro weby Čech, ale třeba Američan a chodím na internet z IP adresy velkého datacentra. Výhodou agenta na vlastním PC tedy je, že mě internet vidí jako člověka, Čecha, a neblokuje mi přístup. Dá se to obejít, agent navrhne cesty.
+Pozor, pokud používám zahraniční prostředí s agentem, tak nejsem pro weby Čech, ale třeba Američan a chodím na internet z IP adresy velkého datacentra. Tedy výhoda agenta z vlastního PC je, že mě internet vidí jako člověka, Čecha, a neblokuje mi přístup. Dá se to obejít, agent navrhne cesty.
 
 ---
 

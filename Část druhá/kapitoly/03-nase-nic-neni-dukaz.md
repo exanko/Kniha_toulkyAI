@@ -1,8 +1,8 @@
 # 3. Naše nic není důkaz neexistence
 
-Platonismus, matematický realismus a problém detekce. To, co člověk dělá, je, že skrze sebe, za pomoci nástrojů nebo náhodou stále jen objevuje přírodu. Pokud by vytvořil něco, na co nemá smysly a nástroje, tak o tom neví. Naše nic není důkaz neexistence, jen důkaz naší slepoty.
+Platonismus, matematický realismus a problém detekce. To, co člověk dělá, je, že skrze sebe, za pomocí nástrojů, nebo náhodou stále jen objevuje přírodu. Pokud by vytvořil něco, na co nemá smysly a nástroje, tak o tom neví. Naše nic není důkaz neexistence, jenom důkaz naší slepoty.
 
-Říkáme, že hledáme život – a tak hledáme život, který je stejně velký a stejně rychlý jako my. Vesmír nemá preferované měřítko, my si jen myslíme, že naše velikost a rychlost je v něm „normální“. Je velice málo pravděpodobné, že prostorová, časová a komunikační rekurze nás má na začátku.
+My říkáme, že hledáme život, tak hledáme život, který je stejně velký a stejně rychlý jako my. Vesmír nemá preferované měřítko, my si jen myslíme, že naše velikost a rychlost je tam „normální“. Je velice málo pravděpodobné, že prostorová, časová a komunikační rekurze nás má na začátku.
 
 Všichni jsou prediktivní stroje udržující příběh.
 

@@ -1,6 +1,6 @@
 # 1. Nikdo to nečte
 
-Moc lidí to nezajímá, je to na ně moc obsahu. I když komprimuješ vědomosti do pár odstavců, nikdo to nepřečte. AI bude kontexty zvětšovat, generovat texty, rešerše, průniky vědomostí. Lidé však budou chtít co nejjednodušší odpovědi.
+Moc lidí to nezajímá, je to na ně moc obsahu, i když komprimuješ vědomosti do pár odstavců, nikdo to nepřečte. AI bude kontexty zvětšovat, generovat text, rešerše, průniky vědomostí. Lidé však budou chtít co nejjednodušší odpovědi.
 
 ---
 

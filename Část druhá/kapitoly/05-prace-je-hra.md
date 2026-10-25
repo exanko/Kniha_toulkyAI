@@ -2,7 +2,7 @@
 
 Přináší to dopamin, člověk vidí okamžité výsledky, chce dál budovat, zkoumat, tvořit. Roste mu to před očima. Práce je hra s okamžitými výsledky.
 
-Informace nalité do strukturovaného formátu neslouží jen k prvotnímu záměru něco vytvořit, ale najednou díky nim lze rychle získat názor i na něco, co vytvořil někdo jiný.
+Nalité informace do strukturovaného formátu slouží nejenom k prvotnímu záměru něco vytvořit, ale najednou lze díky nim rychle získat názor i na něco, co vytvořil někdo jiný.
 
 ---
 

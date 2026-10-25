@@ -1,6 +1,6 @@
 # 8. Když projekt vyroste
 
-U většího projektu workflow použité v minulosti nefunguje. Je potřeba vytvořit robustní systém pro více uživatelů a rolí – databáze, práva, vlastní AI asistentky. Stejně je tedy potřeba odborný vůdce.
+Větší projekt: workflow použité v minulosti nefunguje, je potřeba vytvořit robustní systém pro více uživatelů a rolí – databáze, práva, vlastní AI asistentky. Tedy je potřeba stejně odborný vůdce.
 
 ---
 

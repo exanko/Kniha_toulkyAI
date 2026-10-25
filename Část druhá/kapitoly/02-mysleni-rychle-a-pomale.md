@@ -1,6 +1,6 @@
 # 2. Myšlení rychlé a pomalé
 
-Daniel Kahneman v knize Myšlení rychlé a pomalé popisuje dva typy myšlení – systém 1 a systém 2. To, že lidé nahrazovali systém 2 třeba dotazem na Google, je jasná věc. Hodně lidí funguje drtivě jen na prvním typu. Nenahradí lidem AI druhý typ myšlení úplně?
+Daniel Kahneman v knize Myšlení rychlé a pomalé popisuje typ myšlení na první stupeň a druhý. To, že lidé nahrazovali druhý stupeň třeba dotazem na Google, je jasná věc. Hodně lidí funguje drtivě jen na prvním typu. Nenahradí lidem AI druhý typ myšlení úplně?
 
 ---
 
