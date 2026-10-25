@@ -124,4 +124,4 @@
 
 ---
 
-[← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md)
+[← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md) · [Závěr: Velcí a malí recenzenti →](03-velci-a-mali-recenzenti.md)
