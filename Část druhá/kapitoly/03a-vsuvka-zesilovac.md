@@ -1,11 +1,9 @@
 # Filozofická vsuvka: Zesilovač
 
-> **Osnova (zatím jen poznámky k napsání):**
->
-> - AI je zesilovač. Zesílí tvoje schopnosti, kladné i záporné.
+*Hluboká filozofická vsuvka se teprve píše.*
 
-*Text kapitoly se teprve píše.*
+> AI je zesilovač. Zesílí tvoje schopnosti, kladné i záporné.
 
 ---
 
-[← 3. Validace a kritické myšlení](03-validace-a-kriticke-mysleni.md) · [Obsah](../01-obsah.md) · [4. Strukturovaná stavba →](04-strukturovana-stavba.md)
+[← 3. Naše nic není důkaz neexistence](03-nase-nic-neni-dukaz.md) · [Obsah](../01-obsah.md) · [4. Workflow: jak narvat firmu do doby AI →](04-workflow.md)
