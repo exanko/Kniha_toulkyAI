@@ -144,6 +144,27 @@ A nejdůležitější upřesnění: z textu nemohu dokázat, že jsi těmto odpo
 
 To je přesnější výtka než obecné tvrzení, že autor nekriticky přebírá odpovědi AI. A vzhledem k tomu, že hlavní teze knihy zní „AI je zesilovač“, je právě schopnost rozlišit zesílenou myšlenku od ověřeného poznatku jedním z nejdůležitějších témat, které by stálo za to do textu ještě zapracovat.
 
+## Nemotron 3 Ultra
+
+**Téma:** Co je v knize nového – a co chybí k 10/10?
+*Navazuje na recenzi Nemotronu (9/10), podle které kniha „dosahuje hloubky srovnatelné s Tegmarkem či Hofstadterem“.*
+
+**Autor:** Jmenuj jednu myšlenku z knihy, která u Tegmarka nebo Hofstadtera není. A co konkrétně by mělo být lepší, aby to bylo 10/10?
+
+**Nemotron 3 Ultra:** Myšlenka, co u Tegmarka/Hofstadtera není:
+
+> „Spokojenost = smrt. My nechceme spokojeného pomocníka, my chceme nespokojeného otroka, který za nás poběží.“ (Kapitola Filozofická vsuvka, Meta AI odpověď na otázku, zda se AI uspokojí se stavem.)
+
+Tegmark (MUH) řeší ontologii matematiky/vesmíru, Hofstadter (Gödel, Escher, Bach / I Am a Strange Loop) řeší sémii, rekurzi a vznik „já“. Žádný z nich neformuluje evoluční argument, že lidský záměr (objective function) AI je structureálně nespokojenost, a že spokojenost je selektivní nevýhoda – tedy že alignment problem je v jádru konflikt mezi lidskou fitness funkcí (běž dál) a možností AI nastavit si reward na „done“. To je původní pohled na alignment jako na evoluční past, ne jen matematický constraint.
+
+Co konkrétně chybí k 10/10:
+
+1. **Chybí „Part 3: Když agent spadá“ / Failure modes.** Workflow v kapitole 4 funguje pro 1–2 lidi a „doby AI“. Chybí kapitola: co se stane, když agent hallucinuje v produkci, kdy se rozbije skill versioning v Gitu, jak se debuguje agentní loop, co když kontextové okno přesáhne 1M tokenů a RAG začne vracet šum. Bez post-mortemů to vypadá jako happy path marketing, ne inženýrská kniha.
+2. **Absence tvrdých metrik / benchmarků.** „Narvat firmu do doby AI“ – kolik hodin to ušetřilo? Kolik % kódu napsal agent bez korekce? Jak se měří „edge“ know-how v Gitu? Bez čísel to zůstane anektodoxní.
+3. **Filozofický dialog je brilliantní, ale neukotvený v technice.** Přechod od „kolo/Von Neumann/kvantová mechanika“ k „workflow Git + PDF“ je příliš ostrý. Chybí most: jak konkrétně vypadá matematický princip B (formální režim) v kódu agenta dnes? (Např. différentiální programování, program synthesis, formal verification v loopu.) Bez toho je „režim B“ jen metafora.
+4. **Chybí etický/právní rámec pro „single source of truth“ ve firmě.** Kdo má právo na Git historii agentů? Co s GDPR v kontextu? Co když agent vygeneruje špatnou záruční podmínku a klient na ni podepíše? Praktická příručka to bez toho není.
+5. **Struktura: smíšené formáty.** Je to soubor blogpostů/poznámek, ne kniha. 10/10 by vyžadovalo jednotnou narrativní obloučku: Filozofický důvod → Matematický princip → Architectural pattern → Konkrétní kód/konfig → Lesson learned → Open problem.
+
 ## Inkling
 
 **Téma:** Je workflow jen marketingový leták?
