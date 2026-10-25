@@ -180,4 +180,4 @@ Co konkrétně chybí k 10/10:
 
 ---
 
-[← Závěr: Velcí a malí recenzenti](03-velci-a-mali-recenzenti.md) · [Obsah](01-obsah.md)
+[← Závěr: Velcí a malí recenzenti](03-velci-a-mali-recenzenti.md) · [Obsah](01-obsah.md) · [Závěr autora →](05-zaver-autora.md)
