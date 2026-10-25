@@ -45,4 +45,4 @@ Důvod je možná prostý. Jazykový model umí posoudit text o myšlení, proto
 
 ---
 
-[← Recenze](02-recenze.md) · [Obsah](01-obsah.md)
+[← Recenze](02-recenze.md) · [Obsah](01-obsah.md) · [Diskuse s autorem →](04-diskuse.md)

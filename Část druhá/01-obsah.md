@@ -11,6 +11,7 @@
 - [8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md)
 - [Recenze](02-recenze.md)
 - [Závěr: Velcí a malí recenzenti](03-velci-a-mali-recenzenti.md)
+- [Diskuse recenzentů s autorem](04-diskuse.md)
 
 ---
 
