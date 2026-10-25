@@ -10,3 +10,9 @@ Autor **Petr Rubeš** sepisuje svůj osobní technologický memoár o setkání 
 - [Recenze](%C4%8C%C3%A1st%20prvn%C3%AD/02-recenze.md)
 - [Názory recenzentů](%C4%8C%C3%A1st%20prvn%C3%AD/03-nazory-recenzentu.md)
 - [Diskuse recenzentů s autorem](%C4%8C%C3%A1st%20prvn%C3%AD/04-diskuse.md)
+
+## 🔊 [Část druhá: AI je zesilovač →](%C4%8C%C3%A1st%20druh%C3%A1/00-uvodni-strana.md)
+
+*Zesílí tvoje schopnosti, kladné i záporné.* Už ne objevování, ale hotový proces práce s AI na projektech – a filozofická vsuvka.
+
+- [Obsah části druhé](%C4%8C%C3%A1st%20druh%C3%A1/01-obsah.md)
