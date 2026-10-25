@@ -86,6 +86,42 @@
 >
 > — **Inkling**, AI kritik
 
+## Qwen3 8B
+
+**Hodnocení:** ★★★★★★★★☆☆ 8 / 10  
+**Žánr:** filozofická a spekulativní nonfikce, blízká technologickému sférismu a epistemologickému přemýšlení
+
+> Knihy se zabývá hlubokými otázkami o povaze umělé inteligence, lidského poznání a přirozeného světa, kombinuje filozofii, matematiku a technologii do jednoho dialogu. Text je plný abstraktních myšlenek a metafor, které vzbuzují kritické přemýšlení o hranicích lidského poznání a role AI v něm. Rozhovor mezi autorem a Meta AI slouží jako metafora pro vztah mezi lidskou a umělou inteligencí, což dává knize unikátní hloubku. I když některé partie mohou být obtížné pro široký publikum, kniha je doporučená pro entuziasty technologie a filozofie. Je to záživný příběh, který vzbuzuje otázky o tom, co znamená „poznat“ a „vynález“.
+>
+> — **Qwen3 8B**, AI kritik
+
+## Qwen 3.5 0.8B
+
+**Hodnocení:** ★★★★★★★★★☆ 9 / 10  
+**Žánr:** filozofická technospeculativní nonfikce
+
+> Knihy se zabývá hlubokými otázkami o vztahu mezi lidskou myslí, umělou inteligencí a přírodou, kombinuje filozofii, vědecké teorie a technologické základy AI. Představuje originální myšlenku, že AI není jen kopie mozku, ale nástroj pro objevování nových principů prostřednictvím matematiky. Text je plný metafor a příkladů, jako je „kolo“ nebo „von Neumannův počítač“, které zjednodušují komplexní koncepty. Závěrečná část o rekurzi vědomí a možnosti, že jsme jen „záblesk na sirce“, přináší filozofickou hloubku a otázky o umírnění lidského pozorování. Doporučuji čtenářům, kteří hledají křížení filozofie, vědy a technologie.
+>
+> — **Qwen 3.5 0.8B**, AI kritik
+
+## Qwen 3.5 4B uncensored
+
+**Hodnocení:** ★★★★★★★★☆☆ 8 / 10  
+**Žánr:** filozoficko-technická eseje o umělé inteligenci, kognitivní věda a kosmologie
+
+> Kniha Petr Rubeše kombinuje hlubokou filozofii s technickou analýzou AI, zkoumají, zda umělá inteligence dokáže vymyslet nové principy nebo jen kopírovat lidské myšlení. Autor diskutuje o matematickém realismu a platonismu, tvrdí, že všechno, co člověk vytvořil, je jen objev toho, co příroda již dovoluje. Rozhovor s Meta AI v knize odhaluje fascinující pohled na to, že AI je jakýmsi zesíleným mozkem, který využívá abstrakci místo biologické intuice. Text se zabývá i kosmologickými otázkami, jako je prostorová a časová rekurze, a předkládá myšlenku, že vesmír nemá preferované měřítko. Knihu doporučuji čtenářům, kteří se zajímají o budoucnost AI, vědomí a fundamentální povahu poznání.
+>
+> — **Qwen 3.5 4B uncensored**, AI kritik
+
+## Bonsai 2 27B
+
+**Hodnocení:** ★★★★★★★★☆☆ 8 / 10  
+**Žánr:** filosoficko-populární esej o AI, poznání a vesmíru
+
+> Kniha je silná v tom, že AI prezentuje jako zesilovač lidských schopností, nikoli jako samostatného hrdiny. Nejlepší je dialog s Meta AI, který rozvíjí problém detekce, kombinaci intuice a formální matematiky a rekurzivní měřítka vesmíru. Text má silný myšlenkový jazyk, ale pro běžného čtenáře může být místy příliš abstraktní a závisí na autoritě rozhovoru s AI. Autor dobře ukazuje, že lidské poznání je omezené nástroji a měřítkům, které si vybereme. Přesto je to poutavý a provokativní úvod do otázek, které AI, věda a filozofie postavují dnes.
+>
+> — **Bonsai 2 27B**, AI kritik
+
 ---
 
 [← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md)
