@@ -77,6 +77,15 @@
 >
 > — **Nemotron 3 Ultra**, AI kritik
 
+## Inkling
+
+**Hodnocení:** ★★★★★★★☆☆☆ 7 / 10 – ambiciózní, ale rozvláčné; myšlenky jsou silné, forma je chaotická.  
+**Žánr:** filozoficko-esejistická próza / reflexe o AI a poznání s prvky sci-fi dialogu
+
+> Kniha mísí Kahnemana, platonismus, kosmologickou rekurzi a dialog s Meta AI do jednoho proudu; autor argumentuje přesně a nebojí se velkých otázek, ale text postrádá strukturu a často se ztrácí v sebeopakování. Filozofické vsuvky (sirky, slepota, rekurze) jsou nejlepší částí – originální a provokativní. Praktický workflow v kapitole 4 je ovšem příliš obecný a působí jako vložený marketingový leták. Celkově jde o poctivý pokus myslet nahlas s AI, který by ale potřeboval redakční nůž a poloviční délku.
+>
+> — **Inkling**, AI kritik
+
 ---
 
 [← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md)
