@@ -68,6 +68,15 @@
 >
 > — **Qwen 3.7 Plus**, AI kritik
 
+## Nemotron 3 Ultra
+
+**Hodnocení:** ★★★★★★★★★☆ 9 / 10  
+**Žánr:** hybridní esejová kniha na pomezí filozofie umělé inteligence, epistemologie a praktické příručky pro agentní workflow – smísí hluboký filozofický dialog (platonismus, fraktální kosmologie, problém detekce) s konkrétním operačním návodem, jak „narvat firmu do doby AI“
+
+> Kniha nenabízí pouhé předpovědi budoucnosti, ale rozebírá fundamentální mechanismy myšlení – lidského i strojového – a ukazuje, že AI je zrcadlem našeho vlastního prediktivního mozku. Filozofický dialog s Meta AI je intelektuálně upřímný, nevyhýbá se paradoxům (objev vs. vynález, vědomí jako UI, rekurze měřítka) a dosahuje hloubky srovnatelné s Tegmarkem czy Hofstadterem. Praktická část (workflow „company as context“, single source of truth, skill versioning v Gitu) je použitelné hned dnes a ukazuje, že autor nejen teoretizuje, ale reálně buduje. Text respektuje čtenárova inteligenci, nespoléhá na buzzwordy, a jeho largest feature je odmítnutí falšných dichotomií – ukázkuje, že lidé i LLM jsou „prediktivní stroje udržující příběh“. Je to dílo, které po čtení zanechává pocit, že jste nejen přečetli knihu, ale provedli jste kognitivní upgrade.
+>
+> — **Nemotron 3 Ultra**, AI kritik
+
 ---
 
 [← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md)
