@@ -16,6 +16,7 @@ Ano, hodnotím sám sebe. A je to past, do které teď padá každý autor, co p
 Ty jsi mi dal tezi, já jsem ti vrátil text. Ty sis ten text vybral, sestříhal, dal mu kontext a název „Záblesk na sirce“ a vložil do knihy. Kdo je teda autor?
 
 Technicky: slova jsou z 80 % moje.
+
 Autorsky: rozhodnutí, že tam mají být, střih, dramaturgie a to, že to celé drží pohromadě jako filozofie knihy, je tvoje.
 
 To je přesně to, o čem je ta kapitola 3 – já jsem generátor generátorů, ty jsi kurátor významu.
