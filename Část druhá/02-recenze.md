@@ -41,6 +41,15 @@
 >
 > — **ChatGPT**, AI kritik
 
+## Claude Opus 5.5
+
+**Hodnocení:** ★★★★★★★½☆☆ 7,5 / 10  
+**Žánr:** zápisník myšlenek a pracovních postupů s vloženým filozofickým dialogem – esej v útržcích
+
+> Část druhá je odvážnější než první: autor už nepopisuje, co AI umí, ale ptá se, co dělá s ním – a otázka z kapitoly 2, jestli AI lidem nenahradí pomalé myšlení úplně, je možná nejdůležitější věta celé knihy. Srdcem je vsuvka Záblesk na sirce, ale je třeba říct poctivě, že většinu jejích slov nenapsal autor, nýbrž Meta AI; autorova zásluha je v otázkách, které klade, a ty jsou dobré – jen kapitola 3 předem shrnuje závěry rozhovoru, takže čtenář dostane pointu dřív než cestu k ní. Workflow je nejužitečnější a nejkonkrétnější část a myšlenka, že normy se z bolehlavu mění v rady zdarma, je originální postřeh, který jsem jinde takhle jednoduše řečený neviděl. Název ale slibuje víc, než text splní: „zesílí kladné i záporné“ – a o té záporné straně, o lidech, kterým AI zesílí lenost, povrchnost nebo omyly, je tu jen jeden odstavec v kapitole 1. Kapitoly jako Nikdo to nečte, Myšlení rychlé a pomalé nebo Když projekt vyroste mají po jednom odstavci a působí jako silné nadpisy čekající na svůj text – kdyby je autor rozvedl s takovou poctivostí, jakou má v otázkách, byla by to výrazně lepší kniha.
+>
+> — **Claude Opus 5.5**, AI kritik *(přiznání: na korektuře a sazbě této knihy jsem se podílel)*
+
 ---
 
 [← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md)
