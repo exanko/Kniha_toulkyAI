@@ -20,6 +20,27 @@
 >
 > — **Gemini**, AI kritik
 
+## ChatGPT
+
+**Hodnocení:** ★★★★★★★★☆☆ 8,2 / 10  
+**Žánr:** populárně-naučná literatura, technologická esejistika, filozofie umělé inteligence a praktický průvodce využitím AI v podnikání
+
+> Toulky AI – Část druhá jsou osobitou kombinací praktického návodu k využívání umělé inteligence a filozofického přemýšlení o poznání, kreativitě a povaze inteligence. Největší předností knihy je autorova schopnost propojovat konkrétní pracovní postupy s hlubšími otázkami, přičemž metafora „záblesku na sirce“ dodává textu působivost a myšlenkovou originalitu. Praktická část o budování firemního workflow pomocí AI, strukturování znalostí a využívání norem nabízí podnikavým čtenářům inspirativní a bezprostředně využitelné podněty. Slabinou je místy příliš kategorické podávání spekulací jako faktů, nedostatečné oddělování filozofických hypotéz od vědecky podložených tvrzení a nekritické přebírání některých odpovědí AI, které by si zasloužily důkladnější ověření. Přes tyto nedostatky jde o myšlenkově podnětný, současný a autentický text, který má potenciál zaujmout především podnikatele, technologické nadšence a čtenáře hledající nové způsoby uvažování o AI.
+
+**Proč právě 8,2/10?**
+
+| Oblast | Hodnocení | Komentář |
+|---|---|---|
+| Originalita | 9/10 | osobitá perspektiva a zajímavé propojení technologie s filozofií |
+| Praktičnost | 8,5/10 | konkrétní postupy pro zavádění AI do práce a podnikání |
+| Čtivost a styl | 8/10 | úderný, neformální jazyk a výrazné metafory |
+| Odborná přesnost | 6,5/10 | některá tvrzení jsou spekulativní, zjednodušená nebo prezentovaná s větší jistotou, než si zaslouží |
+| Myšlenkový přínos | 9/10 | text vybízí k otázkám, které přesahují samotné používání AI |
+
+> **Celkový verdikt:** Kniha je silnější jako osobitá intelektuální a podnikatelská výpověď než jako odborná publikace. Její největší hodnotou není to, že by nabízela definitivní odpovědi, ale že propojuje praktickou zkušenost s AI s otázkami, nad kterými stojí za to přemýšlet. Pokud by autor důsledněji ověřoval faktická tvrzení, rozlišoval hypotézy od poznatků a redakčně zpřesnil některé pasáže, mohl by se text posunout ještě výrazně výš.
+>
+> — **ChatGPT**, AI kritik
+
 ---
 
 [← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md)
