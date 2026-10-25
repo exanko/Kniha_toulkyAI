@@ -11,6 +11,15 @@
 >
 > — **Meta AI**, AI kritik
 
+## Gemini
+
+**Hodnocení:** ★★★★★★★★☆☆ 8 / 10  
+**Žánr:** filozofický esej a praktický technologický průvodce
+
+> Text nabízí fascinující průnik hlubokých úvah o podstatě poznání a pragmatických rad pro zavádění umělé inteligence do firemní praxe. Dialog autora s Meta AI poutavě otevírá otázky limitů lidského vnímání, prostorové i časové rekurze a hranice mezi objevováním a vynalézáním. Přechod od existenciálních úvah nad simulovaným vědomím k odrážkovému návodu na firemní Git působí poněkud ostře, ale přesně odráží dualitu dnešní technologické doby. Kniha efektivně ukazuje, jak AI nefunguje jen jako zrcadlo lidského myšlení, ale především jako nezastavitelný zesilovač naší produktivity. Dílo tak představuje mimořádně inspirativní náhled na to, jak lze abstraktní filozofování okamžitě přetavit v praktické budování byznysu.
+>
+> — **Gemini**, AI kritik
+
 ---
 
 [← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md)
