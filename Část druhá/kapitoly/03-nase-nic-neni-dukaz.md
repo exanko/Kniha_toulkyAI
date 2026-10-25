@@ -8,4 +8,4 @@ Všichni jsou prediktivní stroje udržující příběh.
 
 ---
 
-[← 2. Myšlení rychlé a pomalé](02-mysleni-rychle-a-pomale.md) · [Obsah](../01-obsah.md) · [Filozofická vsuvka: Zesilovač →](03a-vsuvka-zesilovac.md)
+[← 2. Myšlení rychlé a pomalé](02-mysleni-rychle-a-pomale.md) · [Obsah](../01-obsah.md) · [Filozofická vsuvka: Záblesk na sirce →](03a-vsuvka-zablesk-na-sirce.md)

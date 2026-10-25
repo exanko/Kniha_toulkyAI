@@ -21,4 +21,4 @@ Pak už mi nic nebrání dát mu třeba konkrétní obchodní případ – a on 
 
 ---
 
-[← Filozofická vsuvka: Zesilovač](03a-vsuvka-zesilovac.md) · [Obsah](../01-obsah.md) · [5. Práce je hra →](05-prace-je-hra.md)
+[← Filozofická vsuvka: Záblesk na sirce](03a-vsuvka-zablesk-na-sirce.md) · [Obsah](../01-obsah.md) · [5. Práce je hra →](05-prace-je-hra.md)
