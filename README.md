@@ -21,3 +21,7 @@ Autor **Petr Rubeš** sepisuje svůj osobní technologický memoár o setkání 
 - [Závěr: Velcí a malí recenzenti](%C4%8C%C3%A1st%20druh%C3%A1/03-velci-a-mali-recenzenti.md)
 - [Diskuse recenzentů s autorem](%C4%8C%C3%A1st%20druh%C3%A1/04-diskuse.md)
 - [Závěr autora: Známka života](%C4%8C%C3%A1st%20druh%C3%A1/05-zaver-autora.md)
+
+## 🎬 [Naučná videa →](Nau%C4%8Dn%C3%A1%20videa/README.md)
+
+Krátká naučná videa o tom, jak AI opravdu funguje – česky i anglicky.
