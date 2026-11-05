@@ -4,8 +4,8 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 
 ## ▶️ Sledovat na YouTube
 
-- 🇨🇿 **Česky:** [playlist na YouTube](https://www.youtube.com/watch?v=8IEzo9-Xqv4&list=PLNpxYtAHyLcE)
-- 🇬🇧 **English:** [YouTube playlist](https://www.youtube.com/watch?v=YAOh3Sn772E&list=PLVOwx6a35k64)
+- 🇨🇿 **Česky:** [playlist na YouTube](https://www.youtube.com/playlist?list=PLNpxYtAHyLcE)
+- 🇬🇧 **English:** [YouTube playlist](https://www.youtube.com/playlist?list=PLVOwx6a35k64)
 
 ## Pravidla série
 

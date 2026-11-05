@@ -26,4 +26,4 @@ Autor **Petr Rubeš** sepisuje svůj osobní technologický memoár o setkání 
 
 Krátká naučná videa o tom, jak AI opravdu funguje – česky i anglicky.
 
-▶️ Na YouTube: [🇨🇿 česky](https://www.youtube.com/watch?v=8IEzo9-Xqv4&list=PLNpxYtAHyLcE) · [🇬🇧 English](https://www.youtube.com/watch?v=YAOh3Sn772E&list=PLVOwx6a35k64)
+▶️ Na YouTube: [🇨🇿 česky](https://www.youtube.com/playlist?list=PLNpxYtAHyLcE) · [🇬🇧 English](https://www.youtube.com/playlist?list=PLVOwx6a35k64)
