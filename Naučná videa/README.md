@@ -21,7 +21,7 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 | 03 | [Nech AI postavit kalkulačku](03-nech-ai-postavit-kalkulacku/) | [video](03-nech-ai-postavit-kalkulacku/03-nech-ai-postavit-kalkulacku-CZ.mp4) | [video](03-nech-ai-postavit-kalkulacku/03-have-ai-build-the-calculator-EN.mp4) | ✅ hotovo |
 | 04 | [Kecálek vs. vidí za roh](04-kecalek-vs-vidi-za-roh/) | [video](04-kecalek-vs-vidi-za-roh/04-kecalek-vs-vidi-za-roh-CZ.mp4) | [video](04-kecalek-vs-vidi-za-roh/04-chatterbox-vs-sees-around-corners-EN.mp4) | ✅ hotovo |
 | 05 | [AI je zesilovač](05-ai-je-zesilovac/) | [video](05-ai-je-zesilovac/05-ai-je-zesilovac-CZ.mp4) | [video](05-ai-je-zesilovac/05-ai-is-an-amplifier-EN.mp4) | ✅ hotovo |
-| 06 | Hloupý s nástroji, chytrý bez paměti – co je agent | | | 📝 plán |
+| 06 | [Co je AI agent](06-co-je-ai-agent/scenar.md) | | | ⏳ scénář hotový, čeká na namluvení |
 | 07 | Naše „nic“ není důkaz – záblesk na sirce | | | 📝 plán |
 | 08 | Firma v Gitu za 45 vteřin | | | 📝 plán |
 
@@ -31,7 +31,9 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 2. Autor ho namluví v ElevenLabs (hlasy výše) a pošle MP3.
 3. Claude nahrávky přepíše (`nastroje/prepis.py`), najde začátky a konce scén a sestaví obě verze videa.
 
-Sdílený vzhled (pozadí, písmo, záře, ukazatel průběhu, sestavení s hlasem) je v `nastroje/engine.py`; každý díl od 02 má v `zdroj/` jen vlastní scény a časování.
+Sdílený vzhled (pozadí, písmo, záře, ukazatel průběhu, sestavení s hlasem) je v `nastroje/engine.py`; každý díl od 02 má v `zdroj/` jen vlastní scény a časování. Úseky řeči v nahrávce vypíše `nastroje/intervaly.py`.
+
+Podrobný postup výroby (pro Clauda) je ve skillu [`.claude/skills/naucne-video/SKILL.md`](../.claude/skills/naucne-video/SKILL.md).
 
 ---
 
