@@ -1,3 +1,7 @@
+"""Offline přepis nahrávky po úsecích mezi pauzami (Whisper base přes sherpa-onnx).
+Použití: python3 prepis.py <složka_modelu> nahravka.mp3 cs|en
+Model: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-base.tar.bz2
+Instalace: pip install --break-system-packages sherpa-onnx"""
 import sys, subprocess, numpy as np, sherpa_onnx
 M=sys.argv[1]; f=sys.argv[2]; lang=sys.argv[3]
 rec=sherpa_onnx.OfflineRecognizer.from_whisper(encoder=f"{M}/base-encoder.int8.onnx",decoder=f"{M}/base-decoder.int8.onnx",tokens=f"{M}/base-tokens.txt",language=lang,task="transcribe")

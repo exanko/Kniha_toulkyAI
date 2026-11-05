@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+# dočasné soubory při renderu videí
+Naučná videa/*/zdroj/*_scene*.mp4
+Naučná videa/*/zdroj/*_a*.wav
+Naučná videa/*/zdroj/*_audio.wav
+Naučná videa/*/zdroj/*_video.mp4
+Naučná videa/*/zdroj/*_[va].txt
+Naučná videa/*/zdroj/prev_*.png
