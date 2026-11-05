@@ -2,6 +2,11 @@
 
 Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem je **osvěta, ne reklama**: ve videích se nezmiňuje kniha, autor ani konkrétní značky – mluví se obecně o „AI“.
 
+## ▶️ Sledovat na YouTube
+
+- 🇨🇿 **Česky:** [playlist na YouTube](https://www.youtube.com/watch?v=8IEzo9-Xqv4&list=PLNpxYtAHyLcE)
+- 🇬🇧 **English:** [YouTube playlist](https://www.youtube.com/watch?v=YAOh3Sn772E&list=PLVOwx6a35k64)
+
 ## Pravidla série
 
 - **Dva jazyky:** každé video vzniká vždy ve dvou verzích – 🇨🇿 **česky** a 🇬🇧 **anglicky**. Kde česká analogie v angličtině nefunguje, používá se vlastní anglická (párek v rohlíku → peanut butter and jelly).
