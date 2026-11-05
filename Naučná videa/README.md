@@ -17,8 +17,8 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 | # | Téma | 🇨🇿 | 🇬🇧 | Stav |
 |---|---|---|---|---|
 | 01 | [Jak „myslí“ AI](01-jak-mysli-ai/) | [video](01-jak-mysli-ai/01-jak-mysli-ai-CZ.mp4) | [video](01-jak-mysli-ai/01-how-ai-thinks-EN.mp4) | ✅ hotovo |
-| 02 | Mozek spojený provázkem – proč si doma neuděláš vlastní ChatGPT | | | 📝 plán |
-| 03 | Nech AI vyrobit nástroj – ne počítat data | | | 📝 plán |
+| 02 | [Mozek spojený provázkem](02-mozek-spojeny-provazkem/) | [video](02-mozek-spojeny-provazkem/02-mozek-spojeny-provazkem-CZ.mp4) | [video](02-mozek-spojeny-provazkem/02-brain-tied-with-string-EN.mp4) | ✅ hotovo |
+| 03 | [Nech AI postavit kalkulačku](03-nech-ai-postavit-kalkulacku/) | [video](03-nech-ai-postavit-kalkulacku/03-nech-ai-postavit-kalkulacku-CZ.mp4) | [video](03-nech-ai-postavit-kalkulacku/03-have-ai-build-the-calculator-EN.mp4) | ✅ hotovo |
 | 04 | Kecálek vs. vidí za roh – malé a velké modely | | | 📝 plán |
 | 05 | AI je zesilovač – kladné i záporné | | | 📝 plán |
 | 06 | Hloupý s nástroji, chytrý bez paměti – co je agent | | | 📝 plán |
@@ -30,6 +30,8 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 1. Claude napíše mluvený text CZ + EN (tabulka po scénách).
 2. Autor ho namluví v ElevenLabs (hlasy výše) a pošle MP3.
 3. Claude nahrávky přepíše (`nastroje/prepis.py`), najde začátky a konce scén a sestaví obě verze videa.
+
+Sdílený vzhled (pozadí, písmo, záře, ukazatel průběhu, sestavení s hlasem) je v `nastroje/engine.py`; každý díl od 02 má v `zdroj/` jen vlastní scény a časování.
 
 ---
 
