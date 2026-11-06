@@ -26,7 +26,7 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 | 03 | [Nech AI postavit kalkulačku](03-nech-ai-postavit-kalkulacku/) | [video](03-nech-ai-postavit-kalkulacku/03-nech-ai-postavit-kalkulacku-CZ.mp4) | [video](03-nech-ai-postavit-kalkulacku/03-have-ai-build-the-calculator-EN.mp4) | ✅ hotovo |
 | 04 | [Kecálek vs. vidí za roh](04-kecalek-vs-vidi-za-roh/) | [video](04-kecalek-vs-vidi-za-roh/04-kecalek-vs-vidi-za-roh-CZ.mp4) | [video](04-kecalek-vs-vidi-za-roh/04-chatterbox-vs-sees-around-corners-EN.mp4) | ✅ hotovo |
 | 05 | [AI je zesilovač](05-ai-je-zesilovac/) | [video](05-ai-je-zesilovac/05-ai-je-zesilovac-CZ.mp4) | [video](05-ai-je-zesilovac/05-ai-is-an-amplifier-EN.mp4) | ✅ hotovo |
-| 06 | [Co je AI agent](06-co-je-ai-agent/scenar.md) | | | ⏳ scénář hotový, čeká na namluvení |
+| 06 | [Co je AI agent](06-co-je-ai-agent/) | [video](06-co-je-ai-agent/06-co-je-ai-agent-CZ.mp4) | [video](06-co-je-ai-agent/06-what-is-an-ai-agent-EN.mp4) | ✅ hotovo |
 | 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/scenar.md) | | | ⏳ scénář hotový, čeká na namluvení |
 | 08 | [Firma v Gitu](08-firma-v-gitu/scenar.md) | | | ⏳ scénář hotový, čeká na namluvení |
 
