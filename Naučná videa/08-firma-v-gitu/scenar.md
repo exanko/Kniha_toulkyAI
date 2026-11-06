@@ -1,6 +1,6 @@
 # 08 · Firma v Gitu / A company in Git – scénář
 
-**Stav:** ⏳ čeká na namluvení (CZ: Kuba, EN: George)
+**Stav:** ✅ hotovo – viz [README dílu](README.md)
 
 Do ElevenLabs vložit jen text z bloku – scény jsou oddělené prázdným řádkem.
 
