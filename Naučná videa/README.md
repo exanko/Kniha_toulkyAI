@@ -27,8 +27,8 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 | 04 | [Kecálek vs. vidí za roh](04-kecalek-vs-vidi-za-roh/) | [video](04-kecalek-vs-vidi-za-roh/04-kecalek-vs-vidi-za-roh-CZ.mp4) | [video](04-kecalek-vs-vidi-za-roh/04-chatterbox-vs-sees-around-corners-EN.mp4) | ✅ hotovo |
 | 05 | [AI je zesilovač](05-ai-je-zesilovac/) | [video](05-ai-je-zesilovac/05-ai-je-zesilovac-CZ.mp4) | [video](05-ai-je-zesilovac/05-ai-is-an-amplifier-EN.mp4) | ✅ hotovo |
 | 06 | [Co je AI agent](06-co-je-ai-agent/scenar.md) | | | ⏳ scénář hotový, čeká na namluvení |
-| 07 | Naše „nic“ není důkaz – záblesk na sirce | | | 📝 plán |
-| 08 | Firma v Gitu za 45 vteřin | | | 📝 plán |
+| 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/scenar.md) | | | ⏳ scénář hotový, čeká na namluvení |
+| 08 | [Firma v Gitu](08-firma-v-gitu/scenar.md) | | | ⏳ scénář hotový, čeká na namluvení |
 
 ## Postup výroby dílu
 
