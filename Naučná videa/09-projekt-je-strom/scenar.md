@@ -1,6 +1,6 @@
 # 09 · Projekt je strom / Your project is a tree / Tu proyecto es un árbol – scénář
 
-**Stav:** ✍️ scénář hotový · další krok: vygenerovat klíčové snímky (prompty níže) → pak video → namluvit → složit
+**Stav:** 🎬 snímky K01–K12, klipy V1–V3 a hlasy CZ/EN/ES hotové · první verze videa složená (za V4–V8 zatím průlet mezi snímky) · další krok: klipy V4–V8
 
 **Nový postup obrazu:** místo animovaných textů (díly 01–08) generované záběry – nejdřív klíčové snímky (obrázky), z nich videoklipy v Gemini, pak hlas z ElevenLabs a složení s popisky a ukazatelem průběhu jako u ostatních dílů.
 
@@ -201,22 +201,31 @@ Doladím je, až uvidím vygenerované snímky. Klip = přechod mezi dvěma klí
 - Klipy se **začátkem i koncem** se dělají ve Flow na webu (Video → Frames → start / end frame). Když vybraný model koncový snímek nepovolí, přepnout na Veo 3.1.
 - Do každého promptu patří závěr: *No dialogue, no voiceover, no music, no on-screen text or subtitles. Ambient garden sound only.* Zvuk z klipů ztlumíme pod hlas.
 
-| Klip | Snímky | Prompt |
-|---|---|---|
-| V1 | K01 | The gardener trudges along the gravel path with two heavy watering cans, stops at the sapling and slowly pours water at its base. The sapling barely changes. Static camera at eye level, slow and heavy pace. |
-| V2 | K02 → K03 | Time-lapse: the glowing cyan drip ring pulses as luminous droplets soak into the soil; the sapling grows rapidly into a big tree, the crown fills out and shoots spread in all directions; light and clouds race across the sky. At the end the gardener walks into frame and looks up in surprise. Camera slowly pulls back and tilts up to keep the whole tree in frame. |
-| V3 | K03 → K04 | The gardener steps up to the tree and trims the wild shoots with calm, confident cuts; the long branch leaning toward the shed falls onto the grass. The tree ends balanced and tidy. Medium shot, real-time speed. |
-| V4 | K05 → K06 | Macro close-up. The gloved hand sprays a fine glowing cyan mist over the leaves; the orange mites dissolve into tiny sparks and vanish, the curled leaves unfurl and turn glossy green, and the bent shoot slowly straightens toward the sun. Shallow depth of field, slow push-in. |
-| V5 | K07 → K08 | Fast time-lapse in one continuous shot: the tree outgrows the tiny pot and the pot cracks; the gardener hurriedly repots it into a bigger pot, it grows and cracks that one too, then again into a big tub. Broken pots pile up around. Frantic, repetitive rhythm, static camera. |
-| V6 | K08 → K09 | Slow time-lapse: the tree in the tub stops growing; leaves turn yellow and drop one by one onto the tiles; the light grows cooler and dimmer. The gardener gets up from the bucket and looks at the tree, defeated. Slow push-in. |
-| V7 | K10 → K11 | The gardener checks a soil-test vial against the clipboard, nods, lifts the young tree into the hole in the center of the staked circle, fills in the soil and lays a ring of glowing cyan drip tube around the base; the droplets begin to glow. Calm, careful, unhurried. Camera slowly arcs around. |
-| V8 | K11 → K12 | Time-lapse through several seasons: the young tree grows steadily into a big, balanced apple tree; blossoms appear and turn into ripe red apples; the cyan drip ring pulses gently. At the end the gardener steps under the crown with a basket and picks an apple. Camera slowly cranes up to reveal the full crown. Warm golden light. |
+Délka klipu 8–10 s je v pořádku – při skládání se zrychlí nebo zpomalí na délku scény podle hlasu.
+
+| Klip | Snímky | Stav | Prompt |
+|---|---|---|---|
+| V1 | K01 | ✅ | The gardener trudges along the gravel path with two heavy watering cans, stops at the sapling and slowly pours water at its base. The sapling barely changes. Static camera at eye level, slow and heavy pace. |
+| V2 | K02 → K03 | ✅ | Time-lapse: the glowing cyan drip ring pulses as luminous droplets soak into the soil; the sapling grows rapidly into a big tree, the crown fills out and shoots spread in all directions; light and clouds race across the sky. At the end the gardener walks into frame and looks up in surprise. Camera slowly pulls back and tilts up to keep the whole tree in frame. |
+| V3 | K03 → K04 | ✅ | The gardener steps up to the tree and trims the wild shoots with calm, confident cuts; the long branch leaning toward the shed falls onto the grass. The tree ends balanced and tidy. Medium shot, real-time speed. |
+| V4 | K05 → K06 | | Macro close-up, static camera. The gloved hand presses the sprayer and a fine glowing turquoise-cyan mist drifts over the leaves; the orange mites dissolve into tiny sparks and vanish, the orange thread snaps and disappears, the curled dull leaves unfurl and turn glossy green with sparkling cyan droplets, and the young shoot slowly straightens toward the sun. Shallow depth of field, gentle slow push-in. |
+| V5 | K07 → K08 | | Fast time-lapse in one continuous shot, static camera: the gardener lifts the tree out of the cracked terracotta pot into the bigger pot; the roots fill it within seconds and it cracks too; he repots again and again, each time into a bigger pot, broken pots piling up on the tiles. At the end the tree sits in a black tub with its root ball bulging over the rim, and the exhausted gardener drops onto an upturned bucket. Frantic, repetitive rhythm. |
+| V6 | K08 → K09 | | Slow time-lapse, static camera: the tree in the black tub stops growing; roots push through a crack in the tub; the leaves turn yellow and fall one by one onto the tiles; the warm golden light fades into a cool grey dusk. The gardener slowly gets up from the bucket and stands with hands on hips, looking at the tree, defeated. |
+| V7 | K10 → K11 | | The gardener studies the sketch on the clipboard, glances at the soil-test vials and nods; then carries the burlap-wrapped young tree from the path to the hole in the middle of the staked square, plants it, firms the soil, ties it to a stake and lays the glowing turquoise-cyan drip tube in a ring around it; luminous droplets begin to fall. Calm, careful, unhurried. Static camera with a slight slow push-in. |
+| V8 | K11 → K12 | | Time-lapse through the seasons, static camera: the young tree grows steadily into a big, balanced apple tree; blossoms appear and turn into ripe red apples; the cyan drip ring keeps glowing softly at its base. At the end the gardener walks under the crown with a wicker basket and reaches up to pick an apple. Warm golden light. |
+
+**Volitelná oprava – stejný zahradník:** v K03, K04 (a tedy v konci V2 a ve V3) vyšel štíhlejší, mladší zahradník s viditelným obličejem; jinde je to zavalitá „plastelínová“ postava s čepicí do čela. Kdo chce sjednotit, přegeneruje K03 s přiloženým **K02 i K01**, pak K04 z nového K03 a nakonec V2 a V3:
+
+```
+Edit the second attached image exactly as described before (same garden, style, lighting, camera; the same apple tree several years older, about three meters tall, grown fast and wild, one long branch leaning over the stone wall toward the shed; glowing turquoise-cyan drip ring at its base). The gardener must be the same character as in the first attached image: a stocky clay-style figure in a puffy mustard-yellow jacket, brown canvas apron, dark rubber boots and a dark green cap pulled low so the face stays mostly hidden. He stands on the left, looking up at the tree in surprise, holding pruning shears. Vertical 9:16, no text.
+```
 
 ## Složení
 
-1. Snímky ulož do `obrazky/` (K01.png … K12.png), klipy do `klipy/` (V1.mp4 … V8.mp4).
-2. Hlas: 🇨🇿 Kuba · 🇬🇧 George · 🇪🇸 hlas zatím nevybraný → `zvuk/hlas-CZ.mp3`, `zvuk/voice-EN.mp3`, `zvuk/voz-ES.mp3`.
-3. Claude nahrávky přepíše, najde hranice scén, klipy ořízne podle hlasu, přidá popisky a ukazatel průběhu a složí tři MP4.
+1. Snímky jsou v `obrazky/` (K01.jpg … K12.jpg), klipy v `klipy/` (V1.mp4 … V8.mp4).
+2. Hlas: 🇨🇿 Kuba – Czech Social Media · 🇬🇧 George – Warm, Captivating Storyteller · 🇪🇸 Brian C – Clean, professional, warm (latinskoamerická španělština) → `zvuk/hlas-CZ.mp3`, `zvuk/voice-EN.mp3`, `zvuk/voz-ES.mp3`.
+3. Hranice scén v nahrávkách jsou v `zdroj/casovani.json`. `python3 zdroj/make.py preview` udělá náhled všech scén, `python3 zdroj/make.py build` složí tři MP4: klip scény se zrychlí/zpomalí na její délku (úsek klipu v `CLIP_RANGE`), přidají se popisky, ukazatel průběhu a hlas; zvuk klipů se nepoužívá. Chybí-li klip, použije se průlet mezi klíčovými snímky.
+4. Po dodání dalších klipů stačí je uložit jako `klipy/V4.mp4` … a pustit `build` znovu.
 
 ## YouTube
 

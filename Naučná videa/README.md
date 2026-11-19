@@ -13,7 +13,7 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 - **Hlasy (ElevenLabs, bezplatný tarif):**
   - 🇨🇿 **Kuba – Czech Social Media**
   - 🇬🇧 **George – Warm, Captivating Storyteller**
-  - 🇪🇸 zatím nevybraný
+  - 🇪🇸 **Brian C – Clean, professional, warm** (latinskoamerická španělština)
 - **Do ElevenLabs vkládat jen mluvený text**, bez čísel scén a tabulek. Scény stačí oddělit prázdným řádkem – pauzy se v nahrávce najdou automaticky.
 - **Formát:** na výšku 1080 × 1920, 30 fps, 30–55 s, texty na obrazovce odpovídají namluvenému.
 - **Generované záběry (od dílu 09):** klíčové snímky z generátoru obrázků → videoklipy v Gemini → hlas → složení s popisky a ukazatelem průběhu. Postup je ve [scénáři dílu 09](09-projekt-je-strom/scenar.md).
@@ -21,17 +21,17 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 
 ## Díly
 
-| # | Téma | 🇨🇿 | 🇬🇧 | Stav |
-|---|---|---|---|---|
-| 01 | [Jak „myslí“ AI](01-jak-mysli-ai/) | [video](01-jak-mysli-ai/01-jak-mysli-ai-CZ.mp4) | [video](01-jak-mysli-ai/01-how-ai-thinks-EN.mp4) | ✅ hotovo |
-| 02 | [Mozek spojený provázkem](02-mozek-spojeny-provazkem/) | [video](02-mozek-spojeny-provazkem/02-mozek-spojeny-provazkem-CZ.mp4) | [video](02-mozek-spojeny-provazkem/02-brain-tied-with-string-EN.mp4) | ✅ hotovo |
-| 03 | [Nech AI postavit kalkulačku](03-nech-ai-postavit-kalkulacku/) | [video](03-nech-ai-postavit-kalkulacku/03-nech-ai-postavit-kalkulacku-CZ.mp4) | [video](03-nech-ai-postavit-kalkulacku/03-have-ai-build-the-calculator-EN.mp4) | ✅ hotovo |
-| 04 | [Kecálek vs. vidí za roh](04-kecalek-vs-vidi-za-roh/) | [video](04-kecalek-vs-vidi-za-roh/04-kecalek-vs-vidi-za-roh-CZ.mp4) | [video](04-kecalek-vs-vidi-za-roh/04-chatterbox-vs-sees-around-corners-EN.mp4) | ✅ hotovo |
-| 05 | [AI je zesilovač](05-ai-je-zesilovac/) | [video](05-ai-je-zesilovac/05-ai-je-zesilovac-CZ.mp4) | [video](05-ai-je-zesilovac/05-ai-is-an-amplifier-EN.mp4) | ✅ hotovo |
-| 06 | [Co je AI agent](06-co-je-ai-agent/) | [video](06-co-je-ai-agent/06-co-je-ai-agent-CZ.mp4) | [video](06-co-je-ai-agent/06-what-is-an-ai-agent-EN.mp4) | ✅ hotovo |
-| 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/) | [video](07-nase-nic-neni-dukaz/07-nase-nic-neni-dukaz-CZ.mp4) | [video](07-nase-nic-neni-dukaz/07-our-nothing-is-not-proof-EN.mp4) | ✅ hotovo |
-| 08 | [Firma v Gitu](08-firma-v-gitu/) | [video](08-firma-v-gitu/08-firma-v-gitu-CZ.mp4) | [video](08-firma-v-gitu/08-a-company-in-git-EN.mp4) | ✅ hotovo |
-| 09 | [Projekt je strom](09-projekt-je-strom/scenar.md) | – | – | ✍️ scénář, čeká na obrázky |
+| # | Téma | 🇨🇿 | 🇬🇧 | 🇪🇸 | Stav |
+|---|---|---|---|---|---|
+| 01 | [Jak „myslí“ AI](01-jak-mysli-ai/) | [video](01-jak-mysli-ai/01-jak-mysli-ai-CZ.mp4) | [video](01-jak-mysli-ai/01-how-ai-thinks-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
+| 02 | [Mozek spojený provázkem](02-mozek-spojeny-provazkem/) | [video](02-mozek-spojeny-provazkem/02-mozek-spojeny-provazkem-CZ.mp4) | [video](02-mozek-spojeny-provazkem/02-brain-tied-with-string-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
+| 03 | [Nech AI postavit kalkulačku](03-nech-ai-postavit-kalkulacku/) | [video](03-nech-ai-postavit-kalkulacku/03-nech-ai-postavit-kalkulacku-CZ.mp4) | [video](03-nech-ai-postavit-kalkulacku/03-have-ai-build-the-calculator-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
+| 04 | [Kecálek vs. vidí za roh](04-kecalek-vs-vidi-za-roh/) | [video](04-kecalek-vs-vidi-za-roh/04-kecalek-vs-vidi-za-roh-CZ.mp4) | [video](04-kecalek-vs-vidi-za-roh/04-chatterbox-vs-sees-around-corners-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
+| 05 | [AI je zesilovač](05-ai-je-zesilovac/) | [video](05-ai-je-zesilovac/05-ai-je-zesilovac-CZ.mp4) | [video](05-ai-je-zesilovac/05-ai-is-an-amplifier-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
+| 06 | [Co je AI agent](06-co-je-ai-agent/) | [video](06-co-je-ai-agent/06-co-je-ai-agent-CZ.mp4) | [video](06-co-je-ai-agent/06-what-is-an-ai-agent-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
+| 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/) | [video](07-nase-nic-neni-dukaz/07-nase-nic-neni-dukaz-CZ.mp4) | [video](07-nase-nic-neni-dukaz/07-our-nothing-is-not-proof-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
+| 08 | [Firma v Gitu](08-firma-v-gitu/) | [video](08-firma-v-gitu/08-firma-v-gitu-CZ.mp4) | [video](08-firma-v-gitu/08-a-company-in-git-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
+| 09 | [Projekt je strom](09-projekt-je-strom/) | [video](09-projekt-je-strom/09-projekt-je-strom-CZ.mp4) | [video](09-projekt-je-strom/09-your-project-is-a-tree-EN.mp4) | [video](09-projekt-je-strom/09-tu-proyecto-es-un-arbol-ES.mp4) | 🎬 první verze, čeká na klipy V4–V8 |
 
 ## Postup výroby dílu
 

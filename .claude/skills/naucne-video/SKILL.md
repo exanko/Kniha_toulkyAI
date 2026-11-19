@@ -10,8 +10,8 @@ Série krátkých videí na výšku (1080 × 1920, 30 fps, 30–55 s) o tom, jak
 ## Pevná pravidla
 
 - **Osvěta, ne reklama:** nezmiňovat knihu, autora ani značky (ChatGPT apod.) – obecně „AI“, „jazykový model“.
-- **Tři jazyky:** 🇨🇿 česky + 🇬🇧 anglicky + 🇪🇸 španělsky (tykání, neutrální španělština). Kde česká analogie nefunguje, vymyslet vlastní (párek v rohlíku → peanut butter and jelly → café con leche). Španělské texty dílů 01–08 jsou v `Naučná videa/spanelske-texty-01-08.md`.
-- **Hlasy (ElevenLabs, bezplatný tarif – namlouvá autor):** CZ **Kuba – Czech Social Media**, EN **George – Warm, Captivating Storyteller**, ES zatím nevybraný (nahrávka `zvuk/voz-ES.mp3`).
+- **Tři jazyky:** 🇨🇿 česky + 🇬🇧 anglicky + 🇪🇸 španělsky (tykání, latinskoamerická slovní zásoba). Kde česká analogie nefunguje, vymyslet vlastní (párek v rohlíku → peanut butter and jelly → café con leche). Španělské texty dílů 01–08 jsou v `Naučná videa/spanelske-texty-01-08.md`.
+- **Hlasy (ElevenLabs, bezplatný tarif – namlouvá autor):** CZ **Kuba – Czech Social Media**, EN **George – Warm, Captivating Storyteller**, ES **Brian C – Clean, professional, warm** (latinskoamerická; nahrávka `zvuk/voz-ES.mp3`).
 - **Věcná přesnost:** kategorická tvrzení z knihy, která recenzenti vytkli, ve videu zmírnit (např. „zadání je pro něj svaté“ → „jde přesně tam, kam ho nasměruješ“).
 - Claude pracuje ve větvi `claude/upravy`, do `main` jen na výslovný pokyn autora.
 

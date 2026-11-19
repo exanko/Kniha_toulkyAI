@@ -1,10 +1,10 @@
 # 🇪🇸 Španělské mluvené texty – díly 01–08
 
-**Stav:** ✍️ texty hotové · čeká na výběr španělského hlasu a namluvení
+**Stav:** ✍️ texty hotové · čeká na namluvení (hlas Brian C – Clean, professional, warm)
 
 Do ElevenLabs vložit jen text z bloku – scény jsou oddělené prázdným řádkem. Nahrávku uložit do složky dílu jako `zvuk/voz-ES.mp3`. Pak Claude doplní španělské popisky do `zdroj/make.py`, časování a vyrenderuje `NN-…-ES.mp4`.
 
-Texty jsou v neutrální španělštině s tykáním (tú) – fungují pro Španělsko i Latinskou Ameriku. Kde česká ani anglická analogie nesedí, je španělská (viz poznámky).
+Texty jsou psané s tykáním (tú) a latinskoamerickou slovní zásobou, pro hlas Brian C. Kde česká ani anglická analogie nesedí, je španělská (viz poznámky).
 
 ## 01 · Cómo «piensa» la IA
 
@@ -26,16 +26,16 @@ Por eso puede sonar convincente aunque se equivoque. Lo importante, compruébalo
 
 ## 02 · Un cerebro atado con un cordel
 
-Poznámka: „placa base“ je výraz ze Španělska; pro latinskoamerický hlas změnit na „placa madre“.
+Poznámka: základní deska = „placa madre“ (latinskoamerický výraz; ve Španělsku „placa base“).
 
 ```
-¿Por qué no puedes montar en casa tu propia IA grande?
+¿Por qué no puedes armar en casa tu propia IA grande?
 
 Un modelo grande es enorme. No cabe en una sola tarjeta gráfica.
 
 Así que lo repartes entre varias tarjetas. Pero con cada palabra, las tarjetas tienen que pasarse datos entre sí.
 
-En casa, las conecta la placa base. Es como partir un cerebro en dos y volver a unirlo con un cordel.
+En casa, las conecta la placa madre. Es como partir un cerebro en dos y volver a unirlo con un cordel.
 
 En un centro de datos, las tarjetas tienen sus propias conexiones ultrarrápidas. El cerebro sigue entero.
 
@@ -53,7 +53,7 @@ Con una hoja de cálculo grande, puede equivocarse con facilidad. Y a primera vi
 
 Prueba otra cosa. Dile: escríbeme un programa que lo calcule.
 
-El programa lo revisas una vez. Después calcula con exactitud, siempre igual. Y te lo quedas.
+El programa lo revisas una vez. Después calcula con exactitud, siempre igual. Y lo conservas.
 
 Así que no le pidas a la IA que sea tu calculadora. Pídele que te construya una.
 ```
@@ -63,7 +63,7 @@ Así que no le pidas a la IA que sea tu calculadora. Pídele que te construya un
 Poznámka: kecálek → **parlanchín**, vidí za roh → **ve más allá**.
 
 ```
-¿Todas las IA son igual de listas?
+¿Todas las IA son igual de inteligentes?
 
 No. Los modelos tienen distintos tamaños. Y con el tamaño crece lo que son capaces de hacer.
 
@@ -85,7 +85,7 @@ Así que, cuanto más pequeño sea el modelo, más debes comprobar sus respuesta
 
 Sobre todo, te amplifica. Funciona como un amplificador: amplifica todo lo que le metes.
 
-Si sabes lo que quieres y conoces tu campo, harás en horas lo que antes llevaba semanas.
+Si sabes lo que quieres y conoces tu campo, harás en horas lo que antes tomaba semanas.
 
 Si no sabes adónde vas, te amplifica el caos. Obtienes montones de texto, y de ahí no sale nada.
 
@@ -99,11 +99,11 @@ Así que, antes de encenderla, ten clara la dirección. Esa la tienes que poner 
 ```
 ¿Qué es, en realidad, un agente de IA?
 
-Un modelo de lenguaje, por sí mismo, no es más que un cerebro. Listo, pero sin manos y sin memoria.
+Un modelo de lenguaje, por sí mismo, no es más que un cerebro. Inteligente, pero sin manos y sin memoria.
 
 El agente le da herramientas. Puede buscar en internet, escribir archivos, ejecutar programas.
 
-Le da memoria. Apunta lo importante y la próxima vez lo sabe.
+Le da memoria. Anota lo importante y la próxima vez lo sabe.
 
 Y cuando algo le sale bien, guarda el procedimiento. A eso se le llama skill.
 
