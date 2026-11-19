@@ -1,23 +1,23 @@
 ---
 name: naucne-video
-description: Výroba dalšího dílu série Naučná videa (česky + anglicky, hlasy z ElevenLabs) v repozitáři Kniha_toulkyAI – od mluveného textu přes přepis nahrávky a časování po render, repo a README.
+description: Výroba dalšího dílu série Naučná videa (česky, anglicky a španělsky, hlasy z ElevenLabs) v repozitáři Kniha_toulkyAI – od mluveného textu přes přepis nahrávky a časování po render, repo a README.
 ---
 
 # Naučné video – postup výroby dílu
 
-Série krátkých videí na výšku (1080 × 1920, 30 fps, 30–45 s) o tom, jak AI opravdu funguje. Pravidla série jsou v `Naučná videa/README.md` – přečti je jako první.
+Série krátkých videí na výšku (1080 × 1920, 30 fps, 30–55 s) o tom, jak AI opravdu funguje. Od dílu 09 lze místo animovaných textů použít generované záběry (klíčové snímky → videoklipy v Gemini) – postup je ve `scenar.md` dílu 09. Pravidla série jsou v `Naučná videa/README.md` – přečti je jako první.
 
 ## Pevná pravidla
 
 - **Osvěta, ne reklama:** nezmiňovat knihu, autora ani značky (ChatGPT apod.) – obecně „AI“, „jazykový model“.
-- **Vždy dva jazyky:** 🇨🇿 česky + 🇬🇧 anglicky. Kde česká analogie nefunguje, vymyslet anglickou (párek v rohlíku → peanut butter and jelly).
-- **Hlasy (ElevenLabs, bezplatný tarif – namlouvá autor):** CZ **Kuba – Czech Social Media**, EN **George – Warm, Captivating Storyteller**.
+- **Tři jazyky:** 🇨🇿 česky + 🇬🇧 anglicky + 🇪🇸 španělsky (tykání, neutrální španělština). Kde česká analogie nefunguje, vymyslet vlastní (párek v rohlíku → peanut butter and jelly → café con leche). Španělské texty dílů 01–08 jsou v `Naučná videa/spanelske-texty-01-08.md`.
+- **Hlasy (ElevenLabs, bezplatný tarif – namlouvá autor):** CZ **Kuba – Czech Social Media**, EN **George – Warm, Captivating Storyteller**, ES zatím nevybraný (nahrávka `zvuk/voz-ES.mp3`).
 - **Věcná přesnost:** kategorická tvrzení z knihy, která recenzenti vytkli, ve videu zmírnit (např. „zadání je pro něj svaté“ → „jde přesně tam, kam ho nasměruješ“).
 - Claude pracuje ve větvi `claude/upravy`, do `main` jen na výslovný pokyn autora.
 
 ## 1. Mluvený text
 
-Napiš text pro CZ i EN jako dva bloky kódu – **jen mluvený text, scény oddělené prázdným řádkem, bez čísel scén** (ElevenLabs jinak čte i čísla). 6–7 scén, 1–3 krátké věty na scénu. Stručně popiš, co bude v obraze. Ulož do `Naučná videa/NN-nazev/scenar.md` se stavem „čeká na namluvení“.
+Napiš text pro CZ, EN i ES jako tři bloky kódu – **jen mluvený text, scény oddělené prázdným řádkem, bez čísel scén** (ElevenLabs jinak čte i čísla). 6–7 scén, 1–3 krátké věty na scénu. Stručně popiš, co bude v obraze. Ulož do `Naučná videa/NN-nazev/scenar.md` se stavem „čeká na namluvení“.
 
 ## 2. Nástroje (jednou za session)
 

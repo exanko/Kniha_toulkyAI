@@ -9,12 +9,14 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 
 ## Pravidla série
 
-- **Dva jazyky:** každé video vzniká vždy ve dvou verzích – 🇨🇿 **česky** a 🇬🇧 **anglicky**. Kde česká analogie v angličtině nefunguje, používá se vlastní anglická (párek v rohlíku → peanut butter and jelly).
+- **Tři jazyky:** každé video vzniká v 🇨🇿 **češtině**, 🇬🇧 **angličtině** a 🇪🇸 **španělštině** (španělské verze dílů 01–08 se doplňují – texty jsou v [spanelske-texty-01-08.md](spanelske-texty-01-08.md)). Kde česká analogie v jiném jazyce nefunguje, používá se vlastní (párek v rohlíku → peanut butter and jelly → café con leche).
 - **Hlasy (ElevenLabs, bezplatný tarif):**
   - 🇨🇿 **Kuba – Czech Social Media**
   - 🇬🇧 **George – Warm, Captivating Storyteller**
+  - 🇪🇸 zatím nevybraný
 - **Do ElevenLabs vkládat jen mluvený text**, bez čísel scén a tabulek. Scény stačí oddělit prázdným řádkem – pauzy se v nahrávce najdou automaticky.
-- **Formát:** na výšku 1080 × 1920, 30 fps, 30–40 s, texty na obrazovce odpovídají namluvenému.
+- **Formát:** na výšku 1080 × 1920, 30 fps, 30–55 s, texty na obrazovce odpovídají namluvenému.
+- **Generované záběry (od dílu 09):** klíčové snímky z generátoru obrázků → videoklipy v Gemini → hlas → složení s popisky a ukazatelem průběhu. Postup je ve [scénáři dílu 09](09-projekt-je-strom/scenar.md).
 - **Design:** tmavé pozadí s pohyblivými světelnými skvrnami (modrá, fialová, oranžová), jemná záře textu, ukazatel průběhu nahoře, písmo Inter.
 
 ## Díly
@@ -29,10 +31,11 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 | 06 | [Co je AI agent](06-co-je-ai-agent/) | [video](06-co-je-ai-agent/06-co-je-ai-agent-CZ.mp4) | [video](06-co-je-ai-agent/06-what-is-an-ai-agent-EN.mp4) | ✅ hotovo |
 | 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/) | [video](07-nase-nic-neni-dukaz/07-nase-nic-neni-dukaz-CZ.mp4) | [video](07-nase-nic-neni-dukaz/07-our-nothing-is-not-proof-EN.mp4) | ✅ hotovo |
 | 08 | [Firma v Gitu](08-firma-v-gitu/) | [video](08-firma-v-gitu/08-firma-v-gitu-CZ.mp4) | [video](08-firma-v-gitu/08-a-company-in-git-EN.mp4) | ✅ hotovo |
+| 09 | [Projekt je strom](09-projekt-je-strom/scenar.md) | – | – | ✍️ scénář, čeká na obrázky |
 
 ## Postup výroby dílu
 
-1. Claude napíše mluvený text CZ + EN (tabulka po scénách).
+1. Claude napíše mluvený text CZ + EN + ES (tabulka po scénách).
 2. Autor ho namluví v ElevenLabs (hlasy výše) a pošle MP3.
 3. Claude nahrávky přepíše (`nastroje/prepis.py`), najde začátky a konce scén a sestaví obě verze videa.
 
