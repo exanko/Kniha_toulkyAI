@@ -9,11 +9,12 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 
 ## Pravidla série
 
-- **Tři jazyky:** každé video vzniká v 🇨🇿 **češtině**, 🇬🇧 **angličtině** a 🇪🇸 **španělštině** (španělské verze dílů 01–08 se doplňují – texty jsou v [spanelske-texty-01-08.md](spanelske-texty-01-08.md)). Kde česká analogie v jiném jazyce nefunguje, používá se vlastní (párek v rohlíku → peanut butter and jelly → café con leche).
+- **Tři jazyky:** každé video vzniká v 🇨🇿 **češtině**, 🇬🇧 **angličtině** a 🇪🇸 **španělštině** (španělské verze dílů 01–08 se doplňují – texty jsou v [spanelske-texty-01-08.md](spanelske-texty-01-08.md)). Kde česká analogie v jiném jazyce nefunguje, používá se vlastní (párek v rohlíku → peanut butter and jelly → café con leche). Díl 09 má navíc 🇮🇳 **hindštinu** (vykání आप).
 - **Hlasy (ElevenLabs, bezplatný tarif):**
   - 🇨🇿 **Kuba – Czech Social Media**
   - 🇬🇧 **George – Warm, Captivating Storyteller**
   - 🇪🇸 **Brian C – Clean, professional, warm** (latinskoamerická španělština)
+  - 🇮🇳 **Viraj – Rich, Confident and Expressive** (hindština – zatím jen díl 09; text pro hlas píše AI jako „एआई“, popisky sází `nastroje/pisma/NotoSansDevanagari-Bold.ttf`)
 - **Do ElevenLabs vkládat jen mluvený text**, bez čísel scén a tabulek. Scény stačí oddělit prázdným řádkem – pauzy se v nahrávce najdou automaticky.
 - **Formát:** na výšku 1080 × 1920, 30 fps, 30–55 s, texty na obrazovce odpovídají namluvenému.
 - **Generované záběry (od dílu 09):** klíčové snímky z generátoru obrázků → videoklipy v Gemini → hlas → složení s popisky a ukazatelem průběhu. Postup je ve [scénáři dílu 09](09-projekt-je-strom/scenar.md).
@@ -31,7 +32,7 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 | 06 | [Co je AI agent](06-co-je-ai-agent/) | [video](06-co-je-ai-agent/06-co-je-ai-agent-CZ.mp4) | [video](06-co-je-ai-agent/06-what-is-an-ai-agent-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
 | 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/) | [video](07-nase-nic-neni-dukaz/07-nase-nic-neni-dukaz-CZ.mp4) | [video](07-nase-nic-neni-dukaz/07-our-nothing-is-not-proof-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
 | 08 | [Firma v Gitu](08-firma-v-gitu/) | [video](08-firma-v-gitu/08-firma-v-gitu-CZ.mp4) | [video](08-firma-v-gitu/08-a-company-in-git-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
-| 09 | [Projekt je strom](09-projekt-je-strom/) | [video](09-projekt-je-strom/09-projekt-je-strom-CZ.mp4) | [video](09-projekt-je-strom/09-your-project-is-a-tree-EN.mp4) | [video](09-projekt-je-strom/09-tu-proyecto-es-un-arbol-ES.mp4) | 🎬 první verze, čeká na klipy V4–V8 |
+| 09 | [Projekt je strom](09-projekt-je-strom/) | [video](09-projekt-je-strom/09-projekt-je-strom-CZ.mp4) | [video](09-projekt-je-strom/09-your-project-is-a-tree-EN.mp4) | [video](09-projekt-je-strom/09-tu-proyecto-es-un-arbol-ES.mp4) | 🎬 čeká na klipy V5, V7, V8; 🇮🇳 [hindsky](09-projekt-je-strom/09-aapka-project-ek-ped-hai-HI.mp4) |
 
 ## Postup výroby dílu
 

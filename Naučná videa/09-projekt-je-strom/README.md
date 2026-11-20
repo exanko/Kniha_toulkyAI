@@ -1,11 +1,11 @@
-# 09 · Projekt je strom / Your project is a tree / Tu proyecto es un árbol
+# 09 · Projekt je strom / Your project is a tree / Tu proyecto es un árbol / आपका प्रोजेक्ट एक पेड़ है
 
-**Stav:** 🎬 první verze – scény 1–3 z klipů, scény 4–8 zatím průlet mezi klíčovými snímky (čeká na klipy V4–V8, viz [scénář](scenar.md))
+**Stav:** 🎬 druhá verze – scény 1–4 a 6 z klipů, scény 5, 7 a 8 zatím průlet mezi klíčovými snímky (čeká na klipy V5, V7, V8, viz [scénář](scenar.md))
 
-| | 🇨🇿 Česky | 🇬🇧 English | 🇪🇸 Español |
-|---|---|---|---|
-| Video | [09-projekt-je-strom-CZ.mp4](09-projekt-je-strom-CZ.mp4) (53 s) | [09-your-project-is-a-tree-EN.mp4](09-your-project-is-a-tree-EN.mp4) (57 s) | [09-tu-proyecto-es-un-arbol-ES.mp4](09-tu-proyecto-es-un-arbol-ES.mp4) (58 s) |
-| Náhled | <img src="nahled-cs.jpg" width="200"> | <img src="nahled-en.jpg" width="200"> | <img src="nahled-es.jpg" width="200"> |
+| | 🇨🇿 Česky | 🇬🇧 English | 🇪🇸 Español | 🇮🇳 हिन्दी |
+|---|---|---|---|---|
+| Video | [09-projekt-je-strom-CZ.mp4](09-projekt-je-strom-CZ.mp4) (53 s) | [09-your-project-is-a-tree-EN.mp4](09-your-project-is-a-tree-EN.mp4) (57 s) | [09-tu-proyecto-es-un-arbol-ES.mp4](09-tu-proyecto-es-un-arbol-ES.mp4) (58 s) | [09-aapka-project-ek-ped-hai-HI.mp4](09-aapka-project-ek-ped-hai-HI.mp4) (70 s) |
+| Náhled | <img src="nahled-cs.jpg" width="200"> | <img src="nahled-en.jpg" width="200"> | <img src="nahled-es.jpg" width="200"> | <img src="nahled-hi.jpg" width="200"> |
 
 **Myšlenka:** Strom není AI, ale tvůj projekt. AI je zavlažování a hnojení – strom díky ní roste sám a rychle. Člověk stříhá (určuje směr) a hlídá škůdce (když AI ztratí nit, připomene jí cíl). Bez plánu v malém květináči se pořád přesazuje – každé přesazení je přestavba projektu. S plánem a zkouškou na začátku se zasadí jednou a strom plodí.
 
@@ -26,7 +26,7 @@
 
 ## Soubory
 
-`obrazky/` klíčové snímky K01–K12 · `klipy/` videoklipy V1–V8 · `zvuk/` nahrávky z ElevenLabs (Kuba / George / Brian C) · `zdroj/make.py` složení (náhled, render, náhledy) · `zdroj/casovani.json` časování řeči · [`scenar.md`](scenar.md) prompty a postup
+`obrazky/` klíčové snímky K01–K12 · `klipy/` videoklipy V1–V8 · `zvuk/` nahrávky z ElevenLabs (Kuba / George / Brian C / Viraj; hindský text je ve [scénáři](scenar.md)) · `zdroj/make.py` složení (náhled, render, náhledy) · `zdroj/casovani.json` časování řeči · [`scenar.md`](scenar.md) prompty a postup
 
 ---
 

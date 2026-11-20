@@ -1,6 +1,6 @@
-# 09 · Projekt je strom / Your project is a tree / Tu proyecto es un árbol – scénář
+# 09 · Projekt je strom / Your project is a tree / Tu proyecto es un árbol / आपका प्रोजेक्ट एक पेड़ है – scénář
 
-**Stav:** 🎬 snímky K01–K12, klipy V1–V3 a hlasy CZ/EN/ES hotové · první verze videa složená (za V4–V8 zatím průlet mezi snímky) · další krok: klipy V4–V8
+**Stav:** 🎬 snímky K01–K12, klipy V1–V4 a V6, hlasy CZ/EN/ES/HI hotové · video složené ve 4 jazycích (za V5, V7, V8 zatím průlet mezi snímky) · další krok: klipy V5, V7, V8
 
 **Nový postup obrazu:** místo animovaných textů (díly 01–08) generované záběry – nejdřív klíčové snímky (obrázky), z nich videoklipy v Gemini, pak hlas z ElevenLabs a složení s popisky a ukazatelem průběhu jako u ostatních dílů.
 
@@ -81,20 +81,44 @@ Pero si primero lo planeas y lo pruebas todo, lo plantas una sola vez. Justo don
 Entonces crece enseguida y empieza a dar frutos. La IA riega. Dónde plantas el árbol, lo decides tú.
 ```
 
+### 🇮🇳 हिन्दी (hindština)
+
+Vykání (आप), běžná hindsko-anglická slova (प्रोजेक्ट, प्लान, टेस्ट). AI je v textu pro hlas napsané „एआई“, aby ho hlas vyslovil „ej-aj“; v popiscích zůstává „AI“. Před zveřejněním je vhodné nechat text přečíst rodilého mluvčího.
+
+```
+मान लीजिए कि आपका प्रोजेक्ट एक पेड़ है। एआई के बिना, पानी की हर बाल्टी आप खुद ढोते हैं। पेड़ बढ़ता है, पर धीरे-धीरे।
+
+एआई के साथ, पानी और खाद उसे अपने-आप मिलते हैं। वह इतनी तेज़ी से बढ़ता है कि नज़र रखना भी मुश्किल हो जाता है।
+
+आपका काम है छँटाई करना। पेड़ किस दिशा में बढ़ेगा, यह आप तय करते हैं।
+
+और कीड़ों से बचाना। जब एआई भटक जाए और दूसरी दिशा में जाने लगे, तो उसे याद दिलाइए कि असली मकसद क्या है।
+
+लेकिन अगर आप बिना प्लान के, छोटे से गमले में शुरुआत करते हैं, तो पेड़ जल्दी ही गमले से बड़ा हो जाता है। आप उसे बड़े गमले में लगाते हैं। फिर से। और फिर से।
+
+हर बार गमला बदलने का मतलब है पूरा प्रोजेक्ट फिर से बनाना। पेड़ बढ़ने के बजाय बस किसी तरह ज़िंदा रहता है।
+
+लेकिन अगर आप पहले प्लान बनाएँ और टेस्ट करें, तो पेड़ सिर्फ़ एक बार लगाना पड़ता है। ठीक वहीं, जहाँ उसे बढ़ने की जगह मिले।
+
+तब वह तुरंत बढ़ता है और फल देने लगता है। पानी एआई देता है। पर पेड़ कहाँ लगेगा, यह आप तय करते हैं।
+```
+
 ## Popisky v obraze
 
 Krátké popisky přes video (písmo Inter, záře, ukazatel průběhu jako u dílů 01–08) – dělají metaforu jednoznačnou.
 
-| Scéna | 🇨🇿 | 🇬🇧 | 🇪🇸 |
-|---|---|---|---|
-| 1 | PROJEKT = STROM · bez AI | PROJECT = TREE · without AI | PROYECTO = ÁRBOL · sin IA |
-| 2 | S AI roste sám | With AI it grows by itself | Con IA crece solo |
-| 3 | Stříhání = směr | Pruning = direction | Podar = dar dirección |
-| 4 | Škůdci = AI ztratila nit → připomeň cíl | Pests = AI lost the thread → restate the goal | Plagas = la IA pierde el hilo → recuérdale el objetivo |
-| 5 | Bez plánu: přesazuješ pořád dokola | No plan: endless repotting | Sin plan: trasplantes sin fin |
-| 6 | Přesazení = přestavba projektu | Repotting = rebuilding the project | Trasplante = rehacer el proyecto |
-| 7 | Nejdřív plán a test | Plan and test first | Primero planea y prueba |
-| 8 | AI zalévá. Místo vybíráš ty. | AI waters. You choose the spot. | La IA riega. El lugar lo eliges tú. |
+Přesné znění je v `zdroj/make.py` (slovník `T`); hlavní popisek bíle, doplněk tyrkysově (AI, správně) nebo oranžově (problém).
+
+| Scéna | 🇨🇿 | 🇬🇧 | 🇪🇸 | 🇮🇳 |
+|---|---|---|---|---|
+| 1 | Projekt = strom · Bez AI roste pomalu | Project = tree · Without AI it grows slowly | Proyecto = árbol · Sin IA crece despacio | प्रोजेक्ट = पेड़ · AI के बिना धीरे बढ़ता है |
+| 2 | AI = zavlažování · Strom roste sám | AI = irrigation · The tree grows by itself | IA = riego · El árbol crece solo | AI = सिंचाई · पेड़ खुद बढ़ता है |
+| 3 | Stříhání = směr · To je tvoje práce | Pruning = direction · That's your job | Podar = dar dirección · Ese es tu trabajo | छँटाई = दिशा · यह आपका काम है |
+| 4 | Škůdci = AI ztratila nit · Připomeň jí cíl | Pests = AI lost the thread · Restate the goal | Plagas = la IA pierde el hilo · Recuérdale el objetivo | कीड़े = AI भटक गया · उसे मकसद याद दिलाइए |
+| 5 | Bez plánu · přesazuješ pořád dokola | No plan · endless repotting | Sin plan · trasplantes sin fin | बिना प्लान · बार-बार गमला बदलना |
+| 6 | Přesazení = přestavba · celého projektu | Repotting = rebuilding · the whole project | Trasplantar = rehacer · todo el proyecto | गमला बदलना = दोबारा बनाना · पूरा प्रोजेक्ट |
+| 7 | Nejdřív plán a test · zasadíš jen jednou | Plan and test first · plant it just once | Primero planea y prueba · planta una sola vez | पहले प्लान और टेस्ट · पेड़ एक ही बार लगाइए |
+| 8 | AI zalévá · Místo vybíráš ty | AI waters · You choose the spot | La IA riega · El lugar lo eliges tú | AI पानी देता है · जगह आप चुनते हैं |
 
 ## Klíčové snímky – prompty pro generování obrázků
 
@@ -208,11 +232,13 @@ Délka klipu 8–10 s je v pořádku – při skládání se zrychlí nebo zpoma
 | V1 | K01 | ✅ | The gardener trudges along the gravel path with two heavy watering cans, stops at the sapling and slowly pours water at its base. The sapling barely changes. Static camera at eye level, slow and heavy pace. |
 | V2 | K02 → K03 | ✅ | Time-lapse: the glowing cyan drip ring pulses as luminous droplets soak into the soil; the sapling grows rapidly into a big tree, the crown fills out and shoots spread in all directions; light and clouds race across the sky. At the end the gardener walks into frame and looks up in surprise. Camera slowly pulls back and tilts up to keep the whole tree in frame. |
 | V3 | K03 → K04 | ✅ | The gardener steps up to the tree and trims the wild shoots with calm, confident cuts; the long branch leaning toward the shed falls onto the grass. The tree ends balanced and tidy. Medium shot, real-time speed. |
-| V4 | K05 → K06 | | Macro close-up, static camera. The gloved hand presses the sprayer and a fine glowing turquoise-cyan mist drifts over the leaves; the orange mites dissolve into tiny sparks and vanish, the orange thread snaps and disappears, the curled dull leaves unfurl and turn glossy green with sparkling cyan droplets, and the young shoot slowly straightens toward the sun. Shallow depth of field, gentle slow push-in. |
+| V4 | K05 → K06 | ✅ | Macro close-up, static camera. The gloved hand presses the sprayer and a fine glowing turquoise-cyan mist drifts over the leaves; the orange mites dissolve into tiny sparks and vanish, the orange thread snaps and disappears, the curled dull leaves unfurl and turn glossy green with sparkling cyan droplets, and the young shoot slowly straightens toward the sun. Shallow depth of field, gentle slow push-in. |
 | V5 | K07 → K08 | | Fast time-lapse in one continuous shot, static camera: the gardener lifts the tree out of the cracked terracotta pot into the bigger pot; the roots fill it within seconds and it cracks too; he repots again and again, each time into a bigger pot, broken pots piling up on the tiles. At the end the tree sits in a black tub with its root ball bulging over the rim, and the exhausted gardener drops onto an upturned bucket. Frantic, repetitive rhythm. |
-| V6 | K08 → K09 | | Slow time-lapse, static camera: the tree in the black tub stops growing; roots push through a crack in the tub; the leaves turn yellow and fall one by one onto the tiles; the warm golden light fades into a cool grey dusk. The gardener slowly gets up from the bucket and stands with hands on hips, looking at the tree, defeated. |
+| V6 | K08 → K09 | ✅ | Slow time-lapse, static camera: the tree in the black tub stops growing; roots push through a crack in the tub; the leaves turn yellow and fall one by one onto the tiles; the warm golden light fades into a cool grey dusk. The gardener slowly gets up from the bucket and stands with hands on hips, looking at the tree, defeated. |
 | V7 | K10 → K11 | | The gardener studies the sketch on the clipboard, glances at the soil-test vials and nods; then carries the burlap-wrapped young tree from the path to the hole in the middle of the staked square, plants it, firms the soil, ties it to a stake and lays the glowing turquoise-cyan drip tube in a ring around it; luminous droplets begin to fall. Calm, careful, unhurried. Static camera with a slight slow push-in. |
 | V8 | K11 → K12 | | Time-lapse through the seasons, static camera: the young tree grows steadily into a big, balanced apple tree; blossoms appear and turn into ripe red apples; the cyan drip ring keeps glowing softly at its base. At the end the gardener walks under the crown with a wicker basket and reaches up to pick an apple. Warm golden light. |
+
+Pozn.: dodaný klip, kde zahradník na terase stříká uvadlou rostlinu tyrkysovou hadicí, neodpovídá žádné scéně (a má štíhlého zahradníka) – nepoužit.
 
 **Volitelná oprava – stejný zahradník:** v K03, K04 (a tedy v konci V2 a ve V3) vyšel štíhlejší, mladší zahradník s viditelným obličejem; jinde je to zavalitá „plastelínová“ postava s čepicí do čela. Kdo chce sjednotit, přegeneruje K03 s přiloženým **K02 i K01**, pak K04 z nového K03 a nakonec V2 a V3:
 
@@ -223,7 +249,7 @@ Edit the second attached image exactly as described before (same garden, style, 
 ## Složení
 
 1. Snímky jsou v `obrazky/` (K01.jpg … K12.jpg), klipy v `klipy/` (V1.mp4 … V8.mp4).
-2. Hlas: 🇨🇿 Kuba – Czech Social Media · 🇬🇧 George – Warm, Captivating Storyteller · 🇪🇸 Brian C – Clean, professional, warm (latinskoamerická španělština) → `zvuk/hlas-CZ.mp3`, `zvuk/voice-EN.mp3`, `zvuk/voz-ES.mp3`.
+2. Hlas: 🇨🇿 Kuba – Czech Social Media · 🇬🇧 George – Warm, Captivating Storyteller · 🇪🇸 Brian C – Clean, professional, warm (latinskoamerická španělština) · 🇮🇳 Viraj – Rich, Confident and Expressive → `zvuk/hlas-CZ.mp3`, `zvuk/voice-EN.mp3`, `zvuk/voz-ES.mp3`, `zvuk/awaz-HI.mp3`. Hindské popisky se sázejí písmem Noto Sans Devanagari (`nastroje/pisma/`, licence OFL) a latinka v nich písmem Inter.
 3. Hranice scén v nahrávkách jsou v `zdroj/casovani.json`. `python3 zdroj/make.py preview` udělá náhled všech scén, `python3 zdroj/make.py build` složí tři MP4: klip scény se zrychlí/zpomalí na její délku (úsek klipu v `CLIP_RANGE`), přidají se popisky, ukazatel průběhu a hlas; zvuk klipů se nepoužívá. Chybí-li klip, použije se průlet mezi klíčovými snímky.
 4. Po dodání dalších klipů stačí je uložit jako `klipy/V4.mp4` … a pustit `build` znovu.
 
@@ -234,6 +260,7 @@ Edit the second attached image exactly as described before (same garden, style, 
 | 🇨🇿 | Tvůj projekt je strom 🌳 Jak pracovat s AI | AI strom zalévá a hnojí. Ty stříháš, hlídáš škůdce – a hlavně předem vybereš, kam ho zasadíš. #shorts #AI |
 | 🇬🇧 | Your project is a tree 🌳 How to work with AI | AI waters and feeds the tree. You prune it, keep the pests away – and above all, choose where to plant it before you start. #shorts #AI |
 | 🇪🇸 | Tu proyecto es un árbol 🌳 Cómo trabajar con IA | La IA riega y abona el árbol. Tú lo podas, vigilas las plagas y, sobre todo, eliges dónde plantarlo antes de empezar. #shorts #IA |
+| 🇮🇳 | आपका प्रोजेक्ट एक पेड़ है 🌳 AI के साथ कैसे काम करें | AI पेड़ को पानी और खाद देता है। आप छँटाई करते हैं, कीड़ों से बचाते हैं – और सबसे ज़रूरी, पहले से तय करते हैं कि पेड़ कहाँ लगेगा। #shorts #AI |
 
 ---
 

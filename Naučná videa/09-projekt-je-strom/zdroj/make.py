@@ -3,12 +3,12 @@ přes ně popisky a ukazatel průběhu ve stylu série, zvuk = hlas z ElevenLabs
 Chybí-li klip scény (klipy/V<n>.mp4), použije se pomalý průlet mezi klíčovými snímky.
 
   python3 make.py preview          → prev_<jazyk>.png (náhled všech scén)
-  python3 make.py build [cs en es] → hotová MP4 ve složce dílu
+  python3 make.py build [cs en es hi] → hotová MP4 ve složce dílu
   python3 make.py nahled           → nahled-<jazyk>.jpg (540×960)
 Vyžaduje ffmpeg, Pillow, numpy, písmo Inter."""
 import os, sys, json, subprocess
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 here = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(here)
 sys.path.insert(0, os.path.join(ROOT, "..", "nastroje"))
 from engine import W, H, FPS, font, CY, OR, WH, wrap, fadein, mix, _off, durations
@@ -16,13 +16,14 @@ from engine import W, H, FPS, font, CY, OR, WH, wrap, fadein, mix, _off, duratio
 SEG = json.load(open(os.path.join(here, "casovani.json")))
 LEAD, TAIL, LAST = 0.25, 0.40, 1.6      # náběh před řečí, dojezd po ní, dojezd poslední scény
 XF = 0.35                               # prolínání pozadí mezi scénami (s)
-AUDIO = {"cs": "zvuk/hlas-CZ.mp3", "en": "zvuk/voice-EN.mp3", "es": "zvuk/voz-ES.mp3"}
+AUDIO = {"cs": "zvuk/hlas-CZ.mp3", "en": "zvuk/voice-EN.mp3", "es": "zvuk/voz-ES.mp3", "hi": "zvuk/awaz-HI.mp3"}
 OUT = {"cs": "09-projekt-je-strom-CZ.mp4", "en": "09-your-project-is-a-tree-EN.mp4",
-       "es": "09-tu-proyecto-es-un-arbol-ES.mp4"}
+       "es": "09-tu-proyecto-es-un-arbol-ES.mp4", "hi": "09-aapka-project-ek-ped-hai-HI.mp4"}
+DEV = os.path.join(ROOT, "..", "nastroje", "pisma", "NotoSansDevanagari-Bold.ttf")   # hindština (devanágarí)
 
 # Pozadí scén: klip V<n> (úsek od–do v sekundách, který se natáhne/zrychlí na délku scény),
 # nebo – když klip zatím chybí – průlet mezi dvěma klíčovými snímky.
-CLIP_RANGE = {1: (0.0, 8.5), 2: (0.4, 9.6), 3: (1.0, 7.5)}
+CLIP_RANGE = {1: (0.0, 8.5), 2: (0.4, 9.6), 3: (1.0, 7.5), 4: (0.3, 9.7), 6: (0.0, 10.0)}
 STILLS = {1: ("K01", "K01"), 2: ("K02", "K03"), 3: ("K03", "K04"), 4: ("K05", "K06"),
           5: ("K07", "K08"), 6: ("K08", "K09"), 7: ("K10", "K11"), 8: ("K11", "K12")}
 
@@ -40,6 +41,10 @@ T = {
         ("Podar = dar dirección", "Ese es tu trabajo"), ("Plagas = la IA pierde el hilo", "Recuérdale el objetivo"),
         ("Sin plan", "trasplantes sin fin"), ("Trasplantar = rehacer", "todo el proyecto"),
         ("Primero planea y prueba", "planta una sola vez"), ("La IA riega", "El lugar lo eliges tú")],
+ "hi": [("प्रोजेक्ट = पेड़", "AI के बिना धीरे बढ़ता है"), ("AI = सिंचाई", "पेड़ खुद बढ़ता है"),
+        ("छँटाई = दिशा", "यह आपका काम है"), ("कीड़े = AI भटक गया", "उसे मकसद याद दिलाइए"),
+        ("बिना प्लान", "बार-बार गमला बदलना"), ("गमला बदलना = दोबारा बनाना", "पूरा प्रोजेक्ट"),
+        ("पहले प्लान और टेस्ट", "पेड़ एक ही बार लगाइए"), ("AI पानी देता है", "जगह आप चुनते हैं")],
 }
 SUBC = [OR, CY, CY, CY, OR, OR, CY, CY]
 NS = len(STILLS)
@@ -48,20 +53,51 @@ NS = len(STILLS)
 _g = np.clip(1 - np.arange(H) / 820.0, 0, 1) ** 1.5 * 0.74
 SHADE = (1 - _g)[:, None, None].astype(np.float32)
 
-def scene_durs(L): return durations(SEG[L], LEAD, TAIL, LAST)
+def scene_durs(L):
+    return durations(SEG[L] if L in SEG else SEG["en"], LEAD, TAIL, LAST)   # bez nahrávky: náhled s časováním EN
 
-def wrap2(d, txt, f, maxw):
+# Sazba: Inter pro latinku a symboly, Noto Sans Devanagari pro hindštinu (Noto nemá latinku ani „=“)
+class Fnt:
+    def __init__(self, lat, dev=None): self.lat, self.dev = lat, dev
+
+def _isdev(c): return "\u0900" <= c <= "\u097f" or "\ua8e0" <= c <= "\ua8ff" or c in "\u200c\u200d"
+
+def runs(txt):
+    out = []
+    for c in txt:
+        k = (out[-1][0] if out else False) if c == " " else _isdev(c)
+        if out and out[-1][0] == k: out[-1][1] += c
+        else: out.append([k, c])
+    return out
+
+def tlen(d, txt, F):
+    if not F.dev: return d.textlength(txt, font=F.lat)
+    return sum(d.textlength(s, font=F.dev if k else F.lat) for k, s in runs(txt))
+
+def tdraw(d, x, y, txt, F, fill):
+    if not F.dev: d.text((x, y), txt, font=F.lat, fill=fill); return
+    base = y + F.lat.getmetrics()[0]                       # společná účaří
+    for k, s in runs(txt):
+        f = F.dev if k else F.lat
+        d.text((x, base), s, font=f, fill=fill, anchor="ls"); x += d.textlength(s, font=f)
+
+def fonts(L):
+    if L == "hi":
+        return (Fnt(font("b", 82), ImageFont.truetype(DEV, 84)), Fnt(font("b", 58), ImageFont.truetype(DEV, 60)))
+    return Fnt(font("x", 82)), Fnt(font("b", 58))
+
+def wrap2(d, txt, F, maxw):
     """Zalomení nadpisu: nejdřív za „=“, jinak na dva co nejvyrovnanější řádky."""
-    if d.textlength(txt, font=f) <= maxw: return [txt]
+    if tlen(d, txt, F) <= maxw: return [txt]
     if " = " in txt:
         a, b = txt.split(" = ", 1); ls = [a + " =", b]
-        if all(d.textlength(l, font=f) <= maxw for l in ls): return ls
+        if all(tlen(d, l, F) <= maxw for l in ls): return ls
     words = txt.split(); best = None
     for i in range(1, len(words)):
         ls = [" ".join(words[:i]), " ".join(words[i:])]
-        m = max(d.textlength(l, font=f) for l in ls)
+        m = max(tlen(d, l, F) for l in ls)
         if best is None or m < best[0]: best = (m, ls)
-    return best[1] if best else wrap(d, txt, f, maxw)
+    return best[1] if best else [txt]
 
 _ov_cache = {}
 def overlay(L, si, t, dur):
@@ -72,13 +108,13 @@ def overlay(L, si, t, dur):
     if key in _ov_cache: return _ov_cache[key]
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     big, small = T[L][si]
-    fb = font("x", 82); fs = font("b", 58)
+    fb, fs = fonts(L)
     ls = wrap2(d, big, fb, 940); y = 190
     for i, l in enumerate(ls):
-        w = d.textlength(l, font=fb); d.text(((W - w) / 2, y + i * 96 + _off(a1)), l, font=fb, fill=mix(WH, a1 * out))
+        tdraw(d, (W - tlen(d, l, fb)) / 2, y + i * 96 + _off(a1), l, fb, mix(WH, a1 * out))
     y2 = y + len(ls) * 96 + 20
     for i, l in enumerate(wrap2(d, small, fs, 940)):
-        w = d.textlength(l, font=fs); d.text(((W - w) / 2, y2 + i * 70 + _off(a2)), l, font=fs, fill=mix(SUBC[si], a2 * out))
+        tdraw(d, (W - tlen(d, l, fs)) / 2, y2 + i * 70 + _off(a2), l, fs, mix(SUBC[si], a2 * out))
     A = im.getchannel("A")
     sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))   # tmavý stín pod textem (čitelnost na světlé koruně)
     sh.putalpha(A.filter(ImageFilter.GaussianBlur(7)).point(lambda v: min(255, int(v * 0.85))))
@@ -193,7 +229,7 @@ def preview(L):
     sheet.save(os.path.join(here, f"prev_{L}.png"))
 
 THUMB = {"cs": ("Projekt = strom", "Jak pracovat s AI"), "en": ("Project = tree", "How to work with AI"),
-         "es": ("Proyecto = árbol", "Cómo trabajar con IA")}
+         "es": ("Proyecto = árbol", "Cómo trabajar con IA"), "hi": ("प्रोजेक्ट = पेड़", "AI के साथ कैसे काम करें")}
 
 def nahled(L):
     """Náhled 540×960: plodící jabloň (K12) s nadpisem dílu."""
@@ -205,5 +241,5 @@ def nahled(L):
     T[L].pop(); SUBC.pop()
 
 if __name__ == "__main__":
-    mode = sys.argv[1]; langs = sys.argv[2:] or ["cs", "en", "es"]
+    mode = sys.argv[1]; langs = sys.argv[2:] or ["cs", "en", "es", "hi"]
     for L in langs: {"preview": preview, "build": build, "nahled": nahled}[mode](L)
