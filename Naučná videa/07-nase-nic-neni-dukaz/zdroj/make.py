@@ -10,9 +10,13 @@ T={"cs":dict(q=["Když něco nevidíme,","znamená to,","že to neexistuje?"],ra
         ai=["AI najde vzory,","které přehlédneme."],fake=["…i vzor,","který tam není."],check="Každý objev ověř."),
    "en":dict(q=["If we can't see it,","does that mean","it isn't there?"],radio=["Radio waves","were always here."],device="We just lacked the device.",
         antenna="A faulty antenna?",noise="noise",whatif="What if it isn't noise?",nothing=["Our “nothing”","isn't proof."],proof="We lack the tool to see it.",
-        ai=["AI finds patterns","people miss."],fake=["…and patterns","that aren't there."],check="Every discovery needs checking.")}[LANG]
+        ai=["AI finds patterns","people miss."],fake=["…and patterns","that aren't there."],check="Every discovery needs checking."),
+   "es":dict(q=["Si no podemos ver algo,","¿significa","que no existe?"],radio=["Las ondas de radio","siempre estuvieron aquí."],device="No teníamos el aparato.",
+        antenna="¿Avería de la antena?",noise="ruido",whatif="¿Y si no es ruido?",nothing=["Nuestra «nada»","no es una prueba."],proof="No tenemos la herramienta.",
+        ai=["La IA encuentra patrones","que se nos escapan."],fake=["…y patrones","que no existen."],check="Verifica cada descubrimiento.")}[LANG]
 K={"cs":dict(radio=1.47,device=3.77,noise=4.89,whatif=7.46,proof=4.13,why=3.57),
-   "en":dict(radio=1.70,device=3.95,noise=5.30,whatif=8.13,proof=4.74,why=3.71)}[LANG]
+   "en":dict(radio=1.70,device=3.95,noise=5.30,whatif=8.13,proof=4.74,why=3.71),
+   "es":dict(radio=1.71,device=4.59,noise=7.60,whatif=10.24,proof=4.84,why=4.26)}[LANG]
 D=durations(SEG)
 rng=np.random.default_rng(3)
 PTS_LINE=[(x, 0.55*x+rng.normal(0,40)) for x in rng.uniform(0,640,26)]
@@ -27,7 +31,7 @@ def s1(t):
     return im
 def s2(t):
     im,d=new()
-    lines(d,340,T["radio"],font("x",92),WH,fadein(t,K["radio"]-0.3))
+    lines(d,340,T["radio"],font("x",{"cs":92,"en":92,"es":80}[LANG]),WH,fadein(t,K["radio"]-0.3))
     dev=fadein(t,K["device"]-0.2)
     for k in range(3):
         y0=900+k*150; amp=45

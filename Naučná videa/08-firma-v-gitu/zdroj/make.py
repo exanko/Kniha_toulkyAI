@@ -13,9 +13,15 @@ T={"cs":dict(q=["Jak dostat malou firmu","do doby AI?"],one="Jedno místo pro v�
         data="Put your data in.",ask=["Is everything clear?","Any contradictions?"],up="From the ground up.",
         layers=["calculations","contracts","products","company story"],know="Keep feeding it your know-how.",kh="my know-how",crit="What do you honestly think?",
         git="Git tracks every change.",lost="Nothing gets lost.",cust="customer",out=["presentation","flyer","calculator"],
-        small="small business",big="big company",robust=["→ needs a more","robust system"],careful="Just one catch:")}[LANG]
+        small="small business",big="big company",robust=["→ needs a more","robust system"],careful="Just one catch:"),
+   "es":dict(q=["¿Cómo llevas","una pequeña empresa","a la era de la IA?"],one="Un solo lugar para todo.",repo="repositorio",truth="Una única fuente de verdad.",
+        data="Sube tus datos.",ask=["¿Todo te queda claro?","¿Hay contradicciones?"],up="Desde los cimientos.",
+        layers=["cálculos","contratos","productos","tu historia"],know="Aporta tu experiencia.",kh="mi experiencia",crit="¿Qué opinas de verdad?",
+        git="Git registra cada cambio.",lost="Nada se pierde.",cust="cliente",out=["presentación","folleto","calculadora"],
+        small="pequeña empresa",big="gran empresa",robust=["→ hace falta un sistema","más robusto"],careful="Eso sí:")}[LANG]
 K={"cs":dict(repo=2.36,truth=3.76,ask=3.94,layer=2.54,lstep=0.6,crit=2.63,lost=2.20,out=[3.80,4.80,5.50],big=1.17,robust=4.13),
-   "en":dict(repo=1.59,truth=2.78,ask=6.03,layer=2.60,lstep=0.55,crit=2.42,lost=2.44,out=[3.83,4.83,5.58],big=1.81,robust=5.28)}[LANG]
+   "en":dict(repo=1.59,truth=2.78,ask=6.03,layer=2.60,lstep=0.55,crit=2.42,lost=2.44,out=[3.83,4.83,5.58],big=1.81,robust=5.28),
+   "es":dict(repo=2.90,truth=4.50,ask=3.47,layer=3.63,lstep=0.9,crit=3.57,lost=2.63,out=[4.20,5.40,6.44],big=1.73,robust=5.41)}[LANG]
 D=durations(SEG)
 def repo_icon(d,cx,cy,s,a):
     if a<=0: return

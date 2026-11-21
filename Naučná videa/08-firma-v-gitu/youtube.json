@@ -1,0 +1,23 @@
+{
+  "_popis": "Údaje pro workflow Nahrát na YouTube. České a anglické video bylo nahrané ručně dřív, proto tu nejsou (workflow by je jinak nahrálo znovu).",
+  "spolecne": {
+    "categoryId": "27",
+    "madeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "jazyky": {
+    "es": {
+      "soubor": "08-una-empresa-en-git-ES.mp4",
+      "nazev": "¿Cómo llevar una pequeña empresa a la era de la IA? 🗂️ Una empresa en Git",
+      "popis": "Un solo lugar para todo: un repositorio en Git como única fuente de verdad. Sube tus datos, deja que el agente se oriente y construye desde los cimientos: cálculos, contratos, productos y la historia de tu empresa. Git registra cada cambio, así que nada se pierde. Eso sí: para una gran empresa hace falta un sistema más robusto.\n\n#shorts #IA #pymes",
+      "stitky": [
+        "IA",
+        "agente de IA",
+        "Git",
+        "pymes",
+        "pequeña empresa",
+        "inteligencia artificial"
+      ]
+    }
+  }
+}

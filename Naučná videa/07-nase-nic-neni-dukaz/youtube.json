@@ -1,0 +1,23 @@
+{
+  "_popis": "Údaje pro workflow Nahrát na YouTube. České a anglické video bylo nahrané ručně dřív, proto tu nejsou (workflow by je jinak nahrálo znovu).",
+  "spolecne": {
+    "categoryId": "27",
+    "madeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "jazyky": {
+    "es": {
+      "soubor": "07-nuestra-nada-no-es-una-prueba-ES.mp4",
+      "nazev": "¿Lo que no vemos no existe? 📡 Nuestra «nada» no es una prueba",
+      "popis": "Las ondas de radio siempre estuvieron aquí: solo faltaba el aparato para captarlas. Muchas veces nuestra «nada» no prueba que algo no exista, sino que aún no tenemos la herramienta para verlo. La IA encuentra patrones que se nos escapan… y también patrones que no existen. Por eso todo descubrimiento necesita verificarse.\n\n#shorts #IA #ciencia",
+      "stitky": [
+        "IA",
+        "inteligencia artificial",
+        "ciencia",
+        "método científico",
+        "patrones en datos",
+        "verificación"
+      ]
+    }
+  }
+}
