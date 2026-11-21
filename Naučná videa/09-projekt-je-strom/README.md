@@ -1,6 +1,6 @@
 # 09 · Projekt je strom / Your project is a tree / Tu proyecto es un árbol / आपका प्रोजेक्ट एक पेड़ है
 
-**Stav:** 🎬 druhá verze – scény 1–4 a 6 z klipů, scény 5, 7 a 8 zatím průlet mezi klíčovými snímky (čeká na klipy V5, V7, V8, viz [scénář](scenar.md))
+**Stav:** ✅ hotovo (CZ, EN, ES, HI)
 
 | | 🇨🇿 Česky | 🇬🇧 English | 🇪🇸 Español | 🇮🇳 हिन्दी |
 |---|---|---|---|---|

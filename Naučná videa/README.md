@@ -32,7 +32,7 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 | 06 | [Co je AI agent](06-co-je-ai-agent/) | [video](06-co-je-ai-agent/06-co-je-ai-agent-CZ.mp4) | [video](06-co-je-ai-agent/06-what-is-an-ai-agent-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
 | 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/) | [video](07-nase-nic-neni-dukaz/07-nase-nic-neni-dukaz-CZ.mp4) | [video](07-nase-nic-neni-dukaz/07-our-nothing-is-not-proof-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
 | 08 | [Firma v Gitu](08-firma-v-gitu/) | [video](08-firma-v-gitu/08-firma-v-gitu-CZ.mp4) | [video](08-firma-v-gitu/08-a-company-in-git-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
-| 09 | [Projekt je strom](09-projekt-je-strom/) | [video](09-projekt-je-strom/09-projekt-je-strom-CZ.mp4) | [video](09-projekt-je-strom/09-your-project-is-a-tree-EN.mp4) | [video](09-projekt-je-strom/09-tu-proyecto-es-un-arbol-ES.mp4) | 🎬 čeká na klipy V5, V7, V8; 🇮🇳 [hindsky](09-projekt-je-strom/09-aapka-project-ek-ped-hai-HI.mp4) |
+| 09 | [Projekt je strom](09-projekt-je-strom/) | [video](09-projekt-je-strom/09-projekt-je-strom-CZ.mp4) | [video](09-projekt-je-strom/09-your-project-is-a-tree-EN.mp4) | [video](09-projekt-je-strom/09-tu-proyecto-es-un-arbol-ES.mp4) | ✅ hotovo, navíc 🇮🇳 [hindsky](09-projekt-je-strom/09-aapka-project-ek-ped-hai-HI.mp4) |
 
 ## Postup výroby dílu
 
