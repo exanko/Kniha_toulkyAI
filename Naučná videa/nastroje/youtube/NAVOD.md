@@ -53,7 +53,7 @@ GitHub → **Actions → Nahrát na YouTube → Run workflow** → Díl `09`, za
 
 1. Claude připraví text, vy ho namluvíte v ElevenLabs a pošlete MP3.
 2. Claude složí video a doplní jazyk do `youtube.json` dílu (soubor, název, popis, štítky).
-3. Vy: **Actions → Nahrát na YouTube → Run workflow** → Díl (např. `05`), Jazyky (např. `es hi`, prázdné = všechny dosud nenahrané) → Run. Jde to i z mobilní aplikace GitHubu.
+3. Vy: **Actions → Nahrát na YouTube → Run workflow** → Díl (např. `05`, nebo víc dílů najednou: `01 02 03`), Jazyky (např. `es hi`, prázdné = všechny dosud nenahrané) → Run. Jde to i z mobilní aplikace GitHubu. Video se zařadí do playlistu svého jazyka; pokud playlist obsahuje jen videa evidovaná v `youtube.json` (ES, HI), zařadí se podle čísla dílu, jinak (CZ, EN s ručně nahranými díly) na konec.
 4. V YouTube Studiu video zkontrolujete, nastavíte související video a zveřejníte.
 
 U starších dílů (01–08), jejichž české a anglické verze byly nahrané ručně, obsahuje `youtube.json` jen nové jazyky – jinak by je workflow nahrálo znovu.
