@@ -1,4 +1,59 @@
 {
-  "ulohy": [],
-  "_spusteni": "2026-11-21 21:25 – HI 01–08"
+  "ulohy": [
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/portugalske-texty-01-09.md",
+      "sekce": "01",
+      "vystup": "Naučná videa/01-jak-mysli-ai/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/portugalske-texty-01-09.md",
+      "sekce": "02",
+      "vystup": "Naučná videa/02-mozek-spojeny-provazkem/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/portugalske-texty-01-09.md",
+      "sekce": "03",
+      "vystup": "Naučná videa/03-nech-ai-postavit-kalkulacku/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/portugalske-texty-01-09.md",
+      "sekce": "04",
+      "vystup": "Naučná videa/04-kecalek-vs-vidi-za-roh/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/portugalske-texty-01-09.md",
+      "sekce": "05",
+      "vystup": "Naučná videa/05-ai-je-zesilovac/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/portugalske-texty-01-09.md",
+      "sekce": "06",
+      "vystup": "Naučná videa/06-co-je-ai-agent/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/portugalske-texty-01-09.md",
+      "sekce": "07",
+      "vystup": "Naučná videa/07-nase-nic-neni-dukaz/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/portugalske-texty-01-09.md",
+      "sekce": "08",
+      "vystup": "Naučná videa/08-firma-v-gitu/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/portugalske-texty-01-09.md",
+      "sekce": "09",
+      "vystup": "Naučná videa/09-projekt-je-strom/zvuk/voz-PT.mp3"
+    }
+  ],
+  "_spusteni": "2026-11-21 23:35 – PT 01–09"
 }
