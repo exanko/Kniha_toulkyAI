@@ -14,9 +14,16 @@ T={"cs":dict(q=["Proč si doma","nepostavíš vlastní","velkou AI?"],qc=2,
         split=["So you split it","across several cards."],every="For every single word,",every2="the cards pass data.",
         home=["At home, they talk","through the motherboard."],string="A brain tied with string.",
         dc=["In a data center:","super-fast links."],stays="The brain stays in one piece.",
-        why="That's why:",dcl="Data center",dcs="the biggest models",hl="At home",hs="smaller models")}[LANG]
+        why="That's why:",dcl="Data center",dcs="the biggest models",hl="At home",hs="smaller models"),
+   "es":dict(q=["¿Por qué no puedes","armar en casa","tu propia IA grande?"],qc=2,
+        big=["Un modelo grande","es enorme."],nofit="No cabe en una tarjeta.",model="MODELO",
+        split=["Así que lo repartes","entre varias tarjetas."],every="Con cada palabra, las tarjetas",every2="se pasan datos.",
+        home=["En casa, las conecta","la placa madre."],string=["Un cerebro atado","con un cordel."],
+        dc=["En un centro de datos:","conexión ultrarrápida."],stays="El cerebro sigue entero.",
+        why="Por eso:",dcl="Centro de datos",dcs="modelos gigantes",hl="En casa",hs="modelos pequeños")}[LANG]
 K={"cs":dict(nofit=1.97,every=2.17,string=2.58,stays=4.12,home=3.26),
-   "en":dict(nofit=2.78,every=3.11,string=2.94,stays=4.52,home=3.39)}[LANG]
+   "en":dict(nofit=2.78,every=3.11,string=2.94,stays=4.52,home=3.39),
+   "es":dict(nofit=2.80,every=3.06,string=2.99,stays=5.44,home=4.01)}[LANG]
 D=durations(SEG)
 def gpu(d,cx,cy,w,h,a,frac=0,fcol=MG,warn=0):
     if a<=0: return
@@ -35,7 +42,8 @@ def s1(t):
     return im
 def s2(t):
     im,d=new()
-    ctext(d,380,T["big"],font("x",92),WH,fadein(t,0.2))
+    big=T["big"] if isinstance(T["big"],list) else [T["big"]]
+    lines(d,380 if len(big)==1 else 330,big,font("x",92),WH,fadein(t,0.2))
     a=fadein(t,0.3); warn=fadein(t,K["nofit"],0.3)
     g=ease((t-0.8)/0.9)
     if g>0:
@@ -82,7 +90,8 @@ def s4(t):
         for j in range(2):
             s=((t*0.12+j*0.5)%1.0); k=int(s*40); px,py=pts[k]
             d.ellipse([px-9,py-9,px+9,py+9],fill=mix(OR,a))
-    ctext(d,1450,T["string"],font("x",72),OR,fadein(t,K["string"]))
+    st=T["string"] if isinstance(T["string"],list) else [T["string"]]
+    lines(d,1450,st,font("x",72),OR,fadein(t,K["string"]))
     return im
 def s5(t):
     im,d=new()
