@@ -11,9 +11,11 @@ Hotové úlohy z fronty zmizí, nepovedené v ní zůstanou. Jeden běh namluví
 ## Nastavení (jednou)
 
 1. **Placený tarif ElevenLabs** (Starter a výš) – hlasy z knihovny jdou přes API jen s ním.
-2. **API klíč:** ElevenLabs → Developers → API Keys → Create Key. Název třeba `GitHub – Kniha`. Omezení:
-   - přístup jen k **Text to Speech** (a případně **User: Read**, aby se ve výsledku ukazovaly zbývající kredity),
-   - měsíční limit kreditů, třeba 30 000.
+2. **API klíč:** ElevenLabs → Developers → API Keys → Create Key. Název třeba `claude`, Restrict Key zapnuté:
+   - **Per credit refresh period:** limit kreditů, třeba 30 000,
+   - **Text to Speech:** Access, **User:** Access (kvůli zbývajícím kreditům ve výsledku),
+   - všechno ostatní **No Access** (i Sound Effects, Audio Isolation, Music, Image & Video),
+   - Restrict by IP address vypnuté (GitHub běží z různých adres), Auto-disable if leaked zapnuté.
 3. **Tajemství v GitHubu:** repozitář → Settings → Secrets and variables → Actions → New repository secret → název `ELEVENLABS_API_KEY`, hodnota = klíč. Do chatu ho neposílejte.
 4. **ID hlasů** v `hlasy.json` (nejsou tajná) – doplní Claude.
 
