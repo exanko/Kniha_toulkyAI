@@ -1,4 +1,53 @@
 {
-  "ulohy": [],
-  "_spusteni": "2026-11-21 21:10 – ES 07 a 08 (tarif Creator)"
+  "ulohy": [
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/hindske-texty-01-08.md",
+      "sekce": "01",
+      "vystup": "Naučná videa/01-jak-mysli-ai/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/hindske-texty-01-08.md",
+      "sekce": "02",
+      "vystup": "Naučná videa/02-mozek-spojeny-provazkem/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/hindske-texty-01-08.md",
+      "sekce": "03",
+      "vystup": "Naučná videa/03-nech-ai-postavit-kalkulacku/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/hindske-texty-01-08.md",
+      "sekce": "04",
+      "vystup": "Naučná videa/04-kecalek-vs-vidi-za-roh/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/hindske-texty-01-08.md",
+      "sekce": "05",
+      "vystup": "Naučná videa/05-ai-je-zesilovac/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/hindske-texty-01-08.md",
+      "sekce": "06",
+      "vystup": "Naučná videa/06-co-je-ai-agent/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/hindske-texty-01-08.md",
+      "sekce": "07",
+      "vystup": "Naučná videa/07-nase-nic-neni-dukaz/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/hindske-texty-01-08.md",
+      "sekce": "08",
+      "vystup": "Naučná videa/08-firma-v-gitu/zvuk/awaz-HI.mp3"
+    }
+  ],
+  "_spusteni": "2026-11-21 21:25 – HI 01–08"
 }
