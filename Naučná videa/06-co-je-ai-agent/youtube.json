@@ -10,7 +10,16 @@
       "soubor": "06-que-es-un-agente-de-ia-ES.mp4",
       "nazev": "¿Qué es un agente de IA? 🤖 Herramientas, memoria y skills",
       "popis": "Un modelo de lenguaje es solo un cerebro: inteligente, pero sin manos y sin memoria. El agente le da herramientas, memoria y procedimientos guardados (skills), y prueba, comprueba y corrige hasta cumplir el objetivo. Pero ojo: va exactamente adonde lo diriges.\n\n#shorts #IA #agentesdeIA",
-      "stitky": ["IA", "agente de IA", "agentes de IA", "inteligencia artificial", "automatización con IA"]
+      "stitky": [
+        "IA",
+        "agente de IA",
+        "agentes de IA",
+        "inteligencia artificial",
+        "automatización con IA"
+      ],
+      "videoId": "m9YBmiyy6tc",
+      "url": "https://www.youtube.com/shorts/m9YBmiyy6tc",
+      "nahrano": "2026-11-21"
     }
   }
 }

@@ -10,7 +10,16 @@
       "soubor": "02-un-cerebro-atado-con-un-cordel-ES.mp4",
       "nazev": "¿Por qué no puedes tener una IA grande en casa? 🧠 Un cerebro atado con un cordel",
       "popis": "Un modelo grande no cabe en una sola tarjeta gráfica. Repartido entre varias, con cada palabra las tarjetas se pasan datos: en casa a través de la placa madre, en un centro de datos con conexiones ultrarrápidas.\n\n#shorts #IA #inteligenciaartificial",
-      "stitky": ["IA", "inteligencia artificial", "IA en casa", "tarjeta gráfica", "centro de datos"]
+      "stitky": [
+        "IA",
+        "inteligencia artificial",
+        "IA en casa",
+        "tarjeta gráfica",
+        "centro de datos"
+      ],
+      "videoId": "lY8SHf7kkUc",
+      "url": "https://www.youtube.com/shorts/lY8SHf7kkUc",
+      "nahrano": "2026-11-21"
     }
   }
 }
