@@ -1,6 +1,5 @@
-# Poslední běh „Namluvit“ – 2026-11-21 19:50 UTC
+# Poslední běh „Namluvit“ – 2026-11-21 20:01 UTC (kontrola klíče)
 
-| Úloha | Výsledek |
-|---|---|
-| es → Naučná videa/07-nase-nic-neni-dukaz/zvuk/voz-ES.mp3 | ❌ chybí tajemství ELEVENLABS_API_KEY (Settings → Secrets and variables → Actions) |
-| es → Naučná videa/08-firma-v-gitu/zvuk/voz-ES.mp3 | ❌ chybí tajemství ELEVENLABS_API_KEY (Settings → Secrets and variables → Actions) |
+✅ klíč funguje – tarif **free**, využito 9371 z 10000 kreditů, další obnovení 2026-12-04
+
+Ve frontě čeká úloh: 2
