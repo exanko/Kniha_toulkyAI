@@ -113,9 +113,18 @@ def pozice(token, L, dil, pl):
     return sum(1 for c in evid if c < cislo)
 
 def do_playlistu(token, vid, pl, pos=None):
+    """Zařadí video do playlistu; vrátí skutečnou pozici (None = na konec).
+    Pozici YouTube přijme jen u playlistu s ručním řazením – jinak se video přidá na konec."""
     sn = {"playlistId": pl, "resourceId": {"kind": "youtube#video", "videoId": vid}}
-    if pos is not None: sn["position"] = pos
+    if pos is not None:
+        try:
+            http("POST", f"{API}/youtube/v3/playlistItems?part=snippet", token, {"snippet": dict(sn, position=pos)})
+            return pos
+        except HttpChyba as ex:
+            if ex.code != 400 or "manualSortRequired" not in str(ex): raise
+            print("   playlist nemá ruční řazení – přidávám na konec")
     http("POST", f"{API}/youtube/v3/playlistItems?part=snippet", token, {"snippet": sn})
+    return None
 
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]; flags = {a for a in sys.argv[1:] if a.startswith("--")}
@@ -154,15 +163,15 @@ def main():
         pl = CFG["jazyky"][L].get("playlist"); stav = "nahráno"
         if pl:
             try:
-                pos = pozice(token, L, dil, pl)
-                do_playlistu(token, vid, pl, pos)
+                pos = do_playlistu(token, vid, pl, pozice(token, L, dil, pl))
                 stav += ", v playlistu" + (f" (pozice {pos + 1})" if pos is not None else " (na konci)")
-            except HttpChyba as ex: stav += f", playlist SELHAL: {ex}"
+            except HttpChyba as ex:
+                stav += f", playlist SELHAL – přidejte ho ručně (HTTP {ex.code})"; print("   " + str(ex))
         print(f"✅ {L}: {e['url']} ({stav})"); souhrn.append((L, e["url"], stav))
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
             f.write(f"### {os.path.basename(dil)}\n\n| Jazyk | Video | Stav |\n|---|---|---|\n")
-            f.writelines(f"| {L} | {u} | {s} |\n" for L, u, s in souhrn)
+            f.writelines(f"| {L} | {u} | {' '.join(s.split()).replace('|', '/')[:200]} |\n" for L, u, s in souhrn)
             if not verejne: f.write("\nVidea jsou **soukromá** – zveřejněte je v YouTube Studiu (a nastavte související video).\n")
 
 if __name__ == "__main__":
