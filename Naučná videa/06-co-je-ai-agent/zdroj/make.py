@@ -12,9 +12,14 @@ T={"cs":dict(q=["Co je vlastně","AI agent?"],brain="Jazykový model = mozek",sm
    "en":dict(q=["What actually is","an AI agent?"],brain="Language model = brain",smart="smart",hands="hands",mem="memory",
         tools="An agent gives it tools.",tl=["web","files","programs"],memt="It gives it memory.",notes=["project: book","languages: CZ + EN","voices: Kuba, George"],next="Next time, it knows.",
         recipe="It saves the recipe.",steps=["1. transcribe","2. time it","3. render"],skill="= SKILL",
-        loop=["tries","checks","fixes"],goal="GOAL",careful="Just be careful:",goes=["It goes exactly","where you point it."],point="So point it well.")}[LANG]
+        loop=["tries","checks","fixes"],goal="GOAL",careful="Just be careful:",goes=["It goes exactly","where you point it."],point="So point it well."),
+   "es":dict(q=["¿Qué es,","en realidad,","un agente de IA?"],brain="Modelo de lenguaje = cerebro",smart="inteligente",hands="manos",mem="memoria",
+        tools="Le da herramientas.",tl=["web","archivos","programas"],memt="Le da memoria.",notes=["proyecto: libro","idiomas: CZ + EN","voces: Kuba, George"],next="La próxima vez lo sabe.",
+        recipe="Guarda el procedimiento.",steps=["1. transcribe","2. sincroniza","3. renderiza"],skill="= SKILL",
+        loop=["prueba","comprueba","corrige"],goal="META",careful="Pero ojo:",goes=["Va exactamente","adonde lo diriges."],point="Así que dirígelo bien.")}[LANG]
 K={"cs":dict(smart=3.07,tools=2.03,tstep=0.8,write=1.55,next=3.28,save=1.78,skill=3.05,goal=3.61,goes=1.08,point=3.48),
-   "en":dict(smart=3.52,tools=2.44,tstep=0.75,write=1.93,next=3.47,save=1.79,skill=3.45,goal=4.27,goes=1.62,point=4.03)}[LANG]
+   "en":dict(smart=3.52,tools=2.44,tstep=0.75,write=1.93,next=3.47,save=1.79,skill=3.45,goal=4.27,goes=1.62,point=4.03),
+   "es":dict(smart=4.55,tools=2.61,tstep=1.4,write=1.91,next=3.11,save=1.88,skill=3.61,goal=4.14,goes=1.36,point=3.82)}[LANG]
 D=durations(SEG)
 def brain(d,cx,cy,r,a):
     if a<=0: return
@@ -84,7 +89,7 @@ def s4(t):
     return im
 def s5(t):
     im,d=new()
-    ctext(d,340,T["recipe"],font("x",92 if LANG=="cs" else 84),WH,fadein(t,0.2))
+    ctext(d,340,T["recipe"],font("x",{"cs":92,"en":84,"es":76}[LANG]),WH,fadein(t,0.2))
     a=fadein(t,K["save"]-0.4)
     if a>0:
         d.rounded_rectangle([230,560,850,1150],radius=28,fill=(255,179,71,int(40*a)),outline=mix(OR,a),width=5)
