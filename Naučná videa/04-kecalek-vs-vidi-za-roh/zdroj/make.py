@@ -17,9 +17,17 @@ T={"cs":dict(q=["Je každá AI","stejně chytrá?"],sizes=["malý","střední","
         mid="Mid-size model",cards="a few cards",code="can write code",loop="Tries and fixes more often.",
         big="The biggest models",dc="data center",see="Sees around corners.",finds=["connections","mistakes"],
         exp=["12 AIs reviewed","the same text."],smallest="smallest",score="9/10",nofind="…and found not a single flaw.",
-        end=["The smaller the model,","the more you double-check."])}[LANG]
+        end=["The smaller the model,","the more you double-check."]),
+   "es":dict(q=["¿Todas las IA","son igual de","inteligentes?"],sizes=["pequeño","mediano","grande"],
+        diff=["Los modelos tienen","distintos tamaños."],grows="Y crece lo que pueden hacer.",
+        small="Modelo pequeño",onecard="1 tarjeta para juegos",fast="RÁPIDO",chat="bla bla bla…",made="Parlanchín. Se inventa cosas.",
+        mid="Modelo mediano",cards="unas cuantas tarjetas",code="sabe programar",loop="Prueba y corrige más veces.",
+        big="Los más grandes",dc="centro de datos",see="Ven más allá.",finds=["conexiones","errores"],
+        exp=["12 IA evaluaron","el mismo texto."],smallest="más pequeña",score="9/10",nofind="…y no encontró ni un solo error.",
+        end=["Cuanto más pequeño","el modelo, más","debes comprobar."])}[LANG]
 K={"cs":dict(grows=3.0,fast=3.0,made=5.23,tries=3.58,catch=3.39,twelve=1.35,smallest=3.95,nofind=6.09),
-   "en":dict(grows=3.37,fast=3.06,made=5.37,tries=4.35,catch=4.56,twelve=1.41,smallest=4.18,nofind=6.67)}[LANG]
+   "en":dict(grows=3.37,fast=3.06,made=5.37,tries=4.35,catch=4.56,twelve=1.41,smallest=4.18,nofind=6.67),
+   "es":dict(grows=3.74,fast=4.41,made=5.83,tries=4.67,catch=4.27,twelve=1.32,smallest=4.24,nofind=7.19)}[LANG]
 D=durations(SEG)
 def gpu(d,cx,cy,w,h,a):
     if a<=0: return

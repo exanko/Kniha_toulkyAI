@@ -16,9 +16,16 @@ T={"cs":dict(q=["Chceš, aby AI","spočítala","tvoje data?"],catch="Má to há�
         instead="Try this instead.",prompt=["\"Write me a program","that calculates it.\""],
         code=["data = load('sheet.csv')","print(sum(data))"],
         checks=["Check it once","Calculates exactly","Same way every time","You get to keep it"],
-        end1=["Don't make AI","your calculator."],end2="Have it build you one.",num_ok="48,213",num_ai="48,312")}[LANG]
+        end1=["Don't make AI","your calculator."],end2="Have it build you one.",num_ok="48,213",num_ai="48,312"),
+   "es":dict(q=["¿Quieres que la IA","haga las cuentas","con tus datos?"],catch="Pero ojo.",lm="Modelo de lenguaje",calc="calculadora",
+        pred=["Predice cómo debería","ser la respuesta correcta."],ok="Correcto:",ai="IA:",notice="Y a primera vista no lo notas.",
+        instead="Prueba otra cosa.",prompt=["«Escríbeme un programa","que lo calcule.»"],
+        code=["datos = cargar('tabla.csv')","print(sum(datos))"],
+        checks=["Lo revisas una vez","Calcula con exactitud","Siempre igual","Lo conservas"],
+        end1=["No uses la IA","como calculadora."],end2="Pídele que la construya.",num_ok="48,213",num_ai="48,312")}[LANG]
 K={"cs":dict(lm=1.56,pred=4.47,notice=2.71,tell=1.26,prog=2.01,c=[0.4,2.28,3.75,4.92],build=2.66),
-   "en":dict(lm=1.65,pred=4.98,notice=3.36,tell=1.91,prog=2.66,c=[0.4,2.25,4.41,6.22],build=2.94)}[LANG]
+   "en":dict(lm=1.65,pred=4.98,notice=3.36,tell=1.91,prog=2.66,c=[0.4,2.25,4.41,6.22],build=2.94),
+   "es":dict(lm=1.35,pred=4.99,notice=4.19,tell=1.50,prog=2.24,c=[0.4,2.65,4.86,6.12],build=3.99)}[LANG]
 D=durations(SEG)
 def calc_icon(d,cx,cy,s,a,nbtn=12):
     if a<=0: return
@@ -48,7 +55,7 @@ def s2(t):
     a=fadein(t,K["lm"])
     if a>0:
         d.rounded_rectangle([90,820,450,1120],radius=36,fill=(192,76,255,int(60*a)),outline=mix(MG,a),width=5)
-        ctext(d,920,"AI",font("x",110),WH,a,x=270)
+        ctext(d,920,"IA" if LANG=="es" else "AI",font("x",110),WH,a,x=270)
         ctext(d,1150,T["lm"],font("sb",44),MG,a,x=270)
         ctext(d,890,"≠",font("x",170),WH,fadein(t,K["lm"]+0.4))
         calc_icon(d,810,970,0.95,fadein(t,K["lm"]+0.6))
@@ -76,7 +83,7 @@ def s4(t):
     a=fadein(t,K["tell"])
     if a>0:
         d.rounded_rectangle([110,600+_off(a),970,880+_off(a)],radius=40,fill=(63,215,224,int(55*a)),outline=mix(CY,a),width=4)
-        lines(d,650,T["prompt"],font("x",66),WH,a)
+        lines(d,650,T["prompt"],font("x",60 if LANG=="es" else 66),WH,a)
     b=fadein(t,K["prog"])
     if b>0:
         d.rounded_rectangle([110,980,970,1330],radius=24,fill=(10,12,26,int(235*b)),outline=mix(GR,0.6*b),width=3)

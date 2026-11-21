@@ -1,0 +1,16 @@
+{
+  "_popis": "Údaje pro workflow Nahrát na YouTube. České a anglické video bylo nahrané ručně dřív, proto tu nejsou (workflow by je jinak nahrálo znovu).",
+  "spolecne": {
+    "categoryId": "27",
+    "madeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "jazyky": {
+    "es": {
+      "soubor": "06-que-es-un-agente-de-ia-ES.mp4",
+      "nazev": "¿Qué es un agente de IA? 🤖 Herramientas, memoria y skills",
+      "popis": "Un modelo de lenguaje es solo un cerebro: inteligente, pero sin manos y sin memoria. El agente le da herramientas, memoria y procedimientos guardados (skills), y prueba, comprueba y corrige hasta cumplir el objetivo. Pero ojo: va exactamente adonde lo diriges.\n\n#shorts #IA #agentesdeIA",
+      "stitky": ["IA", "agente de IA", "agentes de IA", "inteligencia artificial", "automatización con IA"]
+    }
+  }
+}

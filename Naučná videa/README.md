@@ -11,7 +11,7 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 
 ## Pravidla série
 
-- **Tři jazyky:** každé video vzniká v 🇨🇿 **češtině**, 🇬🇧 **angličtině** a 🇪🇸 **španělštině** (španělské verze dílů 01–08 se doplňují – texty jsou v [spanelske-texty-01-08.md](spanelske-texty-01-08.md)). Kde česká analogie v jiném jazyce nefunguje, používá se vlastní (párek v rohlíku → peanut butter and jelly → café con leche). Díl 09 má navíc 🇮🇳 **hindštinu** (vykání आप).
+- **Tři jazyky:** každé video vzniká v 🇨🇿 **češtině**, 🇬🇧 **angličtině** a 🇪🇸 **španělštině** (španělské verze dílů 01–08 se doplňují – texty jsou v [spanelske-texty-01-08.md](spanelske-texty-01-08.md)). Kde česká analogie v jiném jazyce nefunguje, používá se vlastní (párek v rohlíku → peanut butter and jelly → café con leche). Postupně přibývá 🇮🇳 **hindština** (vykání आप): díl 09 hotový, texty dílů 01–08 jsou v [hindske-texty-01-08.md](hindske-texty-01-08.md).
 - **Hlasy (ElevenLabs, bezplatný tarif):**
   - 🇨🇿 **Kuba – Czech Social Media**
   - 🇬🇧 **George – Warm, Captivating Storyteller**
@@ -26,14 +26,14 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 
 | # | Téma | 🇨🇿 | 🇬🇧 | 🇪🇸 | Stav |
 |---|---|---|---|---|---|
-| 01 | [Jak „myslí“ AI](01-jak-mysli-ai/) | [video](01-jak-mysli-ai/01-jak-mysli-ai-CZ.mp4) | [video](01-jak-mysli-ai/01-how-ai-thinks-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
-| 02 | [Mozek spojený provázkem](02-mozek-spojeny-provazkem/) | [video](02-mozek-spojeny-provazkem/02-mozek-spojeny-provazkem-CZ.mp4) | [video](02-mozek-spojeny-provazkem/02-brain-tied-with-string-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
-| 03 | [Nech AI postavit kalkulačku](03-nech-ai-postavit-kalkulacku/) | [video](03-nech-ai-postavit-kalkulacku/03-nech-ai-postavit-kalkulacku-CZ.mp4) | [video](03-nech-ai-postavit-kalkulacku/03-have-ai-build-the-calculator-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
-| 04 | [Kecálek vs. vidí za roh](04-kecalek-vs-vidi-za-roh/) | [video](04-kecalek-vs-vidi-za-roh/04-kecalek-vs-vidi-za-roh-CZ.mp4) | [video](04-kecalek-vs-vidi-za-roh/04-chatterbox-vs-sees-around-corners-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
-| 05 | [AI je zesilovač](05-ai-je-zesilovac/) | [video](05-ai-je-zesilovac/05-ai-je-zesilovac-CZ.mp4) | [video](05-ai-je-zesilovac/05-ai-is-an-amplifier-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
-| 06 | [Co je AI agent](06-co-je-ai-agent/) | [video](06-co-je-ai-agent/06-co-je-ai-agent-CZ.mp4) | [video](06-co-je-ai-agent/06-what-is-an-ai-agent-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
-| 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/) | [video](07-nase-nic-neni-dukaz/07-nase-nic-neni-dukaz-CZ.mp4) | [video](07-nase-nic-neni-dukaz/07-our-nothing-is-not-proof-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
-| 08 | [Firma v Gitu](08-firma-v-gitu/) | [video](08-firma-v-gitu/08-firma-v-gitu-CZ.mp4) | [video](08-firma-v-gitu/08-a-company-in-git-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), čeká na namluvení) |
+| 01 | [Jak „myslí“ AI](01-jak-mysli-ai/) | [video](01-jak-mysli-ai/01-jak-mysli-ai-CZ.mp4) | [video](01-jak-mysli-ai/01-how-ai-thinks-EN.mp4) | [video](01-jak-mysli-ai/01-como-piensa-la-ia-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
+| 02 | [Mozek spojený provázkem](02-mozek-spojeny-provazkem/) | [video](02-mozek-spojeny-provazkem/02-mozek-spojeny-provazkem-CZ.mp4) | [video](02-mozek-spojeny-provazkem/02-brain-tied-with-string-EN.mp4) | [video](02-mozek-spojeny-provazkem/02-un-cerebro-atado-con-un-cordel-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
+| 03 | [Nech AI postavit kalkulačku](03-nech-ai-postavit-kalkulacku/) | [video](03-nech-ai-postavit-kalkulacku/03-nech-ai-postavit-kalkulacku-CZ.mp4) | [video](03-nech-ai-postavit-kalkulacku/03-have-ai-build-the-calculator-EN.mp4) | [video](03-nech-ai-postavit-kalkulacku/03-que-la-ia-te-construya-la-calculadora-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
+| 04 | [Kecálek vs. vidí za roh](04-kecalek-vs-vidi-za-roh/) | [video](04-kecalek-vs-vidi-za-roh/04-kecalek-vs-vidi-za-roh-CZ.mp4) | [video](04-kecalek-vs-vidi-za-roh/04-chatterbox-vs-sees-around-corners-EN.mp4) | [video](04-kecalek-vs-vidi-za-roh/04-parlanchin-vs-ve-mas-alla-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
+| 05 | [AI je zesilovač](05-ai-je-zesilovac/) | [video](05-ai-je-zesilovac/05-ai-je-zesilovac-CZ.mp4) | [video](05-ai-je-zesilovac/05-ai-is-an-amplifier-EN.mp4) | [video](05-ai-je-zesilovac/05-la-ia-es-un-amplificador-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
+| 06 | [Co je AI agent](06-co-je-ai-agent/) | [video](06-co-je-ai-agent/06-co-je-ai-agent-CZ.mp4) | [video](06-co-je-ai-agent/06-what-is-an-ai-agent-EN.mp4) | [video](06-co-je-ai-agent/06-que-es-un-agente-de-ia-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
+| 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/) | [video](07-nase-nic-neni-dukaz/07-nase-nic-neni-dukaz-CZ.mp4) | [video](07-nase-nic-neni-dukaz/07-our-nothing-is-not-proof-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), 🇮🇳 [text](hindske-texty-01-08.md), čekají na namluvení) |
+| 08 | [Firma v Gitu](08-firma-v-gitu/) | [video](08-firma-v-gitu/08-firma-v-gitu-CZ.mp4) | [video](08-firma-v-gitu/08-a-company-in-git-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), 🇮🇳 [text](hindske-texty-01-08.md), čekají na namluvení) |
 | 09 | [Projekt je strom](09-projekt-je-strom/) | [video](09-projekt-je-strom/09-projekt-je-strom-CZ.mp4) | [video](09-projekt-je-strom/09-your-project-is-a-tree-EN.mp4) | [video](09-projekt-je-strom/09-tu-proyecto-es-un-arbol-ES.mp4) | ✅ hotovo, navíc 🇮🇳 [hindsky](09-projekt-je-strom/09-aapka-project-ek-ped-hai-HI.mp4) |
 
 ## Postup výroby dílu

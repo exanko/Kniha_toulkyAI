@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       dil:
-        description: "Díl – číslo nebo název složky (např. 09)"
+        description: "Díl – číslo nebo víc čísel oddělených mezerou (např. 09 nebo 01 02 03)"
         required: true
       jazyky:
         description: "Jazyky oddělené mezerou (cs en es hi). Prázdné = všechny dosud nenahrané."
@@ -50,13 +50,20 @@ jobs:
           VEREJNE: ${{ inputs.verejne }}
           ZKOUSKA: ${{ inputs.zkouska }}
         run: |
-          args=("$DIL")
+          opts=()
           for j in $JAZYKY; do
-            case "$j" in cs|en|es|hi) args+=("$j") ;; *) echo "Neznámý jazyk: $j"; exit 1 ;; esac
+            case "$j" in cs|en|es|hi) opts+=("$j") ;; *) echo "Neznámý jazyk: $j"; exit 1 ;; esac
           done
-          [ "$VEREJNE" = "true" ] && args+=("--verejne")
-          [ "$ZKOUSKA" = "true" ] && args+=("--zkouska")
-          python3 "Naučná videa/nastroje/youtube/nahraj.py" "${args[@]}"
+          [ "$VEREJNE" = "true" ] && opts+=("--verejne")
+          [ "$ZKOUSKA" = "true" ] && opts+=("--zkouska")
+          chyba=0
+          for d in $DIL; do
+            case "$d" in *[!0-9a-z-]*) echo "Neplatný díl: $d"; chyba=1; continue ;; esac
+            echo "::group::Díl $d"
+            python3 "Naučná videa/nastroje/youtube/nahraj.py" "$d" "${opts[@]}" || chyba=1
+            echo "::endgroup::"
+          done
+          exit $chyba
 
       # Zapíše ID nahraných videí do youtube.json i tehdy, když některé nahrání selže –
       # další spuštění pak už nahraná videa přeskočí.

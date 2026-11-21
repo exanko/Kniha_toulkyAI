@@ -13,9 +13,15 @@ T={"cs":dict(q=["Co s tebou","vlastně udělá AI?"],amp="Hlavně tě zesílí."
         know=["You know what you want.","You know your field."],fast=["Hours instead","of weeks."],
         lost="Don't know where you're going?",chaos="It amplifies the chaos.",piles="Piles of text. Nothing comes of it.",
         err="It amplifies mistakes too.",brief=["A bad brief grows","faster than ever."],
-        dir=["Before you switch it on,","know your direction."],you="That part has to come from you.")}[LANG]
+        dir=["Before you switch it on,","know your direction."],you="That part has to come from you."),
+   "es":dict(q=["¿Qué hace","la IA contigo,","en realidad?"],amp="Sobre todo, te amplifica.",inp="tú",out="tú × IA",all="Amplifica todo lo que le metes.",
+        know=["Sabes lo que quieres.","Conoces tu campo."],fast=["En horas,","lo que tomaba semanas."],
+        lost="¿No sabes adónde vas?",chaos="Te amplifica el caos.",piles="Montones de texto. Nada sale de ahí.",
+        err="Amplifica tus errores.",brief=["Unas malas instrucciones","se multiplican más rápido."],
+        dir=["Antes de encenderla,","ten clara la dirección."],you="Esa la tienes que poner tú.")}[LANG]
 K={"cs":dict(amp=1.87,all=3.58,fast=3.13,chaos=1.80,piles=3.28,brief=2.16,dir=0.35,you=3.24),
-   "en":dict(amp=2.73,all=4.02,fast=3.07,chaos=2.06,piles=4.05,brief=3.13,dir=2.20,you=3.78)}[LANG]
+   "en":dict(amp=2.73,all=4.02,fast=3.07,chaos=2.06,piles=4.05,brief=3.13,dir=2.20,you=3.78),
+   "es":dict(amp=2.54,all=4.58,fast=3.06,chaos=1.92,piles=3.48,brief=2.56,dir=0.35,you=4.29)}[LANG]
 D=durations(SEG)
 def sig(kind,x,t):
     if kind=="clean": return math.sin(x*0.045-t*5)
@@ -35,7 +41,7 @@ def s1(t):
     im,d=new(); lines(d,640,T["q"],font("x",104),WH,fadein(t,0.1)); return im
 def s2(t):
     im,d=new()
-    ctext(d,360,T["amp"],font("x",88 if LANG=="cs" else 82),CY,fadein(t,0.2))
+    ctext(d,360,T["amp"],font("x",{"cs":88,"en":82,"es":76}[LANG]),CY,fadein(t,0.2))
     a=fadein(t,K["amp"]-0.4); amplifier(d,t,a,"clean",WH,CY,gain=(t-K["amp"])/1.0)
     ctext(d,1230,T["inp"],font("sb",50),GR,a,x=225); ctext(d,1230,T["out"],font("sb",50),CY,a,x=855)
     ctext(d,1440,T["all"],font("x",58 if LANG=="cs" else 60),OR,fadein(t,K["all"]))

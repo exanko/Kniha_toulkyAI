@@ -60,14 +60,24 @@ T={
    illu="(illustrative numbers)",pick="→ picks the most likely one",again="Then again. And again.",
    sent="Peanut butter and jelly is a classic sandwich.",wbw1="Word by word,",wbw2="a whole answer appears.",
    t1="It doesn't know what's true.",t2="It only knows what",t3="usually comes next.",
-   e1="That's why it can",e2="sound convincing",e3="even when it's wrong.",e4="Always double-check",e5="what matters."),
+   e1="That's why it can",e2="sound convincing",e3="even when it's wrong.",e4="Always double-check",e5="what matters.",
+   t1a="It doesn't know",t1b="what's true."),
+ "es":dict(q1="¿Cómo",q2="«piensa»",q3="la IA?",n1="No piensa.",n2="Adivina la\nsiguiente palabra.",type="Escribes:",
+   pre="Café con",word="leche",calc="La IA calcula qué viene después:",
+   cands=[("leche",0.82,CY),("azúcar",0.09,MG),("canela",0.05,OR),("hielo",0.04,GR)],
+   illu="(números ilustrativos)",pick="→ elige la más probable",again="Y luego otra vez. Y otra.",
+   sent="El café con leche es un clásico del desayuno.",wbw1="Palabra por palabra,",wbw2="nace toda la respuesta.",
+   t2="Solo sabe qué",t3="suele venir después.",
+   e1="Por eso puede",e2="sonar convincente",e3="aunque se equivoque.",e4="Lo importante,",e5="compruébalo siempre.",
+   t1a="No sabe",t1b="qué es verdad."),
 }[LANG]
 # per-language timing: scene durations and key moments (seconds, scene-local)
 K={"cs":dict(d=[3.16, 2.77, 8.51, 5.13, 3.95, 6.55], n2=1.2, pick=6.5, calc=2.27, again2=1.4, w0=2.23, t2=1.62, e3=1.9, e4=3.09),
-   "en":dict(d=[2.86, 3.22, 9.18, 5.74, 4.73, 7.1], n2=1.29, pick=6.22, calc=2.9, again2=1.34, w0=2.52, t2=2.12, e3=1.36, e4=3.84)}[LANG]
+   "en":dict(d=[2.86, 3.22, 9.18, 5.74, 4.73, 7.1], n2=1.29, pick=6.22, calc=2.9, again2=1.34, w0=2.52, t2=2.12, e3=1.36, e4=3.84),
+   "es":dict(d=[3.47, 3.73, 9.85, 6.85, 4.44, 7.43], n2=1.72, pick=7.06, calc=2.90, again2=1.96, w0=2.93, t2=1.88, e3=2.0, e4=3.69)}[LANG]
 def s1(t):
     im=Image.new('RGBA',(W,H),(0,0,0,0)); d=ImageDraw.Draw(im)
-    if LANG=="cs":
+    if LANG in ("cs","es"):
         ctext(d,640,T["q1"],font("b",92),WH,fadein(t,0.1)); ctext(d,760,T["q2"],font("x",170),CY,fadein(t,0.5)); ctext(d,960,T["q3"],font("x",130),WH,fadein(t,0.9))
     else:
         ctext(d,620,T["q1"],font("b",92),WH,fadein(t,0.1)); ctext(d,740,T["q2"],font("x",200),CY,fadein(t,0.5)); ctext(d,980,T["q3"],font("x",104),WH,fadein(t,0.9))
@@ -75,8 +85,8 @@ def s1(t):
 def s2(t):
     im=Image.new('RGBA',(W,H),(0,0,0,0)); d=ImageDraw.Draw(im)
     ctext(d,700,T["n1"],font("x",150 if LANG=="cs" else 130),WH,fadein(t,0.3))
-    f=font("b",96 if LANG=="cs" else 84)
-    ctext(d,900,T["n2"],f,OR,fadein(t,K["n2"]))
+    f=font("b",{"cs":96,"en":84,"es":84}[LANG])
+    for i,l in enumerate(T["n2"].split("\n")): ctext(d,900+i*105,l,f,OR,fadein(t,K["n2"]))
     return im
 def s3(t):
     im=Image.new('RGBA',(W,H),(0,0,0,0)); d=ImageDraw.Draw(im)
@@ -125,7 +135,7 @@ def s5(t):
         f=font("x",96); ctext(d,700,T["t1"],f,WH,fadein(t,0.3))
         ctext(d,880,T["t2"],f,OR,fadein(t,K["t2"])); ctext(d,1000,T["t3"],f,OR,fadein(t,K["t2"]+0.25))
     else:
-        f=font("x",88); ctext(d,620,"It doesn't know",f,WH,fadein(t,0.3)); ctext(d,730,"what's true.",f,WH,fadein(t,0.5))
+        f=font("x",88); ctext(d,620,T["t1a"],f,WH,fadein(t,0.3)); ctext(d,730,T["t1b"],f,WH,fadein(t,0.5))
         ctext(d,900,T["t2"],f,OR,fadein(t,K["t2"])); ctext(d,1010,T["t3"],f,OR,fadein(t,K["t2"]+0.25))
     return im
 def s6(t):

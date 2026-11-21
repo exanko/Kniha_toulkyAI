@@ -96,9 +96,26 @@ def nahraj(token, L, e, dil, verejne, spol):
             print(f"   pokus {pokus} selhal ({ex}), zkouším znovu…"); time.sleep(5 * pokus)
     return res["id"]
 
-def do_playlistu(token, vid, pl):
-    http("POST", f"{API}/youtube/v3/playlistItems?part=snippet", token,
-         {"snippet": {"playlistId": pl, "resourceId": {"kind": "youtube#video", "videoId": vid}}})
+def pozice(token, L, dil, pl):
+    """Pořadí v playlistu podle čísla dílu – jen když playlist obsahuje právě videa evidovaná
+    v youtube.json (jinak, např. u ručně nahraných CZ/EN, se video přidá na konec)."""
+    try: cislo = int(os.path.basename(dil)[:2])
+    except ValueError: return None
+    evid = []
+    for f in glob.glob(os.path.join(ROOT, "*", "youtube.json")):
+        if os.path.dirname(f) == dil: continue
+        e = json.load(open(f, encoding="utf-8")).get("jazyky", {}).get(L, {})
+        if e.get("videoId"):
+            try: evid.append(int(os.path.basename(os.path.dirname(f))[:2]))
+            except ValueError: return None
+    r = http("GET", f"{API}/youtube/v3/playlistItems?part=id&maxResults=1&playlistId={urllib.parse.quote(pl)}", token)
+    if r.get("pageInfo", {}).get("totalResults") != len(evid): return None
+    return sum(1 for c in evid if c < cislo)
+
+def do_playlistu(token, vid, pl, pos=None):
+    sn = {"playlistId": pl, "resourceId": {"kind": "youtube#video", "videoId": vid}}
+    if pos is not None: sn["position"] = pos
+    http("POST", f"{API}/youtube/v3/playlistItems?part=snippet", token, {"snippet": sn})
 
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]; flags = {a for a in sys.argv[1:] if a.startswith("--")}
@@ -136,7 +153,10 @@ def main():
         with open(jpath, "w", encoding="utf-8") as f: f.write(json.dumps(cfg, ensure_ascii=False, indent=2) + "\n")
         pl = CFG["jazyky"][L].get("playlist"); stav = "nahráno"
         if pl:
-            try: do_playlistu(token, vid, pl); stav += ", v playlistu"
+            try:
+                pos = pozice(token, L, dil, pl)
+                do_playlistu(token, vid, pl, pos)
+                stav += ", v playlistu" + (f" (pozice {pos + 1})" if pos is not None else " (na konci)")
             except HttpChyba as ex: stav += f", playlist SELHAL: {ex}"
         print(f"✅ {L}: {e['url']} ({stav})"); souhrn.append((L, e["url"], stav))
     if os.environ.get("GITHUB_STEP_SUMMARY"):
