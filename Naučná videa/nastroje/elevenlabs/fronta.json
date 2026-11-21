@@ -1,17 +1,4 @@
 {
-  "ulohy": [
-    {
-      "jazyk": "es",
-      "text": "Naučná videa/spanelske-texty-01-08.md",
-      "sekce": "07",
-      "vystup": "Naučná videa/07-nase-nic-neni-dukaz/zvuk/voz-ES.mp3"
-    },
-    {
-      "jazyk": "es",
-      "text": "Naučná videa/spanelske-texty-01-08.md",
-      "sekce": "08",
-      "vystup": "Naučná videa/08-firma-v-gitu/zvuk/voz-ES.mp3"
-    }
-  ],
+  "ulohy": [],
   "_spusteni": "2026-11-21 21:10 – ES 07 a 08 (tarif Creator)"
 }

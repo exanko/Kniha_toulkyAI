@@ -1,5 +1,8 @@
-# Poslední běh „Namluvit“ – 2026-11-21 20:01 UTC (kontrola klíče)
+# Poslední běh „Namluvit“ – 2026-11-21 20:10 UTC
 
-✅ klíč funguje – tarif **free**, využito 9371 z 10000 kreditů, další obnovení 2026-12-04
+| Úloha | Výsledek |
+|---|---|
+| es → Naučná videa/07-nase-nic-neni-dukaz/zvuk/voz-ES.mp3 | ✅ 644 znaků, 704 kB |
+| es → Naučná videa/08-firma-v-gitu/zvuk/voz-ES.mp3 | ✅ 771 znaků, 856 kB |
 
-Ve frontě čeká úloh: 2
+Zbývá kreditů: 121629 z 121629
