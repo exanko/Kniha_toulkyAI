@@ -1,4 +1,125 @@
 {
-  "ulohy": [],
-  "_spusteni": "2026-11-21 23:35 – PT 01–09"
+  "ulohy": [
+    {
+      "jazyk": "cs",
+      "text": "Naučná videa/10-normy-jako-rady-zdarma/texty.md",
+      "sekce": "cs",
+      "vystup": "Naučná videa/10-normy-jako-rady-zdarma/zvuk/hlas-CZ.mp3"
+    },
+    {
+      "jazyk": "en",
+      "text": "Naučná videa/10-normy-jako-rady-zdarma/texty.md",
+      "sekce": "en",
+      "vystup": "Naučná videa/10-normy-jako-rady-zdarma/zvuk/voice-EN.mp3"
+    },
+    {
+      "jazyk": "es",
+      "text": "Naučná videa/10-normy-jako-rady-zdarma/texty.md",
+      "sekce": "es",
+      "vystup": "Naučná videa/10-normy-jako-rady-zdarma/zvuk/voz-ES.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/10-normy-jako-rady-zdarma/texty.md",
+      "sekce": "hi",
+      "vystup": "Naučná videa/10-normy-jako-rady-zdarma/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/10-normy-jako-rady-zdarma/texty.md",
+      "sekce": "pt",
+      "vystup": "Naučná videa/10-normy-jako-rady-zdarma/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "cs",
+      "text": "Naučná videa/11-dlouhy-chat/texty.md",
+      "sekce": "cs",
+      "vystup": "Naučná videa/11-dlouhy-chat/zvuk/hlas-CZ.mp3"
+    },
+    {
+      "jazyk": "en",
+      "text": "Naučná videa/11-dlouhy-chat/texty.md",
+      "sekce": "en",
+      "vystup": "Naučná videa/11-dlouhy-chat/zvuk/voice-EN.mp3"
+    },
+    {
+      "jazyk": "es",
+      "text": "Naučná videa/11-dlouhy-chat/texty.md",
+      "sekce": "es",
+      "vystup": "Naučná videa/11-dlouhy-chat/zvuk/voz-ES.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/11-dlouhy-chat/texty.md",
+      "sekce": "hi",
+      "vystup": "Naučná videa/11-dlouhy-chat/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/11-dlouhy-chat/texty.md",
+      "sekce": "pt",
+      "vystup": "Naučná videa/11-dlouhy-chat/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "cs",
+      "text": "Naučná videa/12-boti-mluvi-s-boty/texty.md",
+      "sekce": "cs",
+      "vystup": "Naučná videa/12-boti-mluvi-s-boty/zvuk/hlas-CZ.mp3"
+    },
+    {
+      "jazyk": "en",
+      "text": "Naučná videa/12-boti-mluvi-s-boty/texty.md",
+      "sekce": "en",
+      "vystup": "Naučná videa/12-boti-mluvi-s-boty/zvuk/voice-EN.mp3"
+    },
+    {
+      "jazyk": "es",
+      "text": "Naučná videa/12-boti-mluvi-s-boty/texty.md",
+      "sekce": "es",
+      "vystup": "Naučná videa/12-boti-mluvi-s-boty/zvuk/voz-ES.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/12-boti-mluvi-s-boty/texty.md",
+      "sekce": "hi",
+      "vystup": "Naučná videa/12-boti-mluvi-s-boty/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/12-boti-mluvi-s-boty/texty.md",
+      "sekce": "pt",
+      "vystup": "Naučná videa/12-boti-mluvi-s-boty/zvuk/voz-PT.mp3"
+    },
+    {
+      "jazyk": "cs",
+      "text": "Naučná videa/13-mysleni-rychle-a-pomale/texty.md",
+      "sekce": "cs",
+      "vystup": "Naučná videa/13-mysleni-rychle-a-pomale/zvuk/hlas-CZ.mp3"
+    },
+    {
+      "jazyk": "en",
+      "text": "Naučná videa/13-mysleni-rychle-a-pomale/texty.md",
+      "sekce": "en",
+      "vystup": "Naučná videa/13-mysleni-rychle-a-pomale/zvuk/voice-EN.mp3"
+    },
+    {
+      "jazyk": "es",
+      "text": "Naučná videa/13-mysleni-rychle-a-pomale/texty.md",
+      "sekce": "es",
+      "vystup": "Naučná videa/13-mysleni-rychle-a-pomale/zvuk/voz-ES.mp3"
+    },
+    {
+      "jazyk": "hi",
+      "text": "Naučná videa/13-mysleni-rychle-a-pomale/texty.md",
+      "sekce": "hi",
+      "vystup": "Naučná videa/13-mysleni-rychle-a-pomale/zvuk/awaz-HI.mp3"
+    },
+    {
+      "jazyk": "pt",
+      "text": "Naučná videa/13-mysleni-rychle-a-pomale/texty.md",
+      "sekce": "pt",
+      "vystup": "Naučná videa/13-mysleni-rychle-a-pomale/zvuk/voz-PT.mp3"
+    }
+  ],
+  "_spusteni": "2026-11-22 00:10 – nové díly 10–13 v 5 jazycích"
 }
