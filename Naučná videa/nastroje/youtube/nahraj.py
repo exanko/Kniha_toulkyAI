@@ -5,6 +5,10 @@
   python3 nahraj.py 09 --zkouska       → nic nenahraje: zkontroluje údaje a soubory, a jsou-li zadané
                                          přihlašovací údaje, ověří přihlášení, kanál a playlisty
   python3 nahraj.py 09 es --verejne    → zveřejní hned (jinak se nahrává jako soukromé)
+  python3 nahraj.py 09 --naplanovat    → naplánuje zveřejnění: v každém jazyce jedno video denně,
+                                         v čase a pásmu z kanal.json („zverejneni“), od zítřka nebo
+                                         den po posledním naplánovaném; předem zapsané „zverejneni“
+                                         v youtube.json (např. "2026-12-01T18:00") má přednost
   python3 nahraj.py 09 es --znovu      → nahraje znovu i jazyk, který už videoId má
 
 Přihlašovací údaje v proměnných prostředí (v GitHub Actions z tajemství):
@@ -15,6 +19,7 @@ tak video nenahraje dvakrát. Nakonec se playlisty zvolených jazyků seřadí p
 `python3 nahraj.py 09 es` u už nahraného dílu jen srovná španělský playlist.
 Jen standardní knihovna Pythonu (bez instalace balíčků)."""
 import glob, json, os, sys, time, datetime, urllib.request, urllib.parse, urllib.error
+from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.environ.get("NAUCNA_VIDEA") or os.path.dirname(os.path.dirname(HERE))   # složka „Naučná videa“
@@ -80,11 +85,29 @@ def over_pristup():
     if not ok: sys.exit(1)
     return token
 
-def nahraj(token, L, e, dil, verejne, spol):
+def termin(L, e):
+    """Plánované zveřejnění jazyka L: předem zapsané e["zverejneni"], jinak další volný den."""
+    z = CFG["jazyky"][L].get("zverejneni", {"cas": "18:00", "zona": "Europe/Prague"}); tz = ZoneInfo(z["zona"])
+    h, m = map(int, z["cas"].split(":"))
+    if e.get("zverejneni"):
+        t = datetime.datetime.fromisoformat(e["zverejneni"])
+        return t if t.tzinfo else t.replace(tzinfo=tz)
+    ted = datetime.datetime.now(tz); den = ted.date() + datetime.timedelta(days=1)
+    for f in glob.glob(os.path.join(ROOT, "*", "youtube.json")):
+        x = json.load(open(f, encoding="utf-8")).get("jazyky", {}).get(L, {})
+        if x.get("videoId") and x.get("zverejneni"):
+            t = datetime.datetime.fromisoformat(x["zverejneni"])
+            t = (t if t.tzinfo else t.replace(tzinfo=tz)).astimezone(tz)
+            den = max(den, t.date() + datetime.timedelta(days=1))
+    return datetime.datetime(den.year, den.month, den.day, h, m, tzinfo=tz)
+
+def nahraj(token, L, e, dil, verejne, spol, kdy=None):
     lang = CFG["jazyky"][L]["kod"]
+    stat = {"privacyStatus": "public" if verejne and not kdy else "private"}
+    if kdy: stat["publishAt"] = kdy.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     meta = {"snippet": {"title": e["nazev"], "description": e["popis"], "tags": e.get("stitky", []),
                         "categoryId": spol.get("categoryId", "27"), "defaultLanguage": lang, "defaultAudioLanguage": lang},
-            "status": {"privacyStatus": "public" if verejne else "private", "embeddable": True,
+            "status": {**stat, "embeddable": True,
                        "selfDeclaredMadeForKids": spol.get("madeForKids", False),
                        "containsSyntheticMedia": spol.get("containsSyntheticMedia", False)}}
     path = os.path.join(dil, e["soubor"]); size = os.path.getsize(path)
@@ -196,6 +219,7 @@ def main():
     cfg = json.load(open(jpath, encoding="utf-8")); spol = cfg.get("spolecne", {})
     langs = args[1:] or list(cfg["jazyky"])
     zkouska, verejne, znovu = "--zkouska" in flags, "--verejne" in flags, "--znovu" in flags
+    naplanovat = "--naplanovat" in flags
     plan, chyby = [], []
     for L in langs:
         e = cfg["jazyky"].get(L)
@@ -206,11 +230,12 @@ def main():
         else: plan.append(L)
     if chyby: print("❌ Chyby v údajích:\n  " + "\n  ".join(chyby)); sys.exit(1)
     print(f"Díl {os.path.basename(dil)} – k nahrání: {', '.join(plan) or 'nic'}"
-          f" ({'veřejně' if verejne else 'soukromě'}{', ZKOUŠKA' if zkouska else ''})")
+          f" ({'naplánovaně' if naplanovat else 'veřejně' if verejne else 'soukromě'}{', ZKOUŠKA' if zkouska else ''})")
     for L in plan:
         e = cfg["jazyky"][L]
         print(f"   {L}: {e['soubor']} ({os.path.getsize(os.path.join(dil, e['soubor'])) / 1e6:.1f} MB) · „{e['nazev']}“"
               f" · playlist {CFG['jazyky'][L].get('playlist') or '–'}")
+        if naplanovat: print(f"      zveřejnění: {termin(L, e).isoformat(timespec='minutes')}")
     creds = all(os.environ.get(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"))
     if zkouska:
         if not creds: print("(přihlašovací údaje nejsou zadané – přihlášení a playlisty se neověřují)"); return
@@ -223,11 +248,16 @@ def main():
     token = access_token(); souhrn, nove = [], {}
     for L in plan:
         e = cfg["jazyky"][L]
-        vid = nahraj(token, L, e, dil, verejne, spol)
+        kdy = termin(L, e) if naplanovat else None
+        if kdy and kdy <= datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(minutes=30):
+            print(f"   {L}: termín {kdy.isoformat()} už je pryč – plánuji na další volný den"); e.pop("zverejneni", None); kdy = termin(L, e)
+        vid = nahraj(token, L, e, dil, verejne, spol, kdy)
+        if kdy: e["zverejneni"] = kdy.isoformat(timespec="minutes")
         e["videoId"] = vid; e["url"] = f"https://www.youtube.com/shorts/{vid}"
         e["nahrano"] = datetime.date.today().isoformat()
         with open(jpath, "w", encoding="utf-8") as f: f.write(json.dumps(cfg, ensure_ascii=False, indent=2) + "\n")
-        pl = CFG["jazyky"][L].get("playlist"); stav = "nahráno"
+        pl = CFG["jazyky"][L].get("playlist")
+        stav = f"naplánováno na {kdy.strftime('%d. %m. %Y %H:%M')} ({kdy.tzinfo})" if kdy else "nahráno"
         if pl:
             try:
                 pos = do_playlistu(token, vid, pl, pozice(token, L, dil, pl)); nove[L] = vid
@@ -245,7 +275,8 @@ def main():
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
             f.write(f"### {os.path.basename(dil)}\n\n| Jazyk | Video | Stav |\n|---|---|---|\n")
             f.writelines(f"| {L} | {u} | {' '.join(s.split()).replace('|', '/')[:200]} |\n" for L, u, s in souhrn)
-            if plan and not verejne: f.write("\nVidea jsou **soukromá** – zveřejněte je v YouTube Studiu (a nastavte související video).\n")
+            if plan and naplanovat: f.write("\nVidea se zveřejní sama v naplánovaný čas – v YouTube Studiu jim jen nastavte související video.\n")
+            elif plan and not verejne: f.write("\nVidea jsou **soukromá** – zveřejněte je v YouTube Studiu (a nastavte související video).\n")
 
 if __name__ == "__main__":
     main()

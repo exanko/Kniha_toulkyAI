@@ -1,6 +1,8 @@
 # Nahrávání na YouTube přes GitHub Actions
 
-Workflow **„Nahrát na YouTube“** nahraje jazykové verze dílu podle souboru `Naučná videa/<díl>/youtube.json` (název, popis, štítky, soubor), zařadí je do playlistu jazyka (`kanal.json`) a ID videa zapíše zpátky do repa. Videa se nahrávají jako **soukromá**; zveřejníte je v YouTube Studiu.
+Workflow **„Nahrát na YouTube“** nahraje jazykové verze dílu podle souboru `Naučná videa/<díl>/youtube.json` (název, popis, štítky, soubor), zařadí je do playlistu jazyka (`kanal.json`) a ID videa zapíše zpátky do repa.
+
+**Spouští se samo po sloučení do `main`**, když se změní některý `youtube.json`: nahraje všechno, co ještě nemá `videoId`, a **naplánuje zveřejnění** – v každém jazyce jedno video denně (od zítřka, nebo den po posledním naplánovaném), v čase z `kanal.json`: CZ 18:00 Praha, EN 12:00 New York, ES 18:00 Ciudad de México, HI 18:00 Indie. Konkrétní termín jde předepsat v `youtube.json` (`"zverejneni": "2026-12-01T18:00"`). Do té doby jsou videa soukromá a v YouTube Studiu je vidíte jako naplánovaná.
 
 Co zůstává ruční (YouTube to přes API nedovolí): **související video** u Shortu a **vlastní miniatura** u Shortu.
 
@@ -45,16 +47,27 @@ Repozitář na GitHubu → **Settings → Secrets and variables → Actions → 
 
 Tyto hodnoty nikam jinam nepište (ani do chatu, ani do souborů v repu). Kdyby unikly, smažte OAuth klienta z kroku 2 a založte nový.
 
+**Doporučené zabezpečení – environment jen pro `main`.** Workflow běží v environmentu `youtube`. Když tajemství přesunete do něj, dostane se k nim jen běh z `main`, tedy jen to, co jste zkontroloval a sloučil (žádná jiná větev ani upravený workflow v ní):
+
+1. Settings → **Environments** → `youtube` (vznikne sám při prvním běhu; jinak New environment, název `youtube`).
+2. **Deployment branches and tags** → Selected branches and tags → Add rule → `main`.
+3. **Environment secrets** → Add secret: `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` (stejné hodnoty).
+4. Settings → Secrets and variables → Actions → **smazat** tři repozitářová tajemství `YT_*`.
+
+GitHub uložená tajemství zpátky neukáže – pokud hodnoty nemáte, Client ID a secret najdete v Google Cloud Console (krok 2) a nový refresh token vytvoříte v OAuth Playground (krok 3).
+
 ### 5. Zkouška
 
 GitHub → **Actions → Nahrát na YouTube → Run workflow** → Díl `09`, zaškrtnout **Jen zkouška** → Run. Zkouška nic nenahraje, ale přihlásí se k YouTube, vypíše název kanálu a ověří, že existují všechny playlisty z `kanal.json`. Má projít zeleně (jazyky dílu 09 už jsou nahrané, takže se jen přeskočí). Vypíše také, jestli playlisty mají správné pořadí. Výsledek je v detailu běhu, v kroku „Nahrát na YouTube“.
 
 ## Běžné použití – nová jazyková verze
 
-1. Claude připraví text, vy ho namluvíte v ElevenLabs a pošlete MP3.
-2. Claude složí video a doplní jazyk do `youtube.json` dílu (soubor, název, popis, štítky).
-3. Vy: **Actions → Nahrát na YouTube → Run workflow** → Díl (např. `05`, nebo víc dílů najednou: `01 02 03`), Jazyky (např. `es hi`, prázdné = všechny dosud nenahrané) → Run. Jde to i z mobilní aplikace GitHubu. Video se zařadí do playlistu svého jazyka a na konci běhu se playlist seřadí podle čísel dílů (viz [Pořadí v playlistu](#pořadí-v-playlistu)).
-4. V YouTube Studiu video zkontrolujete, nastavíte související video a zveřejníte.
+1. Claude nechá text namluvit workflow „Namluvit“ ([návod](../elevenlabs/NAVOD.md)), složí video a doplní jazyk do `youtube.json` dílu (soubor, název, popis, štítky) – vše ve větvi `claude/upravy`. Videa vám pošle ke kontrole.
+2. Vy zkontrolujete a sloučíte pull request do `main`.
+3. Sloučení spustí nahrání: videa se nahrají, naplánují, zařadí do playlistů a playlisty se seřadí podle čísel dílů (viz [Pořadí v playlistu](#pořadí-v-playlistu)). ID a termíny se zapíšou do `youtube.json` v `main`.
+4. V YouTube Studiu jen nastavíte související video (API to neumí).
+
+Ručně: **Actions → Nahrát na YouTube → Run workflow** → Díl (např. `05`, nebo víc dílů: `01 02 03`), Jazyky (např. `es hi`, prázdné = všechny dosud nenahrané), případně **Naplánovat zveřejnění** nebo **Zveřejnit hned** → Run. Bez nich se video nahraje jako soukromé.
 
 U starších dílů (01–08), jejichž české a anglické verze byly nahrané ručně, obsahuje `youtube.json` jen nové jazyky – jinak by je workflow nahrálo znovu.
 

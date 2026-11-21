@@ -32,17 +32,17 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 | 04 | [Kecálek vs. vidí za roh](04-kecalek-vs-vidi-za-roh/) | [video](04-kecalek-vs-vidi-za-roh/04-kecalek-vs-vidi-za-roh-CZ.mp4) | [video](04-kecalek-vs-vidi-za-roh/04-chatterbox-vs-sees-around-corners-EN.mp4) | [video](04-kecalek-vs-vidi-za-roh/04-parlanchin-vs-ve-mas-alla-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
 | 05 | [AI je zesilovač](05-ai-je-zesilovac/) | [video](05-ai-je-zesilovac/05-ai-je-zesilovac-CZ.mp4) | [video](05-ai-je-zesilovac/05-ai-is-an-amplifier-EN.mp4) | [video](05-ai-je-zesilovac/05-la-ia-es-un-amplificador-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
 | 06 | [Co je AI agent](06-co-je-ai-agent/) | [video](06-co-je-ai-agent/06-co-je-ai-agent-CZ.mp4) | [video](06-co-je-ai-agent/06-what-is-an-ai-agent-EN.mp4) | [video](06-co-je-ai-agent/06-que-es-un-agente-de-ia-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
-| 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/) | [video](07-nase-nic-neni-dukaz/07-nase-nic-neni-dukaz-CZ.mp4) | [video](07-nase-nic-neni-dukaz/07-our-nothing-is-not-proof-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), 🇮🇳 [text](hindske-texty-01-08.md), čekají na namluvení) |
-| 08 | [Firma v Gitu](08-firma-v-gitu/) | [video](08-firma-v-gitu/08-firma-v-gitu-CZ.mp4) | [video](08-firma-v-gitu/08-a-company-in-git-EN.mp4) | – | ✅ hotovo (🇪🇸 [text](spanelske-texty-01-08.md), 🇮🇳 [text](hindske-texty-01-08.md), čekají na namluvení) |
+| 07 | [Naše „nic“ není důkaz](07-nase-nic-neni-dukaz/) | [video](07-nase-nic-neni-dukaz/07-nase-nic-neni-dukaz-CZ.mp4) | [video](07-nase-nic-neni-dukaz/07-our-nothing-is-not-proof-EN.mp4) | [video](07-nase-nic-neni-dukaz/07-nuestra-nada-no-es-una-prueba-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
+| 08 | [Firma v Gitu](08-firma-v-gitu/) | [video](08-firma-v-gitu/08-firma-v-gitu-CZ.mp4) | [video](08-firma-v-gitu/08-a-company-in-git-EN.mp4) | [video](08-firma-v-gitu/08-una-empresa-en-git-ES.mp4) | ✅ hotovo (🇮🇳 [text](hindske-texty-01-08.md), čeká na namluvení) |
 | 09 | [Projekt je strom](09-projekt-je-strom/) | [video](09-projekt-je-strom/09-projekt-je-strom-CZ.mp4) | [video](09-projekt-je-strom/09-your-project-is-a-tree-EN.mp4) | [video](09-projekt-je-strom/09-tu-proyecto-es-un-arbol-ES.mp4) | ✅ hotovo, navíc 🇮🇳 [hindsky](09-projekt-je-strom/09-aapka-project-ek-ped-hai-HI.mp4) |
 
 ## Postup výroby dílu
 
 1. Claude napíše mluvený text CZ + EN + ES (tabulka po scénách).
-2. Autor ho namluví v ElevenLabs (hlasy výše) a pošle MP3.
-3. Claude nahrávky přepíše (`nastroje/prepis.py`), najde začátky a konce scén a sestaví všechny jazykové verze videa.
-4. Claude doplní do složky dílu `youtube.json` (název, popis, štítky pro každý jazyk).
-5. Autor spustí na GitHubu **Actions → Nahrát na YouTube** (díl, jazyky) – videa se nahrají jako soukromá do playlistů jazyků; pak je v YouTube Studiu zveřejní a nastaví související video. Nastavení a postup: [`nastroje/youtube/NAVOD.md`](nastroje/youtube/NAVOD.md).
+2. Text namluví workflow **Namluvit (ElevenLabs)** – Claude ho spustí zápisem do fronty ve větvi `claude/upravy` ([`nastroje/elevenlabs/NAVOD.md`](nastroje/elevenlabs/NAVOD.md)); dřív namlouval autor ručně a posílal MP3.
+3. Claude podle časů slov (nebo přepisu `nastroje/prepis.py`) najde začátky a konce scén a sestaví všechny jazykové verze videa.
+4. Claude doplní do složky dílu `youtube.json` (název, popis, štítky pro každý jazyk) a pošle videa autorovi ke kontrole.
+5. Autor sloučí pull request do `main` – tím se videa samy nahrají, naplánují (v každém jazyce jedno denně) a zařadí do playlistů; v YouTube Studiu jim pak jen nastaví související video. Nastavení a postup: [`nastroje/youtube/NAVOD.md`](nastroje/youtube/NAVOD.md).
 
 Sdílený vzhled (pozadí, písmo, záře, ukazatel průběhu, sestavení s hlasem) je v `nastroje/engine.py`; každý díl od 02 má v `zdroj/` jen vlastní scény a časování. Úseky řeči v nahrávce vypíše `nastroje/intervaly.py`.
 
