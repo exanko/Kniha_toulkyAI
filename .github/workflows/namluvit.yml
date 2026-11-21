@@ -39,7 +39,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "Naučná videa/"
           if git diff --cached --quiet; then echo "Nic nového k zapsání."; exit 0; fi
-          git commit -m "ElevenLabs: namluveno podle fronty"
+          git commit -m "ElevenLabs: výsledek běhu fronty"
           for pokus in 1 2 3; do
             git pull --rebase -q origin "$VETEV" && git push origin "HEAD:$VETEV" && exit 0
             sleep 10
