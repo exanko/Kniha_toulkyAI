@@ -2,7 +2,8 @@
 
   python3 nahraj.py 09                 → nahraje všechny jazyky dílu 09, které ještě nemají videoId
   python3 nahraj.py 09 es hi           → jen vybrané jazyky
-  python3 nahraj.py 09 --zkouska       → nic nenahraje, jen zkontroluje údaje a soubory
+  python3 nahraj.py 09 --zkouska       → nic nenahraje: zkontroluje údaje a soubory, a jsou-li zadané
+                                         přihlašovací údaje, ověří přihlášení, kanál a playlisty
   python3 nahraj.py 09 es --verejne    → zveřejní hned (jinak se nahrává jako soukromé)
   python3 nahraj.py 09 es --znovu      → nahraje znovu i jazyk, který už videoId má
 
@@ -60,6 +61,21 @@ def zkontroluj(L, e, dil):
     if L not in CFG["jazyky"]: chyby.append(f"jazyk {L} chybí v kanal.json")
     return chyby
 
+def over_pristup():
+    """Zkouška bez nahrávání: přihlášení, kanál a existence playlistů (stojí 2 jednotky kvóty)."""
+    token = access_token()
+    ch = http("GET", f"{API}/youtube/v3/channels?part=snippet&mine=true", token).get("items", [])
+    if not ch: sys.exit("❌ Přihlášení funguje, ale účet nemá kanál YouTube (u značkového účtu vyberte při přihlášení kanál).")
+    print(f"🔑 Přihlášení OK – kanál „{ch[0]['snippet']['title']}“ ({ch[0]['id']})")
+    pls = {L: v["playlist"] for L, v in CFG["jazyky"].items() if v.get("playlist")}
+    q = urllib.parse.quote(",".join(pls.values()))
+    found = {i["id"]: i["snippet"]["title"] for i in http("GET", f"{API}/youtube/v3/playlists?part=snippet&maxResults=50&id={q}", token).get("items", [])}
+    ok = True
+    for L, pid in pls.items():
+        if pid in found: print(f"   📃 {L}: playlist „{found[pid]}“")
+        else: print(f"   ❌ {L}: playlist {pid} nenalezen – opravte ho v kanal.json"); ok = False
+    if not ok: sys.exit(1)
+
 def nahraj(token, L, e, dil, verejne, spol):
     lang = CFG["jazyky"][L]["kod"]
     meta = {"snippet": {"title": e["nazev"], "description": e["popis"], "tags": e.get("stitky", []),
@@ -106,7 +122,11 @@ def main():
         e = cfg["jazyky"][L]
         print(f"   {L}: {e['soubor']} ({os.path.getsize(os.path.join(dil, e['soubor'])) / 1e6:.1f} MB) · „{e['nazev']}“"
               f" · playlist {CFG['jazyky'][L].get('playlist') or '–'}")
-    if zkouska or not plan: return
+    if zkouska:
+        if all(os.environ.get(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")): over_pristup()
+        else: print("(přihlašovací údaje nejsou zadané – přihlášení a playlisty se neověřují)")
+        return
+    if not plan: return
     token = access_token(); souhrn = []
     for L in plan:
         e = cfg["jazyky"][L]

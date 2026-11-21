@@ -47,7 +47,7 @@ Tyto hodnoty nikam jinam nepište (ani do chatu, ani do souborů v repu). Kdyby 
 
 ### 5. Zkouška
 
-GitHub → **Actions → Nahrát na YouTube → Run workflow** → Díl `09`, zaškrtnout **Jen zkouška** → Run. Má projít zeleně (všechny jazyky dílu 09 už jsou nahrané, takže se jen přeskočí).
+GitHub → **Actions → Nahrát na YouTube → Run workflow** → Díl `09`, zaškrtnout **Jen zkouška** → Run. Zkouška nic nenahraje, ale přihlásí se k YouTube, vypíše název kanálu a ověří, že existují všechny playlisty z `kanal.json`. Má projít zeleně (jazyky dílu 09 už jsou nahrané, takže se jen přeskočí). Výsledek je v detailu běhu, v kroku „Nahrát na YouTube“.
 
 ## Běžné použití – nová jazyková verze
 
