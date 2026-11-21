@@ -23,11 +23,17 @@ T={"cs":dict(q=["Jak dostat malou firmu","do doby AI?"],one="Jedno místo pro v�
         data="अपना डेटा डालिए।",ask=["क्या सब कुछ साफ़ है?","विरोधाभास कहाँ हैं?"],up="नींव से ऊपर की ओर।",
         layers=["हिसाब-किताब","कॉन्ट्रैक्ट","प्रोडक्ट","कंपनी की कहानी"],know="लगातार अपना अनुभव दीजिए।",kh="मेरा अनुभव",crit="आप ईमानदारी से क्या सोचते हैं?",
         git="Git हर बदलाव दर्ज करता है।",lost="कुछ भी नहीं खोता।",cust="ग्राहक",out=["प्रेज़ेंटेशन","पर्चा","कैलकुलेटर"],
-        small="छोटा बिज़नेस",big="बड़ी कंपनी",robust=["→ वहाँ ज़्यादा मज़बूत","सिस्टम चाहिए।"],careful="बस एक बात:")}[LANG]
+        small="छोटा बिज़नेस",big="बड़ी कंपनी",robust=["→ वहाँ ज़्यादा मज़बूत","सिस्टम चाहिए।"],careful="बस एक बात:"),
+   "pt":dict(q=["Como levar uma","pequena empresa","para a era da IA?"],one="Um único lugar para tudo.",repo="repositório",truth="Uma única fonte da verdade.",
+        data="Coloque seus dados.",ask=["Está tudo claro?","Vê contradições?"],up="Da base para cima.",
+        layers=["cálculos","contratos","produtos","sua história"],know="Traga a sua experiência.",kh="experiência",crit="O que você realmente acha?",
+        git="O Git salva cada mudança.",lost="Nada se perde.",cust="cliente",out=["apresentação","folheto","calculadora"],
+        small="pequena empresa",big="grande empresa",robust=["→ é preciso um sistema","mais robusto"],careful="Só um detalhe:")}[LANG]
 K={"cs":dict(repo=2.36,truth=3.76,ask=3.94,layer=2.54,lstep=0.6,crit=2.63,lost=2.20,out=[3.80,4.80,5.50],big=1.17,robust=4.13),
    "en":dict(repo=1.59,truth=2.78,ask=6.03,layer=2.60,lstep=0.55,crit=2.42,lost=2.44,out=[3.83,4.83,5.58],big=1.81,robust=5.28),
    "es":dict(repo=2.90,truth=4.50,ask=3.47,layer=3.63,lstep=0.9,crit=3.57,lost=2.63,out=[4.20,5.40,6.44],big=1.73,robust=5.41),
-   "hi":dict(repo=2.94,truth=5.02,ask=4.39,layer=2.90,lstep=1.0,crit=3.31,lost=3.07,out=[4.67,5.76,6.64],big=3.15,robust=5.71)}[LANG]
+   "hi":dict(repo=2.94,truth=5.02,ask=4.39,layer=2.90,lstep=1.0,crit=3.31,lost=3.07,out=[4.67,5.76,6.64],big=3.15,robust=5.71),
+   "pt":dict(repo=2.58,truth=4.02,ask=3.17,layer=2.75,lstep=0.65,crit=3.32,lost=2.46,out=[3.90,4.82,5.78],big=1.66,robust=4.74)}[LANG]
 D=durations(SEG)
 def repo_icon(d,cx,cy,s,a):
     if a<=0: return

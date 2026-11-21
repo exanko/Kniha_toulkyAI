@@ -1,34 +1,43 @@
-# Nahrání jazykových verzí dílu Naučných videí na YouTube.
-# Spouští se samo po sloučení do main, když se změní některý youtube.json: nahraje všechno, co ještě
-# nemá videoId, a naplánuje zveřejnění (v každém jazyce jedno video denně, čas v kanal.json).
+# Nahrání jazykových verzí dílů Naučných videí na YouTube a údržba playlistů.
+# Spouští se samo:
+#   – po sloučení do main, když se změní některý youtube.json nebo kanal.json,
+#   – jednou denně (po obnovení denní kvóty YouTube API) – dodělá, co předchozí běh nestihl.
+# Pokaždé nahraje všechno, co ještě nemá videoId, naplánuje zveřejnění (v každém jazyce jedno video
+# denně, čas v kanal.json) a udrží playlisty: doplní chybějící videa, smaže zdvojené položky a playlist
+# s ručním řazením seřadí podle čísel dílů. Když něco zůstane nedokončené, běh skončí červeně.
 # Ručně: GitHub → Actions → „Nahrát na YouTube“ → Run workflow (jde i z mobilní aplikace GitHubu).
 # Údaje (název, popis, štítky, soubor) jsou v „Naučná videa/<díl>/youtube.json“, playlisty v „Naučná videa/nastroje/youtube/kanal.json“.
-# Návod k nastavení: „Naučná videa/nastroje/youtube/NAVOD.md“.
+# Návod: „Naučná videa/nastroje/youtube/NAVOD.md“.
 name: Nahrát na YouTube
 
 on:
   push:
     branches: [main]
-    paths: ["Naučná videa/*/youtube.json"]
+    paths:
+      - "Naučná videa/*/youtube.json"
+      - "Naučná videa/nastroje/youtube/kanal.json"
+  schedule:
+    - cron: "17 10 * * *"   # denně 10:17 UTC – kvóta se obnovuje o půlnoci kalifornského času (8:00 UTC v zimě)
   workflow_dispatch:
     inputs:
       dil:
-        description: "Díl – číslo nebo víc čísel oddělených mezerou (např. 09 nebo 01 02 03)"
-        required: true
+        description: "Díl – číslo nebo víc čísel oddělených mezerou (např. 09 nebo 01 02 03). Prázdné = všechny díly."
+        required: false
+        default: ""
       jazyky:
-        description: "Jazyky oddělené mezerou (cs en es hi). Prázdné = všechny dosud nenahrané. Playlisty zvolených jazyků se nakonec seřadí podle čísel dílů."
+        description: "Jazyky oddělené mezerou (cs en es hi pt). Prázdné = všechny."
         required: false
         default: ""
       naplanovat:
         description: "Naplánovat zveřejnění (jedno video denně v každém jazyce)"
         type: boolean
-        default: false
+        default: true
       verejne:
         description: "Zveřejnit hned (jinak se nahraje jako soukromé)"
         type: boolean
         default: false
       zkouska:
-        description: "Jen zkouška – nic nenahrávat, jen zkontrolovat údaje a soubory"
+        description: "Jen zkouška – nic nenahrávat ani neměnit, jen zkontrolovat údaje a vypsat obsah playlistů"
         type: boolean
         default: false
 
@@ -52,59 +61,52 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Zjistit díly
-        id: dily
-        env:
-          DIL_IN: ${{ inputs.dil }}
-          NAPLANOVAT_IN: ${{ inputs.naplanovat }}
-        run: |
-          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
-            # po sloučení projít všechny díly – nahraje se jen to, co ještě nemá videoId
-            dil=$(for f in "Naučná videa"/[0-9][0-9]-*/youtube.json; do basename "$(dirname "$f")" | cut -c1-2; done | sort -u | tr '\n' ' ')
-            planovat=true
-          else
-            dil=$(printf '%s' "$DIL_IN" | tr -d '\r\n'); planovat="$NAPLANOVAT_IN"
-          fi
-          echo "Díly: $dil (plánovat: $planovat)"
-          { echo "dil=$dil"; echo "planovat=$planovat"; } >> "$GITHUB_OUTPUT"
-
       - name: Nahrát na YouTube
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-          DIL: ${{ steps.dily.outputs.dil }}
-          PLANOVAT: ${{ steps.dily.outputs.planovat }}
+          DIL_IN: ${{ inputs.dil }}
           JAZYKY: ${{ inputs.jazyky }}
+          NAPLANOVAT_IN: ${{ inputs.naplanovat }}
           VEREJNE: ${{ inputs.verejne }}
           ZKOUSKA: ${{ inputs.zkouska }}
         run: |
           opts=()
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            dil=$(printf '%s' "$DIL_IN" | tr -d '\r\n')
+            if [ -z "$dil" ]; then opts+=("--vse"); fi
+            for d in $dil; do
+              case "$d" in *[!0-9a-z-]*) echo "Neplatný díl: $d"; exit 1 ;; esac
+              opts+=("$d")
+            done
+            [ "$NAPLANOVAT_IN" = "true" ] && opts+=("--naplanovat")
+            [ "$VEREJNE" = "true" ] && opts+=("--verejne")
+            [ "$ZKOUSKA" = "true" ] && opts+=("--zkouska")
+          else
+            # po sloučení i denní běh: všechny díly, naplánovaně
+            opts+=("--vse" "--naplanovat")
+          fi
           for j in $JAZYKY; do
-            case "$j" in cs|en|es|hi) opts+=("$j") ;; *) echo "Neznámý jazyk: $j"; exit 1 ;; esac
+            case "$j" in cs|en|es|hi|pt) opts+=("$j") ;; *) echo "Neznámý jazyk: $j"; exit 1 ;; esac
           done
-          [ "$PLANOVAT" = "true" ] && opts+=("--naplanovat")
-          [ "$VEREJNE" = "true" ] && opts+=("--verejne")
-          [ "$ZKOUSKA" = "true" ] && opts+=("--zkouska")
-          chyba=0
-          for d in $DIL; do
-            case "$d" in *[!0-9a-z-]*) echo "Neplatný díl: $d"; chyba=1; continue ;; esac
-            echo "::group::Díl $d"
-            python3 "Naučná videa/nastroje/youtube/nahraj.py" "$d" "${opts[@]}" || chyba=1
-            echo "::endgroup::"
-          done
-          exit $chyba
+          echo "nahraj.py ${opts[*]}"
+          python3 "Naučná videa/nastroje/youtube/nahraj.py" "${opts[@]}"
 
-      # Zapíše ID nahraných videí do youtube.json i tehdy, když některé nahrání selže –
-      # další spuštění pak už nahraná videa přeskočí.
+      # Zapíše ID nahraných videí (a záznamy o playlistech) do youtube.json i tehdy, když něco selže –
+      # další spuštění pak už nahraná videa přeskočí. Když se main mezitím změnil, zkusí to znovu.
       - name: Zapsat ID videí do repa
-        if: ${{ always() && !inputs.zkouska }}
-        env:
-          DIL: ${{ steps.dily.outputs.dil }}
+        if: ${{ always() && inputs.zkouska != true }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "Naučná videa/"*/youtube.json
           if git diff --cached --quiet; then echo "Nic nového k zapsání."; exit 0; fi
-          git commit -m "YouTube: nahráno – díl $DIL"
-          git push
+          git commit -q -m "YouTube: ID videí a záznamy playlistů (běh $GITHUB_RUN_NUMBER)"
+          for i in 1 2 3 4 5; do
+            git push origin "HEAD:main" && exit 0
+            sleep 10
+            git pull --rebase -q origin main
+          done
+          echo "::error::ID videí se nepodařilo zapsat do repa – zapište je ručně podle výpisu výše, jinak by je další běh nahrál znovu."
+          exit 1

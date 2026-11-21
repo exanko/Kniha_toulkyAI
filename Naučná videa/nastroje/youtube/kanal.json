@@ -4,6 +4,7 @@
     "cs": {"kod": "cs", "playlist": "PLNpxYtAHyLcE", "zverejneni": {"cas": "18:00", "zona": "Europe/Prague"}},
     "en": {"kod": "en", "playlist": "PLVOwx6a35k64", "zverejneni": {"cas": "12:00", "zona": "America/New_York"}},
     "es": {"kod": "es-419", "playlist": "PLey5e-5qs38Y", "zverejneni": {"cas": "18:00", "zona": "America/Mexico_City"}},
-    "hi": {"kod": "hi", "playlist": "PLGM_GEl_OKnE", "zverejneni": {"cas": "18:00", "zona": "Asia/Kolkata"}}
+    "hi": {"kod": "hi", "playlist": "PLGM_GEl_OKnE", "zverejneni": {"cas": "18:00", "zona": "Asia/Kolkata"}},
+    "pt": {"kod": "pt", "playlist": "PLHxugCKbRb9o", "zverejneni": {"cas": "18:00", "zona": "America/Sao_Paulo"}}
   }
 }

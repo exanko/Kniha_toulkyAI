@@ -38,6 +38,18 @@ def sceny(path, k_plus=0.35):
         out.append({"text": p.strip(), "od": round(s, 2), "do": round(e, 2), "slova": slova})
     return out
 
+_INTERP = ",.?!;:…“”„\"'«»¿¡()।—–‚‘’"
+def kotvy(path, A, k_plus=0.35):
+    """Hodnoty K z kotevních slov: A = {klíč: (scéna od 0, začátek slova[, kolikátý výskyt])}.
+    Vrací {klíč: čas slova − začátek řeči scény + k_plus}. Nenalezené slovo = chyba (překlep v kotvě)."""
+    sc = sceny(path, k_plus); out = {}
+    for k, v in A.items():
+        si, pre = v[0], v[1].lower(); n = v[2] if len(v) > 2 else 1
+        hits = [t for w, t in sc[si]["slova"] if w.strip(_INTERP).lower().startswith(pre)]
+        if len(hits) < n: raise KeyError(f"kotva {k}: slovo „{v[1]}“ ve scéně {si + 1} není ({path})")
+        out[k] = hits[n - 1]
+    return out
+
 if __name__ == "__main__":
     if len(sys.argv) < 2: sys.exit(__doc__)
     sc = sceny(sys.argv[1], float(sys.argv[2]) if len(sys.argv) > 2 else 0.35)

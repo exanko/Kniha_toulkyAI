@@ -1,0 +1,70 @@
+{
+  "_popis": "Údaje pro workflow Nahrát na YouTube (po sloučení do main se nahraje a naplánuje vše, co nemá videoId).",
+  "spolecne": {
+    "categoryId": "27",
+    "madeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "jazyky": {
+    "cs": {
+      "soubor": "10-normy-jako-rady-zdarma-CZ.mp4",
+      "nazev": "Normy jako rady zdarma 📋 Jak s nimi pracovat díky AI",
+      "popis": "Dřív platilo: čím víc norem, tím víc bolení hlavy. S AI je to naopak – stačí říct „udělejme to podle ISO 9001“ a mít na paměti i zaměstnance. Čísla norem znát nemusíš, stačí se zeptat. Norma je zhuštěná zkušenost tisíců lidí – a na certifikaci jsi připravený od začátku.\n\n#shorts #AI #ISO9001",
+      "stitky": [
+        "AI",
+        "umělá inteligence",
+        "normy",
+        "ISO 9001",
+        "řízení kvality"
+      ]
+    },
+    "en": {
+      "soubor": "10-standards-as-free-advice-EN.mp4",
+      "nazev": "Standards as free advice 📋 How AI turns ISO into a shortcut",
+      "popis": "It used to be: the more standards, the more headaches. With AI it's the other way round – just say “let's do this by ISO 9001” and keep the employees in mind. You don't need the numbers, just ask. A standard is the condensed experience of thousands of people – and you're ready for certification from day one.\n\n#shorts #AI #ISO9001",
+      "stitky": [
+        "AI",
+        "artificial intelligence",
+        "standards",
+        "ISO 9001",
+        "quality management"
+      ]
+    },
+    "es": {
+      "soubor": "10-normas-como-consejos-gratis-ES.mp4",
+      "nazev": "Normas como consejos gratis 📋 Cómo la IA las aprovecha",
+      "popis": "Antes: cuantas más normas, más dolores de cabeza. Con la IA es al revés: dile «hagámoslo según ISO 9001» y piensa también en los empleados. No necesitas saber los números, basta con preguntar. Una norma es la experiencia condensada de miles de personas, y quedas listo para certificarte desde el principio.\n\n#shorts #IA #ISO9001",
+      "stitky": [
+        "IA",
+        "inteligencia artificial",
+        "normas",
+        "ISO 9001",
+        "gestión de calidad"
+      ]
+    },
+    "hi": {
+      "soubor": "10-maanak-muft-salaah-HI.mp4",
+      "nazev": "मानक: मुफ़्त सलाह 📋 AI के साथ ISO का फ़ायदा",
+      "popis": "पहले जितने ज़्यादा मानक, उतना ज़्यादा सिरदर्द। AI के साथ उल्टा है – बस कहिए \"इसे ISO 9001 के हिसाब से करें\" और कर्मचारियों का भी ध्यान रखिए। नंबर जानने की ज़रूरत नहीं, बस पूछिए। मानक हज़ारों लोगों का अनुभव है – और आप सर्टिफ़िकेशन के लिए शुरुआत से तैयार रहते हैं।\n\n#shorts #AI #ISO9001",
+      "stitky": [
+        "AI",
+        "आर्टिफिशियल इंटेलिजेंस",
+        "मानक",
+        "ISO 9001",
+        "AI in Hindi"
+      ]
+    },
+    "pt": {
+      "soubor": "10-normas-como-conselhos-gratis-PT.mp4",
+      "nazev": "Normas como conselhos grátis 📋 Como a IA aproveita a ISO",
+      "popis": "Antes: quanto mais normas, mais dor de cabeça. Com a IA é o contrário – diga “vamos seguir a ISO 9001” e pense também nos funcionários. Você nem precisa saber os números, basta perguntar. Uma norma é a experiência condensada de milhares de pessoas, e você fica pronto para a certificação desde o começo.\n\n#shorts #IA #ISO9001",
+      "stitky": [
+        "IA",
+        "inteligência artificial",
+        "normas",
+        "ISO 9001",
+        "gestão da qualidade"
+      ]
+    }
+  }
+}

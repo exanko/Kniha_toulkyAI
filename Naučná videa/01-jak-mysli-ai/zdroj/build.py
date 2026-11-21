@@ -1,11 +1,12 @@
 """Sestaví hotová videa: vyrenderuje scény (make.py) a přidá hlas podle casovani.json.
-Použití:  python3 build.py [cs en es hi]   (bez argumentu všechny jazyky; vyžaduje ffmpeg, Pillow, numpy, font Inter)"""
+Použití:  python3 build.py [cs en es hi pt]   (bez argumentu všechny jazyky; vyžaduje ffmpeg, Pillow, numpy, font Inter)"""
 import json, subprocess, os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 SEG = json.load(open("casovani.json"))           # [začátek, konec] řeči každé scény v nahrávce (s)
-SRC = {"cs": "../zvuk/hlas-CZ.mp3", "en": "../zvuk/voice-EN.mp3", "es": "../zvuk/voz-ES.mp3", "hi": "../zvuk/awaz-HI.mp3"}
+SRC = {"cs": "../zvuk/hlas-CZ.mp3", "en": "../zvuk/voice-EN.mp3", "es": "../zvuk/voz-ES.mp3", "hi": "../zvuk/awaz-HI.mp3", "pt": "../zvuk/voz-PT.mp3"}
 OUT = {"cs": "../01-jak-mysli-ai-CZ.mp4", "en": "../01-how-ai-thinks-EN.mp4", "es": "../01-como-piensa-la-ia-ES.mp4",
-       "hi": "../01-ai-kaise-sochta-hai-HI.mp4"}
+       "hi": "../01-ai-kaise-sochta-hai-HI.mp4",
+       "pt": "../01-como-a-ia-pensa-PT.mp4"}
 import sys
 for L in sys.argv[1:] or list(SRC):
     for i in range(6):

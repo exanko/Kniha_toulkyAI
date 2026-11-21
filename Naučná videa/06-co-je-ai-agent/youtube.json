@@ -36,6 +36,18 @@
       "videoId": "2LNhThgcEVY",
       "url": "https://www.youtube.com/shorts/2LNhThgcEVY",
       "nahrano": "2026-11-21"
+    },
+    "pt": {
+      "soubor": "06-o-que-e-um-agente-de-ia-PT.mp4",
+      "nazev": "O que é um agente de IA? 🤖 Ferramentas, memória e skills",
+      "popis": "Um modelo de linguagem sozinho é só um cérebro. O agente dá a ele ferramentas, memória e procedimentos salvos (skills), e tenta, confere e corrige até cumprir o objetivo. Mas ele vai exatamente para onde você o direciona.\n\n#shorts #IA #AgenteDeIA",
+      "stitky": [
+        "IA",
+        "agente de IA",
+        "AI agent",
+        "automação",
+        "IA em português"
+      ]
     }
   }
 }

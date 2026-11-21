@@ -7,6 +7,7 @@
     "cs": {"hlas": "Kuba – Czech Social Media", "voice_id": "pt8Kvp57SW3o4WuGqWZG", "language_code": "cs"},
     "en": {"hlas": "George – Warm, Captivating Storyteller", "voice_id": "JBFqnCBsd6RMkjVDRZzb", "language_code": "en"},
     "es": {"hlas": "Brian C – Clean, professional, warm", "voice_id": "Czw3Dn181ypdrCOnPfif", "language_code": "es"},
-    "hi": {"hlas": "Viraj – Rich, Confident and Expressive", "voice_id": "3AMU7jXQuQa3oRvRqUmb", "language_code": "hi"}
+    "hi": {"hlas": "Viraj – Rich, Confident and Expressive", "voice_id": "3AMU7jXQuQa3oRvRqUmb", "language_code": "hi"},
+    "pt": {"hlas": "Zozo (brazilská portugalština)", "voice_id": "4dlXQwYXFHlCAUmQAu9j", "language_code": "pt"}
   }
 }
