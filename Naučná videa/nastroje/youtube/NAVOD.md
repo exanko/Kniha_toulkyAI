@@ -56,6 +56,8 @@ GitHub → **Actions → Nahrát na YouTube → Run workflow** → Díl `09`, za
 3. Vy: **Actions → Nahrát na YouTube → Run workflow** → Díl (např. `05`), Jazyky (např. `es hi`, prázdné = všechny dosud nenahrané) → Run. Jde to i z mobilní aplikace GitHubu.
 4. V YouTube Studiu video zkontrolujete, nastavíte související video a zveřejníte.
 
+U starších dílů (01–08), jejichž české a anglické verze byly nahrané ručně, obsahuje `youtube.json` jen nové jazyky – jinak by je workflow nahrálo znovu.
+
 Skript nikdy nenahraje jazyk, který už má v `youtube.json` vyplněné `videoId` (pokud se mu výslovně neřekne `--znovu`), takže omylem spuštěný workflow nic nezdvojí.
 
 ## Limity
