@@ -1,10 +1,11 @@
 # 09 · Projekt je strom / Your project is a tree / Tu proyecto es un árbol / आपका प्रोजेक्ट एक पेड़ है
 
-**Stav:** ✅ hotovo (CZ, EN, ES, HI)
+**Stav:** ✅ hotovo a zveřejněno na YouTube (CZ, EN, ES, HI – 21. 11. 2026)
 
 | | 🇨🇿 Česky | 🇬🇧 English | 🇪🇸 Español | 🇮🇳 हिन्दी |
 |---|---|---|---|---|
 | Video | [09-projekt-je-strom-CZ.mp4](09-projekt-je-strom-CZ.mp4) (53 s) | [09-your-project-is-a-tree-EN.mp4](09-your-project-is-a-tree-EN.mp4) (57 s) | [09-tu-proyecto-es-un-arbol-ES.mp4](09-tu-proyecto-es-un-arbol-ES.mp4) (58 s) | [09-aapka-project-ek-ped-hai-HI.mp4](09-aapka-project-ek-ped-hai-HI.mp4) (70 s) |
+| YouTube | [▶️ Short](https://www.youtube.com/shorts/xPLJMW0BRuA) | [▶️ Short](https://www.youtube.com/shorts/-ER7VNDV8ao) | [▶️ Short](https://www.youtube.com/shorts/Kgl1PG67J2w) | [▶️ Short](https://www.youtube.com/shorts/nR_pj6xu0_Y) |
 | Náhled | <img src="nahled-cs.jpg" width="200"> | <img src="nahled-en.jpg" width="200"> | <img src="nahled-es.jpg" width="200"> | <img src="nahled-hi.jpg" width="200"> |
 
 **Myšlenka:** Strom není AI, ale tvůj projekt. AI je zavlažování a hnojení – strom díky ní roste sám a rychle. Člověk stříhá (určuje směr) a hlídá škůdce (když AI ztratí nit, připomene jí cíl). Bez plánu v malém květináči se pořád přesazuje – každé přesazení je přestavba projektu. S plánem a zkouškou na začátku se zasadí jednou a strom plodí.

@@ -255,6 +255,10 @@ Edit the second attached image exactly as described before (same garden, style, 
 
 ## YouTube
 
+Zveřejněno 21. 11. 2026: 🇨🇿 https://www.youtube.com/shorts/xPLJMW0BRuA · 🇬🇧 https://www.youtube.com/shorts/-ER7VNDV8ao · 🇪🇸 https://www.youtube.com/shorts/Kgl1PG67J2w · 🇮🇳 https://www.youtube.com/shorts/nR_pj6xu0_Y
+
+Odkazy v popisu Shorts nejsou klikací – místo nich se v YouTube Studiu nastavuje **související video** (jedno na Short): 🇨🇿/🇬🇧 díl 09 → díl 08 ve stejném jazyce, 🇪🇸 a 🇮🇳 díl 09 → 🇬🇧 díl 09 (dokud nejsou další díly v ES/HI).
+
 | | Název | Popis |
 |---|---|---|
 | 🇨🇿 | Tvůj projekt je strom 🌳 Jak pracovat s AI | AI strom zalévá a hnojí. Ty stříháš, hlídáš škůdce – a hlavně předem vybereš, kam ho zasadíš. #shorts #AI |

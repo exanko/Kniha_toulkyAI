@@ -6,6 +6,7 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 
 - 🇨🇿 **Česky:** [playlist na YouTube](https://www.youtube.com/playlist?list=PLNpxYtAHyLcE)
 - 🇬🇧 **English:** [YouTube playlist](https://www.youtube.com/playlist?list=PLVOwx6a35k64)
+- 🇪🇸 **Español** a 🇮🇳 **हिन्दी:** playlisty založené 21. 11. 2026 (zatím díl 09 – [ES](https://www.youtube.com/shorts/Kgl1PG67J2w), [HI](https://www.youtube.com/shorts/nR_pj6xu0_Y))
 
 ## Pravidla série
 
