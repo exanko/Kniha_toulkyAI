@@ -1,0 +1,16 @@
+{
+  "_popis": "Údaje pro workflow Nahrát na YouTube. České a anglické video bylo nahrané ručně dřív, proto tu nejsou (workflow by je jinak nahrálo znovu).",
+  "spolecne": {
+    "categoryId": "27",
+    "madeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "jazyky": {
+    "es": {
+      "soubor": "04-parlanchin-vs-ve-mas-alla-ES.mp4",
+      "nazev": "¿Todas las IA son igual de inteligentes? 🤖 Parlanchín vs. ve más allá",
+      "popis": "Los modelos tienen distintos tamaños. Uno pequeño es rápido, pero se inventa cosas; los más grandes encuentran conexiones y errores que a los pequeños se les escapan. Cuanto más pequeño el modelo, más debes comprobar sus respuestas.\n\n#shorts #IA #inteligenciaartificial",
+      "stitky": ["IA", "inteligencia artificial", "modelos de IA", "IA local", "alucinaciones de la IA"]
+    }
+  }
+}
