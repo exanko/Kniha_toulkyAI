@@ -5,6 +5,41 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 W,H,FPS=1080,1920,30
 F="/usr/share/fonts/opentype/inter/"
 def font(w,s): return ImageFont.truetype(F+{"b":"Inter-Bold.otf","x":"Inter-ExtraBold.otf","m":"Inter-Medium.otf","r":"Inter-Regular.otf","sb":"Inter-SemiBold.otf"}[w],s)
+# Hindština: Inter nemá devanágarí, Noto Sans Devanagari nemá latinku → kombinovaná sazba.
+# Kreslicí plocha z new()/ImageDraw.Draw() sama sází úseky v devanágarí písmem Noto (o 3 % větším)
+# na společné účaří s Inter; text bez devanágarí jde beze změny přímo do PIL (CZ/EN/ES se nemění).
+DEV=os.path.join(os.path.dirname(os.path.abspath(__file__)),"pisma","NotoSansDevanagari-Bold.ttf")
+_DEVF={}
+def _isdev(c): return "\u0900"<=c<="\u097f" or "\ua8e0"<=c<="\ua8ff" or c in "\u200c\u200d"
+def hasdev(txt): return isinstance(txt,str) and any(_isdev(c) for c in txt)
+def _devf(f):
+    s=max(1,round(f.size*1.03))
+    if s not in _DEVF: _DEVF[s]=ImageFont.truetype(DEV,s)
+    return _DEVF[s]
+def runs(txt):
+    out=[]
+    for c in txt:
+        k=(out[-1][0] if out else False) if c==" " else _isdev(c)
+        if out and out[-1][0]==k: out[-1][1]+=c
+        else: out.append([k,c])
+    return out
+_PILDraw=ImageDraw
+class _Draw(_PILDraw.ImageDraw):
+    def textlength(self,text,font=None,*a,**k):
+        if not hasdev(text): return super().textlength(text,font,*a,**k)
+        return sum(super(_Draw,self).textlength(s,_devf(font) if dv else font,*a,**k) for dv,s in runs(text))
+    def text(self,xy,text,fill=None,font=None,anchor=None,*a,**k):
+        if not hasdev(text): return super().text(xy,text,fill,font,anchor,*a,**k)
+        if anchor not in (None,"la","ls"): raise NotImplementedError(f"devanágarí s anchor={anchor}")
+        x,y=xy; base=y if anchor=="ls" else y+font.getmetrics()[0]
+        for dv,s in runs(text):
+            g=_devf(font) if dv else font
+            super().text((x,base),s,fill,g,"ls",*a,**k); x+=super(_Draw,self).textlength(s,g)
+class _DrawModule:
+    ImageDraw=_Draw
+    @staticmethod
+    def Draw(im,mode=None): return _Draw(im,mode)
+ImageDraw=_DrawModule()
 CY=(63,215,224); MG=(192,76,255); OR=(255,179,71); WH=(240,244,250); GR=(150,162,186); RD=(255,90,110)
 def ease(t): t=max(0,min(1,t)); return 1-(1-t)**3
 def fadein(t,s,dur=0.4): return ease((t-s)/dur)

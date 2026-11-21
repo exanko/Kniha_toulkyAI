@@ -1,5 +1,7 @@
 import sys, os, subprocess, math
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "nastroje"))
+from engine import ImageDraw   # kreslení zvládne i devanágarí (hindština); latinka jde beze změny do PIL
 W,H,FPS=1080,1920,30
 F="/usr/share/fonts/opentype/inter/"
 def font(w,s): return ImageFont.truetype(F+{"b":"Inter-Bold.otf","x":"Inter-ExtraBold.otf","m":"Inter-Medium.otf","r":"Inter-Regular.otf","sb":"Inter-SemiBold.otf"}[w],s)
