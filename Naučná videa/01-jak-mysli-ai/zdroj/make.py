@@ -72,14 +72,23 @@ T={
    t2="Solo sabe qué",t3="suele venir después.",
    e1="Por eso puede",e2="sonar convincente",e3="aunque se equivoque.",e4="Lo importante,",e5="compruébalo siempre.",
    t1a="No sabe",t1b="qué es verdad."),
+ "hi":dict(q1="AI असल में",q2='"सोचता"',q3="कैसे है?",n1="वह सोचता नहीं है।",n2="वह अगले शब्द का\nअंदाज़ा लगाता है।",type="आप लिखते हैं:",
+   pre="रोटी, कपड़ा और",word="मकान",calc="AI हिसाब लगाता है कि आगे क्या आएगा:",
+   cands=[("मकान",0.82,CY),("पानी",0.09,MG),("दवाई",0.05,OR),("बिजली",0.04,GR)],
+   illu="(संख्याएँ सिर्फ़ उदाहरण हैं)",pick="→ सबसे संभावित शब्द चुनता है",again="फिर से। और फिर से।",
+   sent="रोटी, कपड़ा और मकान हर इंसान की बुनियादी ज़रूरत है।",wbw1="शब्द-दर-शब्द",wbw2="पूरा जवाब बन जाता है।",
+   t2="उसे बस इतना पता है कि",t3="आमतौर पर आगे क्या आता है।",
+   e1="इसीलिए वह",e2="भरोसेमंद लग सकता है,",e3="गलत होते हुए भी।",e4="जो ज़रूरी हो,",e5="उसे हमेशा जाँच लीजिए।",
+   t1a="उसे नहीं पता",t1b="कि सच क्या है।"),
 }[LANG]
 # per-language timing: scene durations and key moments (seconds, scene-local)
 K={"cs":dict(d=[3.16, 2.77, 8.51, 5.13, 3.95, 6.55], n2=1.2, pick=6.5, calc=2.27, again2=1.4, w0=2.23, t2=1.62, e3=1.9, e4=3.09),
    "en":dict(d=[2.86, 3.22, 9.18, 5.74, 4.73, 7.1], n2=1.29, pick=6.22, calc=2.9, again2=1.34, w0=2.52, t2=2.12, e3=1.36, e4=3.84),
-   "es":dict(d=[3.47, 3.73, 9.85, 6.85, 4.44, 7.43], n2=1.72, pick=7.06, calc=2.90, again2=1.96, w0=2.93, t2=1.88, e3=2.0, e4=3.69)}[LANG]
+   "es":dict(d=[3.47, 3.73, 9.85, 6.85, 4.44, 7.43], n2=1.72, pick=7.06, calc=2.90, again2=1.96, w0=2.93, t2=1.88, e3=2.0, e4=3.69),
+   "hi":dict(d=[2.98, 4.81, 12.33, 5.65, 6.60, 8.53], n2=1.99, pick=10.57, calc=4.17, again2=1.19, w0=2.39, t2=2.45, e3=1.08, e4=4.24)}[LANG]
 def s1(t):
     im=Image.new('RGBA',(W,H),(0,0,0,0)); d=ImageDraw.Draw(im)
-    if LANG in ("cs","es"):
+    if LANG in ("cs","es","hi"):
         ctext(d,640,T["q1"],font("b",92),WH,fadein(t,0.1)); ctext(d,760,T["q2"],font("x",170),CY,fadein(t,0.5)); ctext(d,960,T["q3"],font("x",130),WH,fadein(t,0.9))
     else:
         ctext(d,620,T["q1"],font("b",92),WH,fadein(t,0.1)); ctext(d,740,T["q2"],font("x",200),CY,fadein(t,0.5)); ctext(d,980,T["q3"],font("x",104),WH,fadein(t,0.9))
@@ -87,7 +96,7 @@ def s1(t):
 def s2(t):
     im=Image.new('RGBA',(W,H),(0,0,0,0)); d=ImageDraw.Draw(im)
     ctext(d,700,T["n1"],font("x",150 if LANG=="cs" else 130),WH,fadein(t,0.3))
-    f=font("b",{"cs":96,"en":84,"es":84}[LANG])
+    f=font("b",{"cs":96,"en":84,"es":84,"hi":84}[LANG])
     for i,l in enumerate(T["n2"].split("\n")): ctext(d,900+i*105,l,f,OR,fadein(t,K["n2"]))
     return im
 def s3(t):
@@ -122,7 +131,8 @@ def s3(t):
     return im
 def s4(t):
     im=Image.new('RGBA',(W,H),(0,0,0,0)); d=ImageDraw.Draw(im)
-    a,b=T["again"].split(". ",1); a+="."
+    sep="। " if "। " in T["again"] else ". "             # hindština končí větu dandou „।“
+    a,b=T["again"].split(sep,1); a+=sep.strip()
     f0=font("b",80); wa=d.textlength(a+" ",font=f0); wb=d.textlength(b,font=f0); x=(W-wa-wb)/2
     d.text((x,420),a,font=f0,fill=mix(WH,fadein(t,0.3))); d.text((x+wa,420),b,font=f0,fill=mix(WH,fadein(t,K["again2"])))
     ws=T["sent"].split(); k=min(len(ws),int(max(0,(t-K["w0"]+0.45)/0.32)))
@@ -137,7 +147,7 @@ def s5(t):
         f=font("x",96); ctext(d,700,T["t1"],f,WH,fadein(t,0.3))
         ctext(d,880,T["t2"],f,OR,fadein(t,K["t2"])); ctext(d,1000,T["t3"],f,OR,fadein(t,K["t2"]+0.25))
     else:
-        f=font("x",88); ctext(d,620,T["t1a"],f,WH,fadein(t,0.3)); ctext(d,730,T["t1b"],f,WH,fadein(t,0.5))
+        f=font("x",80 if LANG=="hi" else 88); ctext(d,620,T["t1a"],f,WH,fadein(t,0.3)); ctext(d,730,T["t1b"],f,WH,fadein(t,0.5))
         ctext(d,900,T["t2"],f,OR,fadein(t,K["t2"])); ctext(d,1010,T["t3"],f,OR,fadein(t,K["t2"]+0.25))
     return im
 def s6(t):

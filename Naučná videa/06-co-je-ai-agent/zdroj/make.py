@@ -16,10 +16,15 @@ T={"cs":dict(q=["Co je vlastně","AI agent?"],brain="Jazykový model = mozek",sm
    "es":dict(q=["¿Qué es,","en realidad,","un agente de IA?"],brain="Modelo de lenguaje = cerebro",smart="inteligente",hands="manos",mem="memoria",
         tools="Le da herramientas.",tl=["web","archivos","programas"],memt="Le da memoria.",notes=["proyecto: libro","idiomas: CZ + EN","voces: Kuba, George"],next="La próxima vez lo sabe.",
         recipe="Guarda el procedimiento.",steps=["1. transcribe","2. sincroniza","3. renderiza"],skill="= SKILL",
-        loop=["prueba","comprueba","corrige"],goal="META",careful="Pero ojo:",goes=["Va exactamente","adonde lo diriges."],point="Así que dirígelo bien.")}[LANG]
+        loop=["prueba","comprueba","corrige"],goal="META",careful="Pero ojo:",goes=["Va exactamente","adonde lo diriges."],point="Así que dirígelo bien."),
+   "hi":dict(q=["AI एजेंट","असल में क्या है?"],brain="लैंग्वेज मॉडल = दिमाग",smart="समझदार",hands="हाथ",mem="याददाश्त",
+        tools="एजेंट उसे औज़ार देता है।",tl=["वेब","फ़ाइलें","प्रोग्राम"],memt="वह उसे याददाश्त देता है।",notes=["प्रोजेक्ट: किताब","भाषाएँ: CZ + EN","आवाज़ें: Kuba, George"],next="अगली बार उसे याद रहता है।",
+        recipe="वह तरीका सहेज लेता है।",steps=["1. ट्रांसक्राइब","2. टाइमिंग","3. रेंडर"],skill="= SKILL",
+        loop=["कोशिश","जाँच","सुधार"],goal="लक्ष्य",careful="बस ध्यान रखिए:",goes=["वह ठीक वहीं जाता है,","जहाँ आप उसे भेजते हैं।"],point="इसलिए उसे सही दिशा दीजिए।")}[LANG]
 K={"cs":dict(smart=3.07,tools=2.03,tstep=0.8,write=1.55,next=3.28,save=1.78,skill=3.05,goal=3.61,goes=1.08,point=3.48),
    "en":dict(smart=3.52,tools=2.44,tstep=0.75,write=1.93,next=3.47,save=1.79,skill=3.45,goal=4.27,goes=1.62,point=4.03),
-   "es":dict(smart=4.55,tools=2.61,tstep=1.4,write=1.91,next=3.11,save=1.88,skill=3.61,goal=4.14,goes=1.36,point=3.82)}[LANG]
+   "es":dict(smart=4.55,tools=2.61,tstep=1.4,write=1.91,next=3.11,save=1.88,skill=3.61,goal=4.14,goes=1.36,point=3.82),
+   "hi":dict(smart=3.74,tools=3.02,tstep=1.5,write=2.59,next=4.43,save=2.35,skill=5.43,goal=5.54,goes=2.07,point=5.91)}[LANG]
 D=durations(SEG)
 def brain(d,cx,cy,r,a):
     if a<=0: return
@@ -89,7 +94,7 @@ def s4(t):
     return im
 def s5(t):
     im,d=new()
-    ctext(d,340,T["recipe"],font("x",{"cs":92,"en":84,"es":76}[LANG]),WH,fadein(t,0.2))
+    ctext(d,340,T["recipe"],font("x",{"cs":92,"en":84,"es":76,"hi":76}[LANG]),WH,fadein(t,0.2))
     a=fadein(t,K["save"]-0.4)
     if a>0:
         d.rounded_rectangle([230,560,850,1150],radius=28,fill=(255,179,71,int(40*a)),outline=mix(OR,a),width=5)

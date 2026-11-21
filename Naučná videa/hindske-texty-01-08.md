@@ -1,8 +1,8 @@
 # 🇮🇳 Hindské mluvené texty – díly 01–08
 
-**Stav:** ✍️ texty hotové · čeká na namluvení (hlas Viraj – Rich, Confident and Expressive)
+**Stav:** ✅ namluveno workflow Namluvit (hlas Viraj – Rich, Confident and Expressive, 21. 11. 2026) · videa `NN-…-HI.mp4` jsou ve složkách dílů
 
-Do ElevenLabs vložit jen text z bloku – scény jsou oddělené prázdným řádkem. Nahrávku uložit do složky dílu jako `zvuk/awaz-HI.mp3`. Pak Claude doplní hindské popisky do `zdroj/make.py`, časování a vyrenderuje `NN-…-HI.mp4`.
+Workflow Namluvit bere text z bloku – scény jsou oddělené prázdným řádkem – a ukládá nahrávku do složky dílu jako `zvuk/awaz-HI.mp3` (s časy písmen v `awaz-HI.casy.json`). Hindské popisky jsou v `zdroj/make.py` jednotlivých dílů.
 
 Stejně jako u dílu 09: vykání (आप), běžná hindsko-anglická slova (मॉडल, डेटा, प्रोग्राम…), AI napsané "एआई" a Git "गिट", aby je hlas vyslovil správně. Před zveřejněním je vhodné nechat texty přečíst rodilého mluvčího.
 

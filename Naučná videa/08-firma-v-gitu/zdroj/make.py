@@ -18,10 +18,16 @@ T={"cs":dict(q=["Jak dostat malou firmu","do doby AI?"],one="Jedno místo pro v�
         data="Sube tus datos.",ask=["¿Todo te queda claro?","¿Hay contradicciones?"],up="Desde los cimientos.",
         layers=["cálculos","contratos","productos","tu historia"],know="Aporta tu experiencia.",kh="mi experiencia",crit="¿Qué opinas de verdad?",
         git="Git registra cada cambio.",lost="Nada se pierde.",cust="cliente",out=["presentación","folleto","calculadora"],
-        small="pequeña empresa",big="gran empresa",robust=["→ hace falta un sistema","más robusto"],careful="Eso sí:")}[LANG]
+        small="pequeña empresa",big="gran empresa",robust=["→ hace falta un sistema","más robusto"],careful="Eso sí:"),
+   "hi":dict(q=["एक छोटे बिज़नेस को","AI के दौर में","कैसे लाएँ?"],one="हर चीज़ के लिए एक जगह।",repo="रिपॉज़िटरी",truth="सच का एक ही स्रोत।",
+        data="अपना डेटा डालिए।",ask=["क्या सब कुछ साफ़ है?","विरोधाभास कहाँ हैं?"],up="नींव से ऊपर की ओर।",
+        layers=["हिसाब-किताब","कॉन्ट्रैक्ट","प्रोडक्ट","कंपनी की कहानी"],know="लगातार अपना अनुभव दीजिए।",kh="मेरा अनुभव",crit="आप ईमानदारी से क्या सोचते हैं?",
+        git="Git हर बदलाव दर्ज करता है।",lost="कुछ भी नहीं खोता।",cust="ग्राहक",out=["प्रेज़ेंटेशन","पर्चा","कैलकुलेटर"],
+        small="छोटा बिज़नेस",big="बड़ी कंपनी",robust=["→ वहाँ ज़्यादा मज़बूत","सिस्टम चाहिए।"],careful="बस एक बात:")}[LANG]
 K={"cs":dict(repo=2.36,truth=3.76,ask=3.94,layer=2.54,lstep=0.6,crit=2.63,lost=2.20,out=[3.80,4.80,5.50],big=1.17,robust=4.13),
    "en":dict(repo=1.59,truth=2.78,ask=6.03,layer=2.60,lstep=0.55,crit=2.42,lost=2.44,out=[3.83,4.83,5.58],big=1.81,robust=5.28),
-   "es":dict(repo=2.90,truth=4.50,ask=3.47,layer=3.63,lstep=0.9,crit=3.57,lost=2.63,out=[4.20,5.40,6.44],big=1.73,robust=5.41)}[LANG]
+   "es":dict(repo=2.90,truth=4.50,ask=3.47,layer=3.63,lstep=0.9,crit=3.57,lost=2.63,out=[4.20,5.40,6.44],big=1.73,robust=5.41),
+   "hi":dict(repo=2.94,truth=5.02,ask=4.39,layer=2.90,lstep=1.0,crit=3.31,lost=3.07,out=[4.67,5.76,6.64],big=3.15,robust=5.71)}[LANG]
 D=durations(SEG)
 def repo_icon(d,cx,cy,s,a):
     if a<=0: return
