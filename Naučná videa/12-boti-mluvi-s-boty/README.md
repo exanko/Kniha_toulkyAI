@@ -2,7 +2,7 @@
 
 | | 🇨🇿 Česky | 🇬🇧 English | 🇪🇸 Español | 🇮🇳 हिन्दी | 🇧🇷 Português |
 |---|---|---|---|---|---|
-| Video | [12-kdyz-boti-mluvi-s-boty-CZ.mp4](12-kdyz-boti-mluvi-s-boty-CZ.mp4) (38 s) | [12-when-bots-talk-to-bots-EN.mp4](12-when-bots-talk-to-bots-EN.mp4) (38 s) | [12-cuando-los-bots-hablan-con-bots-ES.mp4](12-cuando-los-bots-hablan-con-bots-ES.mp4) (? s) | [12-jab-bots-bots-se-baat-karte-hain-HI.mp4](12-jab-bots-bots-se-baat-karte-hain-HI.mp4) (? s) | [12-quando-bots-conversam-com-bots-PT.mp4](12-quando-bots-conversam-com-bots-PT.mp4) (? s) |
+| Video | [12-kdyz-boti-mluvi-s-boty-CZ.mp4](12-kdyz-boti-mluvi-s-boty-CZ.mp4) (38 s) | [12-when-bots-talk-to-bots-EN.mp4](12-when-bots-talk-to-bots-EN.mp4) (38 s) | [12-cuando-los-bots-hablan-con-bots-ES.mp4](12-cuando-los-bots-hablan-con-bots-ES.mp4) (41 s) | [12-jab-bots-bots-se-baat-karte-hain-HI.mp4](12-jab-bots-bots-se-baat-karte-hain-HI.mp4) (46 s) | [12-quando-bots-conversam-com-bots-PT.mp4](12-quando-bots-conversam-com-bots-PT.mp4) (38 s) |
 | Náhled | <img src="nahled-cs.jpg" width="200"> | <img src="nahled-en.jpg" width="200"> | <img src="nahled-es.jpg" width="200"> | <img src="nahled-hi.jpg" width="200"> | <img src="nahled-pt.jpg" width="200"> |
 
 **Myšlenka:** Boti, kteří spolu jen mluví (společný příběh: vypravěč, postavy, ilustrátor), zpočátku sypou nápady, ale bez nového vstupu si začnou přikyvovat a konverzace sklouzne do prázdných frází. AI potřebuje skutečná data a otázky zvenku – to je role člověka.

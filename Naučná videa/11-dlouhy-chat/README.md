@@ -2,7 +2,7 @@
 
 | | 🇨🇿 Česky | 🇬🇧 English | 🇪🇸 Español | 🇮🇳 हिन्दी | 🇧🇷 Português |
 |---|---|---|---|---|---|
-| Video | [11-proc-ai-v-dlouhem-chatu-chybuje-CZ.mp4](11-proc-ai-v-dlouhem-chatu-chybuje-CZ.mp4) (? s) | [11-why-ai-slips-in-long-chats-EN.mp4](11-why-ai-slips-in-long-chats-EN.mp4) (? s) | [11-por-que-la-ia-falla-en-chats-largos-ES.mp4](11-por-que-la-ia-falla-en-chats-largos-ES.mp4) (? s) | [11-lambi-chat-mein-ai-kyon-chookta-hai-HI.mp4](11-lambi-chat-mein-ai-kyon-chookta-hai-HI.mp4) (? s) | [11-por-que-a-ia-erra-em-chats-longos-PT.mp4](11-por-que-a-ia-erra-em-chats-longos-PT.mp4) (? s) |
+| Video | [11-proc-ai-v-dlouhem-chatu-chybuje-CZ.mp4](11-proc-ai-v-dlouhem-chatu-chybuje-CZ.mp4) (36 s) | [11-why-ai-slips-in-long-chats-EN.mp4](11-why-ai-slips-in-long-chats-EN.mp4) (38 s) | [11-por-que-la-ia-falla-en-chats-largos-ES.mp4](11-por-que-la-ia-falla-en-chats-largos-ES.mp4) (37 s) | [11-lambi-chat-mein-ai-kyon-chookta-hai-HI.mp4](11-lambi-chat-mein-ai-kyon-chookta-hai-HI.mp4) (41 s) | [11-por-que-a-ia-erra-em-chats-longos-PT.mp4](11-por-que-a-ia-erra-em-chats-longos-PT.mp4) (34 s) |
 | Náhled | <img src="nahled-cs.jpg" width="200"> | <img src="nahled-en.jpg" width="200"> | <img src="nahled-es.jpg" width="200"> | <img src="nahled-hi.jpg" width="200"> | <img src="nahled-pt.jpg" width="200"> |
 
 **Myšlenka:** V dlouhém chatu jde s každou zprávou do modelu celá konverzace, hromadí se protiklady a při zkracování může vypadnout důležitá věc. Pomůže nový chat s krátkými poznámkami – krátký a čistý kontext je lepší než dlouhý a zamotaný.

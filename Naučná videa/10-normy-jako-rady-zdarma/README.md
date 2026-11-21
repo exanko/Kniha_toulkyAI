@@ -2,7 +2,7 @@
 
 | | 🇨🇿 Česky | 🇬🇧 English | 🇪🇸 Español | 🇮🇳 हिन्दी | 🇧🇷 Português |
 |---|---|---|---|---|---|
-| Video | [10-normy-jako-rady-zdarma-CZ.mp4](10-normy-jako-rady-zdarma-CZ.mp4) (34 s) | [10-standards-as-free-advice-EN.mp4](10-standards-as-free-advice-EN.mp4) (36 s) | [10-normas-como-consejos-gratis-ES.mp4](10-normas-como-consejos-gratis-ES.mp4) (? s) | [10-maanak-muft-salaah-HI.mp4](10-maanak-muft-salaah-HI.mp4) (? s) | [10-normas-como-conselhos-gratis-PT.mp4](10-normas-como-conselhos-gratis-PT.mp4) (? s) |
+| Video | [10-normy-jako-rady-zdarma-CZ.mp4](10-normy-jako-rady-zdarma-CZ.mp4) (34 s) | [10-standards-as-free-advice-EN.mp4](10-standards-as-free-advice-EN.mp4) (36 s) | [10-normas-como-consejos-gratis-ES.mp4](10-normas-como-consejos-gratis-ES.mp4) (37 s) | [10-maanak-muft-salaah-HI.mp4](10-maanak-muft-salaah-HI.mp4) (39 s) | [10-normas-como-conselhos-gratis-PT.mp4](10-normas-como-conselhos-gratis-PT.mp4) (33 s) |
 | Náhled | <img src="nahled-cs.jpg" width="200"> | <img src="nahled-en.jpg" width="200"> | <img src="nahled-es.jpg" width="200"> | <img src="nahled-hi.jpg" width="200"> | <img src="nahled-pt.jpg" width="200"> |
 
 **Myšlenka:** Normy, dřív dlouhé texty a bolení hlavy, jsou s AI rady zdarma: stačí říct „udělejme to podle ISO 9001 a mysli na zaměstnance“, čísla norem ani znát nemusíš. Norma je zhuštěná zkušenost tisíců lidí a na certifikaci jsi připravený od začátku.

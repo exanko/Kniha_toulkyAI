@@ -2,7 +2,7 @@
 
 | | 🇨🇿 Česky | 🇬🇧 English | 🇪🇸 Español | 🇮🇳 हिन्दी | 🇧🇷 Português |
 |---|---|---|---|---|---|
-| Video | [13-mysleni-rychle-a-pomale-CZ.mp4](13-mysleni-rychle-a-pomale-CZ.mp4) (? s) | [13-thinking-fast-and-slow-EN.mp4](13-thinking-fast-and-slow-EN.mp4) (? s) | [13-pensar-rapido-y-despacio-ES.mp4](13-pensar-rapido-y-despacio-ES.mp4) (? s) | [13-tez-soch-aur-dheemi-soch-HI.mp4](13-tez-soch-aur-dheemi-soch-HI.mp4) (? s) | [13-pensar-rapido-e-devagar-PT.mp4](13-pensar-rapido-e-devagar-PT.mp4) (? s) |
+| Video | [13-mysleni-rychle-a-pomale-CZ.mp4](13-mysleni-rychle-a-pomale-CZ.mp4) (36 s) | [13-thinking-fast-and-slow-EN.mp4](13-thinking-fast-and-slow-EN.mp4) (37 s) | [13-pensar-rapido-y-despacio-ES.mp4](13-pensar-rapido-y-despacio-ES.mp4) (40 s) | [13-tez-soch-aur-dheemi-soch-HI.mp4](13-tez-soch-aur-dheemi-soch-HI.mp4) (46 s) | [13-pensar-rapido-e-devagar-PT.mp4](13-pensar-rapido-e-devagar-PT.mp4) (36 s) |
 | Náhled | <img src="nahled-cs.jpg" width="200"> | <img src="nahled-en.jpg" width="200"> | <img src="nahled-es.jpg" width="200"> | <img src="nahled-hi.jpg" width="200"> | <img src="nahled-pt.jpg" width="200"> |
 
 **Myšlenka:** Lidé myslí rychle (hned, ale často vedle) a pomalu (počítá, ověřuje, zvažuje – a rádi se mu vyhneme). Dřív jsme pomalé myšlení přenechávali vyhledávači, teď ho můžeme přenechat celé AI. Kdo ale přestane myslet pomalu sám, nepozná, kdy se AI mýlí: dřinu nech AI, úsudek si nech.
