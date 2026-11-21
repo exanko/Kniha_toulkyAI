@@ -11,7 +11,7 @@ on:
         description: "Díl – číslo nebo víc čísel oddělených mezerou (např. 09 nebo 01 02 03)"
         required: true
       jazyky:
-        description: "Jazyky oddělené mezerou (cs en es hi). Prázdné = všechny dosud nenahrané."
+        description: "Jazyky oddělené mezerou (cs en es hi). Prázdné = všechny dosud nenahrané. Playlisty zvolených jazyků se nakonec seřadí podle čísel dílů."
         required: false
         default: ""
       verejne:
