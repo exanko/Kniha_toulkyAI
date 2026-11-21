@@ -1,0 +1,70 @@
+{
+  "_popis": "Údaje pro workflow Nahrát na YouTube (po sloučení do main se nahraje a naplánuje vše, co nemá videoId).",
+  "spolecne": {
+    "categoryId": "27",
+    "madeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "jazyky": {
+    "cs": {
+      "soubor": "13-mysleni-rychle-a-pomale-CZ.mp4",
+      "nazev": "Myšlení rychlé a pomalé 🧠 Co nesvěřit AI",
+      "popis": "Rychlé myšlení odpoví hned, ale často se splete. Pomalé počítá, ověřuje a zvažuje – a lidé se mu rádi vyhnou. Teď ho můžeme přenechat celé AI. Jenže kdo přestane myslet pomalu sám, nepozná, kdy se AI mýlí. Dřinu nech AI, úsudek si nech.\n\n#shorts #AI #myšlení",
+      "stitky": [
+        "AI",
+        "umělá inteligence",
+        "kritické myšlení",
+        "psychologie",
+        "rozhodování"
+      ]
+    },
+    "en": {
+      "soubor": "13-thinking-fast-and-slow-EN.mp4",
+      "nazev": "Thinking fast and slow 🧠 What not to hand to AI",
+      "popis": "Fast thinking answers instantly but is often wrong. Slow thinking calculates, checks and weighs – and people happily avoid it. Now we can hand all of it to AI. But if you stop thinking slowly yourself, you won't notice when the AI is wrong. Let AI do the heavy lifting; keep the judgment.\n\n#shorts #AI #criticalthinking",
+      "stitky": [
+        "AI",
+        "artificial intelligence",
+        "critical thinking",
+        "psychology",
+        "decision making"
+      ]
+    },
+    "es": {
+      "soubor": "13-pensar-rapido-y-despacio-ES.mp4",
+      "nazev": "Pensar rápido y despacio 🧠 Lo que no debes dejarle a la IA",
+      "popis": "El pensamiento rápido responde al instante, pero a menudo falla. El lento calcula, verifica y sopesa, y la gente lo evita con gusto. Ahora podemos dejárselo todo a la IA. Pero si dejas de pensar despacio, no notarás cuándo se equivoca. Que la IA haga el trabajo pesado; el criterio, quédatelo tú.\n\n#shorts #IA #pensamientocritico",
+      "stitky": [
+        "IA",
+        "inteligencia artificial",
+        "pensamiento crítico",
+        "psicología",
+        "toma de decisiones"
+      ]
+    },
+    "hi": {
+      "soubor": "13-tez-soch-aur-dheemi-soch-HI.mp4",
+      "nazev": "तेज़ सोच और धीमी सोच 🧠 AI को क्या नहीं सौंपना चाहिए",
+      "popis": "तेज़ सोच तुरंत जवाब देती है, पर अक्सर गलत होती है। धीमी सोच हिसाब लगाती है, जाँचती है, तौलती है – और लोग उससे बचते हैं। अब हम सब कुछ AI को सौंप सकते हैं। लेकिन धीमी सोच छोड़ी, तो AI की गलती नहीं दिखेगी। मेहनत AI को दीजिए, फ़ैसला अपने पास रखिए।\n\n#shorts #AI #सोच",
+      "stitky": [
+        "AI",
+        "आर्टिफिशियल इंटेलिजेंस",
+        "क्रिटिकल थिंकिंग",
+        "मनोविज्ञान",
+        "AI in Hindi"
+      ]
+    },
+    "pt": {
+      "soubor": "13-pensar-rapido-e-devagar-PT.mp4",
+      "nazev": "Pensar rápido e devagar 🧠 O que não entregar para a IA",
+      "popis": "O pensamento rápido responde na hora, mas muitas vezes erra. O lento calcula, confere e pondera – e a gente evita de bom grado. Agora dá para passar tudo para a IA. Mas, sem pensar devagar, você não percebe quando a IA erra. Deixe o trabalho pesado com a IA; o julgamento fica com você.\n\n#shorts #IA #pensamentocritico",
+      "stitky": [
+        "IA",
+        "inteligência artificial",
+        "pensamento crítico",
+        "psicologia",
+        "tomada de decisão"
+      ]
+    }
+  }
+}

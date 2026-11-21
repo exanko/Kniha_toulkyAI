@@ -26,11 +26,18 @@ T={"cs":dict(q=["Proč si doma","nepostavíš vlastní","velkou AI?"],qc=2,
         split=["इसलिए आप उसे","कई कार्ड्स में बाँटते हैं।"],every="हर शब्द के लिए कार्ड्स",every2="आपस में डेटा भेजते हैं।",
         home=["घर पर वे मदरबोर्ड","के ज़रिए बात करते हैं।"],string="धागे से जुड़ा दिमाग।",
         dc=["डेटा सेंटर में:","बेहद तेज़ कनेक्शन।"],stays="दिमाग एक टुकड़े में रहता है।",
-        why="इसीलिए:",dcl="डेटा सेंटर",dcs="सबसे बड़े मॉडल",hl="घर पर",hs="छोटे मॉडल")}[LANG]
+        why="इसीलिए:",dcl="डेटा सेंटर",dcs="सबसे बड़े मॉडल",hl="घर पर",hs="छोटे मॉडल"),
+   "pt":dict(q=["Por que não dá","para montar em casa","uma IA grande?"],qc=2,
+        big=["Um modelo grande","é enorme."],nofit="Não cabe em uma placa.",model="MODELO",
+        split=["Então você divide","entre várias placas."],every="A cada palavra, as placas",every2="trocam dados.",
+        home=["Em casa, quem conecta","é a placa-mãe."],string=["Um cérebro amarrado","com barbante."],
+        dc=["No data center:","conexão ultrarrápida."],stays="O cérebro continua inteiro.",
+        why="Por isso:",dcl="Data center",dcs="modelos gigantes",hl="Em casa",hs="modelos menores")}[LANG]
 K={"cs":dict(nofit=1.97,every=2.17,string=2.58,stays=4.12,home=3.26),
    "en":dict(nofit=2.78,every=3.11,string=2.94,stays=4.52,home=3.39),
    "es":dict(nofit=2.80,every=3.06,string=2.99,stays=5.44,home=4.01),
-   "hi":dict(nofit=2.68,every=4.11,string=4.25,stays=4.43,home=4.19)}[LANG]
+   "hi":dict(nofit=2.68,every=4.11,string=4.25,stays=4.43,home=4.19),
+   "pt":dict(nofit=2.37,every=3.28,string=3.16,stays=4.39,home=3.21)}[LANG]
 D=durations(SEG)
 def gpu(d,cx,cy,w,h,a,frac=0,fcol=MG,warn=0):
     if a<=0: return

@@ -1,0 +1,70 @@
+{
+  "_popis": "Údaje pro workflow Nahrát na YouTube (po sloučení do main se nahraje a naplánuje vše, co nemá videoId).",
+  "spolecne": {
+    "categoryId": "27",
+    "madeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "jazyky": {
+    "cs": {
+      "soubor": "11-proc-ai-v-dlouhem-chatu-chybuje-CZ.mp4",
+      "nazev": "Proč AI v dlouhém chatu chybuje? 💬 Krátký kontext vítězí",
+      "popis": "S každou zprávou jde do modelu znovu celá konverzace. Hromadí se protiklady, a když se chat nevejde do paměti, zkrátí se – a důležitá věc může vypadnout. Pomůže nový chat a krátké poznámky na začátku.\n\n#shorts #AI #chatbot",
+      "stitky": [
+        "AI",
+        "umělá inteligence",
+        "chatbot",
+        "kontext",
+        "tipy pro AI"
+      ]
+    },
+    "en": {
+      "soubor": "11-why-ai-slips-in-long-chats-EN.mp4",
+      "nazev": "Why does AI slip in long chats? 💬 Short context wins",
+      "popis": "With every message, the whole conversation goes back into the model. Contradictions pile up, and when the chat no longer fits in memory it gets shortened – something important can fall out. Start a new chat and bring short notes.\n\n#shorts #AI #chatbot",
+      "stitky": [
+        "AI",
+        "artificial intelligence",
+        "chatbot",
+        "context window",
+        "AI tips"
+      ]
+    },
+    "es": {
+      "soubor": "11-por-que-la-ia-falla-en-chats-largos-ES.mp4",
+      "nazev": "¿Por qué la IA falla en chats largos? 💬 Gana el contexto corto",
+      "popis": "Con cada mensaje, toda la conversación vuelve a entrar en el modelo. Se acumulan contradicciones y, cuando el chat ya no cabe en la memoria, se recorta: algo importante puede quedarse fuera. Empieza un chat nuevo con notas cortas.\n\n#shorts #IA #chatbot",
+      "stitky": [
+        "IA",
+        "inteligencia artificial",
+        "chatbot",
+        "contexto",
+        "consejos de IA"
+      ]
+    },
+    "hi": {
+      "soubor": "11-lambi-chat-mein-ai-kyon-chookta-hai-HI.mp4",
+      "nazev": "लंबी चैट में AI क्यों चूकता है? 💬 छोटा संदर्भ बेहतर",
+      "popis": "हर मैसेज के साथ पूरी बातचीत फिर से मॉडल में जाती है। विरोधाभास जमा होते हैं, और जब चैट याददाश्त में नहीं समाती, तो उसे छोटा किया जाता है – कोई ज़रूरी बात छूट सकती है। नई चैट शुरू कीजिए और छोटे नोट्स दीजिए।\n\n#shorts #AI #chatbot",
+      "stitky": [
+        "AI",
+        "आर्टिफिशियल इंटेलिजेंस",
+        "चैटबॉट",
+        "AI टिप्स",
+        "AI in Hindi"
+      ]
+    },
+    "pt": {
+      "soubor": "11-por-que-a-ia-erra-em-chats-longos-PT.mp4",
+      "nazev": "Por que a IA erra em chats longos? 💬 Contexto curto vence",
+      "popis": "A cada mensagem, a conversa inteira entra de novo no modelo. As contradições se acumulam e, quando o chat não cabe mais na memória, ele é encurtado – algo importante pode ficar de fora. Comece um chat novo com notas curtas.\n\n#shorts #IA #chatbot",
+      "stitky": [
+        "IA",
+        "inteligência artificial",
+        "chatbot",
+        "contexto",
+        "dicas de IA"
+      ]
+    }
+  }
+}

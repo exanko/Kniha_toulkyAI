@@ -186,6 +186,13 @@ def srovnej(token, L, pl, jen_zjistit=False, cekej_na=()):
         time.sleep(5)
     if any(v not in ev for v in vids) or len(set(vids)) != len(vids):
         return "pořadí neřeším – v playlistu jsou i videa, která repo nezná"
+    chybi = [v for v in sorted(ev, key=ev.get) if v not in vids]   # např. playlist založený až po nahrání
+    if chybi and not jen_zjistit:
+        for v in chybi: http("POST", f"{API}/youtube/v3/playlistItems?part=snippet", token,
+                             {"snippet": {"playlistId": pl, "resourceId": {"kind": "youtube#video", "videoId": v}}})
+        print(f"   {L}: do playlistu doplněno {len(chybi)} videí")
+        return srovnej(token, L, pl, cekej_na=chybi)
+    if chybi: return f"v playlistu chybí {len(chybi)} videí – doplní se při spuštění bez zkoušky"
     chtene = sorted(vids, key=lambda v: ev[v])
     if vids == chtene: return "pořadí v pořádku"
     if jen_zjistit: return "pořadí nesedí – srovná se při spuštění bez zkoušky"

@@ -16,9 +16,10 @@ from engine import W, H, FPS, font, CY, OR, WH, wrap, fadein, mix, _off, duratio
 SEG = json.load(open(os.path.join(here, "casovani.json")))
 LEAD, TAIL, LAST = 0.25, 0.40, 1.6      # náběh před řečí, dojezd po ní, dojezd poslední scény
 XF = 0.35                               # prolínání pozadí mezi scénami (s)
-AUDIO = {"cs": "zvuk/hlas-CZ.mp3", "en": "zvuk/voice-EN.mp3", "es": "zvuk/voz-ES.mp3", "hi": "zvuk/awaz-HI.mp3"}
+AUDIO = {"cs": "zvuk/hlas-CZ.mp3", "en": "zvuk/voice-EN.mp3", "es": "zvuk/voz-ES.mp3", "hi": "zvuk/awaz-HI.mp3", "pt": "zvuk/voz-PT.mp3"}
 OUT = {"cs": "09-projekt-je-strom-CZ.mp4", "en": "09-your-project-is-a-tree-EN.mp4",
-       "es": "09-tu-proyecto-es-un-arbol-ES.mp4", "hi": "09-aapka-project-ek-ped-hai-HI.mp4"}
+       "es": "09-tu-proyecto-es-un-arbol-ES.mp4", "hi": "09-aapka-project-ek-ped-hai-HI.mp4",
+       "pt": "09-o-seu-projeto-e-uma-arvore-PT.mp4"}
 DEV = os.path.join(ROOT, "..", "nastroje", "pisma", "NotoSansDevanagari-Bold.ttf")   # hindština (devanágarí)
 
 # Pozadí scén: klip V<n> (úsek od–do v sekundách, který se natáhne/zrychlí na délku scény),
@@ -45,6 +46,10 @@ T = {
         ("छँटाई = दिशा", "यह आपका काम है"), ("कीड़े = AI भटक गया", "उसे मकसद याद दिलाइए"),
         ("बिना प्लान", "बार-बार गमला बदलना"), ("गमला बदलना = दोबारा बनाना", "पूरा प्रोजेक्ट"),
         ("पहले प्लान और टेस्ट", "पेड़ एक ही बार लगाइए"), ("AI पानी देता है", "जगह आप चुनते हैं")],
+ "pt": [("Projeto = árvore", "Sem IA cresce devagar"), ("IA = irrigação", "A árvore cresce sozinha"),
+        ("Podar = dar direção", "Esse é o seu trabalho"), ("Pragas = a IA perde o fio", "Lembre o objetivo"),
+        ("Sem plano", "transplantes sem fim"), ("Transplantar = refazer", "o projeto inteiro"),
+        ("Primeiro planeje e teste", "plante uma vez só"), ("A IA rega", "O lugar quem escolhe é você")]
 }
 SUBC = [OR, CY, CY, CY, OR, OR, CY, CY]
 NS = len(STILLS)
@@ -229,7 +234,8 @@ def preview(L):
     sheet.save(os.path.join(here, f"prev_{L}.png"))
 
 THUMB = {"cs": ("Projekt = strom", "Jak pracovat s AI"), "en": ("Project = tree", "How to work with AI"),
-         "es": ("Proyecto = árbol", "Cómo trabajar con IA"), "hi": ("प्रोजेक्ट = पेड़", "AI के साथ कैसे काम करें")}
+         "es": ("Proyecto = árbol", "Cómo trabajar con IA"), "hi": ("प्रोजेक्ट = पेड़", "AI के साथ कैसे काम करें"),
+         "pt": ("Projeto = árvore", "Como trabalhar com IA")}
 
 def nahled(L):
     """Náhled 540×960: plodící jabloň (K12) s nadpisem dílu."""
@@ -241,5 +247,5 @@ def nahled(L):
     T[L].pop(); SUBC.pop()
 
 if __name__ == "__main__":
-    mode = sys.argv[1]; langs = sys.argv[2:] or ["cs", "en", "es", "hi"]
+    mode = sys.argv[1]; langs = sys.argv[2:] or ["cs", "en", "es", "hi", "pt"]
     for L in langs: {"preview": preview, "build": build, "nahled": nahled}[mode](L)

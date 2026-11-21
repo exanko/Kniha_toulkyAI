@@ -16,11 +16,15 @@ T={"cs":dict(q=["Když něco nevidíme,","znamená to,","že to neexistuje?"],ra
         ai=["La IA encuentra patrones","que se nos escapan."],fake=["…y patrones","que no existen."],check="Verifica cada descubrimiento."),
    "hi":dict(q=["अगर हम देख नहीं सकते,","तो क्या वह","है ही नहीं?"],radio=["रेडियो तरंगें","हमेशा से यहाँ थीं।"],device="बस यंत्र नहीं था।",
         antenna="एंटीना की खराबी?",noise="शोर",whatif="अगर यह शोर न हो तो?",nothing=["हमारा \"कुछ नहीं\"","सबूत नहीं है।"],proof="हमारे पास औज़ार नहीं है।",
-        ai=["AI वे पैटर्न खोजता है,","जो हमसे छूट जाते हैं।"],fake=["…और वे भी,","जो हैं ही नहीं।"],check="हर खोज की जाँच ज़रूरी है।")}[LANG]
+        ai=["AI वे पैटर्न खोजता है,","जो हमसे छूट जाते हैं।"],fake=["…और वे भी,","जो हैं ही नहीं।"],check="हर खोज की जाँच ज़रूरी है।"),
+   "pt":dict(q=["Se a gente não","consegue ver,","não existe?"],radio=["As ondas de rádio","sempre estiveram aqui."],device="Faltava o aparelho.",
+        antenna="Defeito na antena?",noise="ruído",whatif="E se não for ruído?",nothing=["O nosso “nada”","não é prova."],proof="Falta a ferramenta.",
+        ai=["A IA encontra padrões","que nos escapam."],fake=["…e padrões","que nem existem."],check="Verifique cada descoberta.")}[LANG]
 K={"cs":dict(radio=1.47,device=3.77,noise=4.89,whatif=7.46,proof=4.13,why=3.57),
    "en":dict(radio=1.70,device=3.95,noise=5.30,whatif=8.13,proof=4.74,why=3.71),
    "es":dict(radio=1.71,device=4.59,noise=7.60,whatif=10.24,proof=4.84,why=4.26),
-   "hi":dict(radio=1.87,device=4.59,noise=5.68,whatif=8.80,proof=6.28,why=4.72)}[LANG]
+   "hi":dict(radio=1.87,device=4.59,noise=5.68,whatif=8.80,proof=6.28,why=4.72),
+   "pt":dict(radio=1.49,device=3.89,noise=5.99,whatif=7.91,proof=4.12,why=3.40)}[LANG]
 D=durations(SEG)
 rng=np.random.default_rng(3)
 PTS_LINE=[(x, 0.55*x+rng.normal(0,40)) for x in rng.uniform(0,640,26)]
@@ -35,7 +39,7 @@ def s1(t):
     return im
 def s2(t):
     im,d=new()
-    lines(d,340,T["radio"],font("x",{"cs":92,"en":92,"es":80,"hi":92}[LANG]),WH,fadein(t,K["radio"]-0.3))
+    lines(d,340,T["radio"],font("x",{"cs":92,"en":92,"es":80,"hi":92,"pt":80}[LANG]),WH,fadein(t,K["radio"]-0.3))
     dev=fadein(t,K["device"]-0.2)
     for k in range(3):
         y0=900+k*150; amp=45

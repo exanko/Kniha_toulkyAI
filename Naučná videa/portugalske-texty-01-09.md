@@ -1,6 +1,6 @@
 # 🇧🇷 Portugalské (brazilské) mluvené texty – díly 01–09
 
-**Stav:** ✍️ texty hotové · namlouvá workflow Namluvit (hlas Zozo)
+**Stav:** ✅ namluveno workflow Namluvit (hlas Zozo, 21. 11. 2026) · videa `NN-…-PT.mp4` jsou ve složkách dílů
 
 Workflow bere text z bloku – scény jsou oddělené prázdným řádkem – a ukládá nahrávku do složky dílu jako `zvuk/voz-PT.mp3` (s časy písmen v `voz-PT.casy.json`). Portugalské popisky jsou v `zdroj/make.py` jednotlivých dílů.
 

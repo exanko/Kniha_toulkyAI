@@ -1,0 +1,70 @@
+{
+  "_popis": "Údaje pro workflow Nahrát na YouTube (po sloučení do main se nahraje a naplánuje vše, co nemá videoId).",
+  "spolecne": {
+    "categoryId": "27",
+    "madeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "jazyky": {
+    "cs": {
+      "soubor": "12-kdyz-boti-mluvi-s-boty-CZ.mp4",
+      "nazev": "Když boti mluví s boty 🤖 Proč AI potřebuje vstup zvenku",
+      "popis": "Nechal jsem několik botů hrát společný příběh. Zpočátku plné nápadů, ale nic nového nepřicházelo – boti si přikyvovali, až konverzace sklouzla do prázdných frází. AI potřebuje skutečná data a skutečné otázky. A to je tvoje role.\n\n#shorts #AI #chatboti",
+      "stitky": [
+        "AI",
+        "umělá inteligence",
+        "chatboti",
+        "AI agenti",
+        "experiment"
+      ]
+    },
+    "en": {
+      "soubor": "12-when-bots-talk-to-bots-EN.mp4",
+      "nazev": "When bots talk to bots 🤖 Why AI needs outside input",
+      "popis": "I let several bots play a story together. Full of ideas at first, but nothing new came in – they nodded along until the chat slid into empty phrases. AI needs real data and real questions. That's your part.\n\n#shorts #AI #chatbots",
+      "stitky": [
+        "AI",
+        "artificial intelligence",
+        "chatbots",
+        "AI agents",
+        "experiment"
+      ]
+    },
+    "es": {
+      "soubor": "12-cuando-los-bots-hablan-con-bots-ES.mp4",
+      "nazev": "Cuando los bots hablan con bots 🤖 Por qué la IA necesita algo de fuera",
+      "popis": "Dejé que varios bots jugaran juntos una historia. Al principio, muchas ideas; pero no llegaba nada nuevo y acabaron dándose la razón en frases vacías. La IA necesita datos reales y preguntas reales. Eso te toca a ti.\n\n#shorts #IA #chatbots",
+      "stitky": [
+        "IA",
+        "inteligencia artificial",
+        "chatbots",
+        "agentes de IA",
+        "experimento"
+      ]
+    },
+    "hi": {
+      "soubor": "12-jab-bots-bots-se-baat-karte-hain-HI.mp4",
+      "nazev": "जब बॉट्स बॉट्स से बात करते हैं 🤖 AI को बाहर से इनपुट क्यों चाहिए",
+      "popis": "मैंने कई बॉट्स को मिलकर एक कहानी खेलने दी। शुरुआत में ढेरों विचार थे, लेकिन बाहर से कुछ नया नहीं आया – बॉट्स हाँ में हाँ मिलाते रहे और बातचीत खोखली हो गई। AI को असली डेटा और असली सवाल चाहिए। यह काम आपका है।\n\n#shorts #AI #chatbots",
+      "stitky": [
+        "AI",
+        "आर्टिफिशियल इंटेलिजेंस",
+        "चैटबॉट",
+        "AI एजेंट",
+        "AI in Hindi"
+      ]
+    },
+    "pt": {
+      "soubor": "12-quando-bots-conversam-com-bots-PT.mp4",
+      "nazev": "Quando bots conversam com bots 🤖 Por que a IA precisa de algo de fora",
+      "popis": "Deixei vários bots jogarem uma história juntos. No começo, cheio de ideias; mas nada novo entrava, e eles só concordavam até virar frases vazias. A IA precisa de dados reais e perguntas reais. Essa parte é sua.\n\n#shorts #IA #chatbots",
+      "stitky": [
+        "IA",
+        "inteligência artificial",
+        "chatbots",
+        "agentes de IA",
+        "experimento"
+      ]
+    }
+  }
+}
