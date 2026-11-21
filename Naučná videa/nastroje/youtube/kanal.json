@@ -1,0 +1,9 @@
+{
+  "_popis": "Společné údaje kanálu pro nahrávání (nahraj.py): playlist a kód jazyka pro YouTube API ke každému jazyku série.",
+  "jazyky": {
+    "cs": {"kod": "cs", "playlist": "PLNpxYtAHyLcE"},
+    "en": {"kod": "en", "playlist": "PLVOwx6a35k64"},
+    "es": {"kod": "es-419", "playlist": "PLey5e-5qs38Y"},
+    "hi": {"kod": "hi", "playlist": "PLGM_GEl_OKnE"}
+  }
+}

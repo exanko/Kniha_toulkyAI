@@ -55,4 +55,5 @@ Napiš text pro CZ, EN i ES jako tři bloky kódu – **jen mluvený text, scén
 
 - Složka dílu: `NN-nazev/` s `NN-nazev-CZ.mp4`, `NN-english-name-EN.mp4`, `nahled-cs.jpg`, `nahled-en.jpg` (540 × 960), `zvuk/hlas-CZ.mp3`, `zvuk/voice-EN.mp3`, `zdroj/` (make.py, build.py, casovani.json) a `README.md` (tabulka videí a náhledů, myšlenka, mluvený text po scénách).
 - V `Naučná videa/README.md` přepni řádek dílu na ✅ hotovo s odkazy.
+- Vytvoř `NN-nazev/youtube.json` podle vzoru `09-projekt-je-strom/youtube.json` (pro každý jazyk soubor, název ≤ 100 znaků, popis s #shorts, štítky; bez `videoId`). Ověř `python3 "Naučná videa/nastroje/youtube/nahraj.py" NN --zkouska`. Autor pak spustí workflow **Nahrát na YouTube**; ID videí zapíše workflow samo. Postup: `Naučná videa/nastroje/youtube/NAVOD.md`.
 - Commit do `claude/upravy`, push, poslat obě videa autorovi a hned přiložit mluvený text dalšího dílu.

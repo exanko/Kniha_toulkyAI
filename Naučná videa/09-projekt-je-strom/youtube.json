@@ -1,0 +1,45 @@
+{
+  "spolecne": {
+    "categoryId": "27",
+    "madeForKids": false,
+    "containsSyntheticMedia": false
+  },
+  "jazyky": {
+    "cs": {
+      "soubor": "09-projekt-je-strom-CZ.mp4",
+      "nazev": "Tvůj projekt je strom 🌳 Jak pracovat s AI",
+      "popis": "AI strom zalévá a hnojí. Ty stříháš, hlídáš škůdce – a hlavně předem vybereš, kam ho zasadíš.\n\n#shorts #AI #umelainteligence",
+      "stitky": ["AI", "umělá inteligence", "jak pracovat s AI", "plánování projektu", "AI agent"],
+      "videoId": "xPLJMW0BRuA",
+      "url": "https://www.youtube.com/shorts/xPLJMW0BRuA",
+      "nahrano": "2026-11-21"
+    },
+    "en": {
+      "soubor": "09-your-project-is-a-tree-EN.mp4",
+      "nazev": "Your project is a tree 🌳 How to work with AI",
+      "popis": "AI waters and feeds the tree. You prune it, keep the pests away – and above all, choose where to plant it before you start.\n\n#shorts #AI #artificialintelligence",
+      "stitky": ["AI", "artificial intelligence", "how to work with AI", "AI tips", "project planning"],
+      "videoId": "-ER7VNDV8ao",
+      "url": "https://www.youtube.com/shorts/-ER7VNDV8ao",
+      "nahrano": "2026-11-21"
+    },
+    "es": {
+      "soubor": "09-tu-proyecto-es-un-arbol-ES.mp4",
+      "nazev": "Tu proyecto es un árbol 🌳 Cómo trabajar con IA",
+      "popis": "La IA riega y abona el árbol. Tú lo podas, vigilas las plagas y, sobre todo, eliges dónde plantarlo antes de empezar.\n\n#shorts #IA #inteligenciaartificial",
+      "stitky": ["IA", "inteligencia artificial", "cómo trabajar con IA", "consejos de IA", "planificación de proyectos"],
+      "videoId": "Kgl1PG67J2w",
+      "url": "https://www.youtube.com/shorts/Kgl1PG67J2w",
+      "nahrano": "2026-11-21"
+    },
+    "hi": {
+      "soubor": "09-aapka-project-ek-ped-hai-HI.mp4",
+      "nazev": "आपका प्रोजेक्ट एक पेड़ है 🌳 AI के साथ कैसे काम करें",
+      "popis": "AI पेड़ को पानी और खाद देता है। आप छँटाई करते हैं, कीड़ों से बचाते हैं – और सबसे ज़रूरी, पहले से तय करते हैं कि पेड़ कहाँ लगेगा।\n\n#shorts #AI #ArtificialIntelligence",
+      "stitky": ["AI", "आर्टिफिशियल इंटेलिजेंस", "AI कैसे इस्तेमाल करें", "प्रोजेक्ट प्लानिंग", "AI in Hindi"],
+      "videoId": "nR_pj6xu0_Y",
+      "url": "https://www.youtube.com/shorts/nR_pj6xu0_Y",
+      "nahrano": "2026-11-21"
+    }
+  }
+}

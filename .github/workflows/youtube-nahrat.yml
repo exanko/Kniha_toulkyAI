@@ -1,0 +1,73 @@
+# Nahrání jazykových verzí dílu Naučných videí na YouTube.
+# Spouští se ručně: GitHub → Actions → „Nahrát na YouTube“ → Run workflow (jde i z mobilní aplikace GitHubu).
+# Údaje (název, popis, štítky, soubor) jsou v „Naučná videa/<díl>/youtube.json“, playlisty v „Naučná videa/nastroje/youtube/kanal.json“.
+# Návod k nastavení: „Naučná videa/nastroje/youtube/NAVOD.md“.
+name: Nahrát na YouTube
+
+on:
+  workflow_dispatch:
+    inputs:
+      dil:
+        description: "Díl – číslo nebo název složky (např. 09)"
+        required: true
+      jazyky:
+        description: "Jazyky oddělené mezerou (cs en es hi). Prázdné = všechny dosud nenahrané."
+        required: false
+        default: ""
+      verejne:
+        description: "Zveřejnit hned (jinak se nahraje jako soukromé)"
+        type: boolean
+        default: false
+      zkouska:
+        description: "Jen zkouška – nic nenahrávat, jen zkontrolovat údaje a soubory"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-nahrat
+
+jobs:
+  nahrat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Nahrát na YouTube
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          DIL: ${{ inputs.dil }}
+          JAZYKY: ${{ inputs.jazyky }}
+          VEREJNE: ${{ inputs.verejne }}
+          ZKOUSKA: ${{ inputs.zkouska }}
+        run: |
+          args=("$DIL")
+          for j in $JAZYKY; do
+            case "$j" in cs|en|es|hi) args+=("$j") ;; *) echo "Neznámý jazyk: $j"; exit 1 ;; esac
+          done
+          [ "$VEREJNE" = "true" ] && args+=("--verejne")
+          [ "$ZKOUSKA" = "true" ] && args+=("--zkouska")
+          python3 "Naučná videa/nastroje/youtube/nahraj.py" "${args[@]}"
+
+      # Zapíše ID nahraných videí do youtube.json i tehdy, když některé nahrání selže –
+      # další spuštění pak už nahraná videa přeskočí.
+      - name: Zapsat ID videí do repa
+        if: ${{ always() && !inputs.zkouska }}
+        env:
+          DIL: ${{ inputs.dil }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "Naučná videa/"*/youtube.json
+          if git diff --cached --quiet; then echo "Nic nového k zapsání."; exit 0; fi
+          git commit -m "YouTube: nahráno – díl $DIL"
+          git push
