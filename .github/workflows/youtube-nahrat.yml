@@ -1,10 +1,15 @@
 # Nahrání jazykových verzí dílu Naučných videí na YouTube.
-# Spouští se ručně: GitHub → Actions → „Nahrát na YouTube“ → Run workflow (jde i z mobilní aplikace GitHubu).
+# Spouští se samo po sloučení do main, když se změní některý youtube.json: nahraje všechno, co ještě
+# nemá videoId, a naplánuje zveřejnění (v každém jazyce jedno video denně, čas v kanal.json).
+# Ručně: GitHub → Actions → „Nahrát na YouTube“ → Run workflow (jde i z mobilní aplikace GitHubu).
 # Údaje (název, popis, štítky, soubor) jsou v „Naučná videa/<díl>/youtube.json“, playlisty v „Naučná videa/nastroje/youtube/kanal.json“.
 # Návod k nastavení: „Naučná videa/nastroje/youtube/NAVOD.md“.
 name: Nahrát na YouTube
 
 on:
+  push:
+    branches: [main]
+    paths: ["Naučná videa/*/youtube.json"]
   workflow_dispatch:
     inputs:
       dil:
@@ -14,6 +19,10 @@ on:
         description: "Jazyky oddělené mezerou (cs en es hi). Prázdné = všechny dosud nenahrané. Playlisty zvolených jazyků se nakonec seřadí podle čísel dílů."
         required: false
         default: ""
+      naplanovat:
+        description: "Naplánovat zveřejnění (jedno video denně v každém jazyce)"
+        type: boolean
+        default: false
       verejne:
         description: "Zveřejnit hned (jinak se nahraje jako soukromé)"
         type: boolean
@@ -32,7 +41,10 @@ concurrency:
 jobs:
   nahrat:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # Tajemství YT_* patří do environmentu „youtube“ povoleného jen pro main (viz NAVOD.md) –
+    # pak se k nim nedostane nic, co neprošlo sloučením.
+    environment: youtube
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v7
 
@@ -40,12 +52,29 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Zjistit díly
+        id: dily
+        env:
+          DIL_IN: ${{ inputs.dil }}
+          NAPLANOVAT_IN: ${{ inputs.naplanovat }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            # po sloučení projít všechny díly – nahraje se jen to, co ještě nemá videoId
+            dil=$(for f in "Naučná videa"/[0-9][0-9]-*/youtube.json; do basename "$(dirname "$f")" | cut -c1-2; done | sort -u | tr '\n' ' ')
+            planovat=true
+          else
+            dil=$(printf '%s' "$DIL_IN" | tr -d '\r\n'); planovat="$NAPLANOVAT_IN"
+          fi
+          echo "Díly: $dil (plánovat: $planovat)"
+          { echo "dil=$dil"; echo "planovat=$planovat"; } >> "$GITHUB_OUTPUT"
+
       - name: Nahrát na YouTube
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-          DIL: ${{ inputs.dil }}
+          DIL: ${{ steps.dily.outputs.dil }}
+          PLANOVAT: ${{ steps.dily.outputs.planovat }}
           JAZYKY: ${{ inputs.jazyky }}
           VEREJNE: ${{ inputs.verejne }}
           ZKOUSKA: ${{ inputs.zkouska }}
@@ -54,6 +83,7 @@ jobs:
           for j in $JAZYKY; do
             case "$j" in cs|en|es|hi) opts+=("$j") ;; *) echo "Neznámý jazyk: $j"; exit 1 ;; esac
           done
+          [ "$PLANOVAT" = "true" ] && opts+=("--naplanovat")
           [ "$VEREJNE" = "true" ] && opts+=("--verejne")
           [ "$ZKOUSKA" = "true" ] && opts+=("--zkouska")
           chyba=0
@@ -70,7 +100,7 @@ jobs:
       - name: Zapsat ID videí do repa
         if: ${{ always() && !inputs.zkouska }}
         env:
-          DIL: ${{ inputs.dil }}
+          DIL: ${{ steps.dily.outputs.dil }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

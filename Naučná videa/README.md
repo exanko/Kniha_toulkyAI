@@ -39,10 +39,10 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 ## Postup výroby dílu
 
 1. Claude napíše mluvený text CZ + EN + ES (tabulka po scénách).
-2. Autor ho namluví v ElevenLabs (hlasy výše) a pošle MP3.
-3. Claude nahrávky přepíše (`nastroje/prepis.py`), najde začátky a konce scén a sestaví všechny jazykové verze videa.
-4. Claude doplní do složky dílu `youtube.json` (název, popis, štítky pro každý jazyk).
-5. Autor spustí na GitHubu **Actions → Nahrát na YouTube** (díl, jazyky) – videa se nahrají jako soukromá do playlistů jazyků; pak je v YouTube Studiu zveřejní a nastaví související video. Nastavení a postup: [`nastroje/youtube/NAVOD.md`](nastroje/youtube/NAVOD.md).
+2. Text namluví workflow **Namluvit (ElevenLabs)** – Claude ho spustí zápisem do fronty ve větvi `claude/upravy` ([`nastroje/elevenlabs/NAVOD.md`](nastroje/elevenlabs/NAVOD.md)); dřív namlouval autor ručně a posílal MP3.
+3. Claude podle časů slov (nebo přepisu `nastroje/prepis.py`) najde začátky a konce scén a sestaví všechny jazykové verze videa.
+4. Claude doplní do složky dílu `youtube.json` (název, popis, štítky pro každý jazyk) a pošle videa autorovi ke kontrole.
+5. Autor sloučí pull request do `main` – tím se videa samy nahrají, naplánují (v každém jazyce jedno denně) a zařadí do playlistů; v YouTube Studiu jim pak jen nastaví související video. Nastavení a postup: [`nastroje/youtube/NAVOD.md`](nastroje/youtube/NAVOD.md).
 
 Sdílený vzhled (pozadí, písmo, záře, ukazatel průběhu, sestavení s hlasem) je v `nastroje/engine.py`; každý díl od 02 má v `zdroj/` jen vlastní scény a časování. Úseky řeči v nahrávce vypíše `nastroje/intervaly.py`.
 
