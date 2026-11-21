@@ -8,7 +8,7 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 - 🇬🇧 **English:** [YouTube playlist](https://www.youtube.com/playlist?list=PLVOwx6a35k64)
 - 🇪🇸 **Español:** [playlist en YouTube](https://www.youtube.com/playlist?list=PLey5e-5qs38Y)
 - 🇮🇳 **हिन्दी:** [YouTube प्लेलिस्ट](https://www.youtube.com/playlist?list=PLGM_GEl_OKnE)
-- 🇧🇷 **Português:** playlist no YouTube (doplní se)
+- 🇧🇷 **Português:** [playlist no YouTube](https://www.youtube.com/playlist?list=PLHxugCKbRb9o)
 
 ## Pravidla série
 
@@ -48,7 +48,7 @@ Krátká naučná videa (shorts / reels) o tom, jak AI opravdu funguje. Cílem j
 2. Text namluví workflow **Namluvit (ElevenLabs)** – Claude ho spustí zápisem do fronty ve větvi `claude/upravy` ([`nastroje/elevenlabs/NAVOD.md`](nastroje/elevenlabs/NAVOD.md)); dřív namlouval autor ručně a posílal MP3.
 3. Claude podle časů slov (nebo přepisu `nastroje/prepis.py`) najde začátky a konce scén a sestaví všechny jazykové verze videa.
 4. Claude doplní do složky dílu `youtube.json` (název, popis, štítky pro každý jazyk) a pošle videa autorovi ke kontrole.
-5. Autor sloučí pull request do `main` – tím se videa samy nahrají, naplánují (v každém jazyce jedno denně) a zařadí do playlistů; v YouTube Studiu jim pak jen nastaví související video. Nastavení a postup: [`nastroje/youtube/NAVOD.md`](nastroje/youtube/NAVOD.md).
+5. Autor sloučí pull request do `main` – tím se videa samy nahrají, naplánují (v každém jazyce jedno denně) a zařadí do playlistů; co běh nestihne (např. kvóta YouTube API), dodělá denní běh. V YouTube Studiu jim pak jen nastaví související video. Nastavení a postup: [`nastroje/youtube/NAVOD.md`](nastroje/youtube/NAVOD.md).
 
 Sdílený vzhled (pozadí, písmo, záře, ukazatel průběhu, sestavení s hlasem) je v `nastroje/engine.py`; každý díl od 02 má v `zdroj/` jen vlastní scény a časování. Úseky řeči v nahrávce vypíše `nastroje/intervaly.py`.
 
