@@ -9,6 +9,7 @@ fronta.json:
   vystup – kam uložit MP3 (jen uvnitř „Naučná videa/“); vedle vznikne <název>.casy.json s časy písmen
   znovu  – true = namluvit i když MP3 už existuje (jinak se úloha přeskočí)
 
+„kontrola“: true ve frontě jen ověří klíč a vypíše tarif a kredity (nic nenamluví).
 Hotové úlohy z fronty zmizí, nepovedené v ní zůstanou. Záznam posledního běhu je ve vysledek.md.
 Hlasy a nastavení: hlasy.json. Klíč: proměnná ELEVENLABS_API_KEY (v GitHubu tajemství).
 Jen standardní knihovna Pythonu."""
@@ -63,8 +64,28 @@ def namluv(u, text):
     with open(out[:-4] + ".casy.json", "w", encoding="utf-8") as f: json.dump(casy, f, ensure_ascii=False)
     return len(audio)
 
+def kontrola(fronta):
+    """„kontrola“: true ve frontě → jen ověří klíč a vypíše tarif a kredity (nic nenamluví, nic nestojí)."""
+    fronta.pop("kontrola", None)
+    with open(FRONTA, "w", encoding="utf-8") as f: f.write(json.dumps(fronta, ensure_ascii=False, indent=2) + "\n")
+    cas = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    if not os.environ.get("ELEVENLABS_API_KEY"): r, ok = "❌ chybí tajemství ELEVENLABS_API_KEY", False
+    else:
+        try:
+            s = api("GET", "/v1/user/subscription"); ok = True
+            r = (f"✅ klíč funguje – tarif **{s.get('tier', '?')}**, využito {s.get('character_count', '?')} "
+                 f"z {s.get('character_limit', '?')} kreditů")
+            if s.get("next_character_count_reset_unix"):
+                r += ", další obnovení " + datetime.datetime.fromtimestamp(s["next_character_count_reset_unix"], datetime.timezone.utc).strftime("%Y-%m-%d")
+        except Chyba as ex: r, ok = f"❌ {ex}", False
+    with open(VYSLEDEK, "w", encoding="utf-8") as f:
+        f.write(f"# Poslední běh „Namluvit“ – {cas} (kontrola klíče)\n\n{r}\n\nVe frontě čeká úloh: {len(fronta.get('ulohy', []))}\n")
+    print(open(VYSLEDEK, encoding="utf-8").read())
+    return 0 if ok else 1
+
 def main():
     fronta = json.load(open(FRONTA, encoding="utf-8")); ulohy = fronta.get("ulohy", [])
+    if fronta.get("kontrola"): return kontrola(fronta)
     if not ulohy: print("Fronta je prázdná."); return 0
     plan, vysl, zbyva = [], [], []
     for u in ulohy:

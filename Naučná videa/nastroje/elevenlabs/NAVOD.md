@@ -32,4 +32,6 @@ Hotové úlohy z fronty zmizí, nepovedené v ní zůstanou. Jeden běh namluví
 - `vystup` – kam uložit MP3 (jen uvnitř `Naučná videa/`),
 - `znovu` – `true` = namluvit znovu, i když MP3 už existuje.
 
+`"kontrola": true` (vedle `ulohy`) jen ověří klíč a do `vysledek.md` zapíše tarif a kredity – nic nenamluví ani nestojí.
+
 Ručně jde workflow spustit přes Actions → Namluvit (ElevenLabs) → Run workflow → větev `claude/upravy` (na `main` neběží).
