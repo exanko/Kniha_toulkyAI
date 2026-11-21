@@ -47,20 +47,31 @@ Tyto hodnoty nikam jinam nepište (ani do chatu, ani do souborů v repu). Kdyby 
 
 ### 5. Zkouška
 
-GitHub → **Actions → Nahrát na YouTube → Run workflow** → Díl `09`, zaškrtnout **Jen zkouška** → Run. Zkouška nic nenahraje, ale přihlásí se k YouTube, vypíše název kanálu a ověří, že existují všechny playlisty z `kanal.json`. Má projít zeleně (jazyky dílu 09 už jsou nahrané, takže se jen přeskočí). Výsledek je v detailu běhu, v kroku „Nahrát na YouTube“.
+GitHub → **Actions → Nahrát na YouTube → Run workflow** → Díl `09`, zaškrtnout **Jen zkouška** → Run. Zkouška nic nenahraje, ale přihlásí se k YouTube, vypíše název kanálu a ověří, že existují všechny playlisty z `kanal.json`. Má projít zeleně (jazyky dílu 09 už jsou nahrané, takže se jen přeskočí). Vypíše také, jestli playlisty mají správné pořadí. Výsledek je v detailu běhu, v kroku „Nahrát na YouTube“.
 
 ## Běžné použití – nová jazyková verze
 
 1. Claude připraví text, vy ho namluvíte v ElevenLabs a pošlete MP3.
 2. Claude složí video a doplní jazyk do `youtube.json` dílu (soubor, název, popis, štítky).
-3. Vy: **Actions → Nahrát na YouTube → Run workflow** → Díl (např. `05`, nebo víc dílů najednou: `01 02 03`), Jazyky (např. `es hi`, prázdné = všechny dosud nenahrané) → Run. Jde to i z mobilní aplikace GitHubu. Video se zařadí do playlistu svého jazyka; pokud playlist obsahuje jen videa evidovaná v `youtube.json` (ES, HI), zařadí se podle čísla dílu, jinak (CZ, EN s ručně nahranými díly) na konec.
+3. Vy: **Actions → Nahrát na YouTube → Run workflow** → Díl (např. `05`, nebo víc dílů najednou: `01 02 03`), Jazyky (např. `es hi`, prázdné = všechny dosud nenahrané) → Run. Jde to i z mobilní aplikace GitHubu. Video se zařadí do playlistu svého jazyka a na konci běhu se playlist seřadí podle čísel dílů (viz [Pořadí v playlistu](#pořadí-v-playlistu)).
 4. V YouTube Studiu video zkontrolujete, nastavíte související video a zveřejníte.
 
 U starších dílů (01–08), jejichž české a anglické verze byly nahrané ručně, obsahuje `youtube.json` jen nové jazyky – jinak by je workflow nahrálo znovu.
 
 Skript nikdy nenahraje jazyk, který už má v `youtube.json` vyplněné `videoId` (pokud se mu výslovně neřekne `--znovu`), takže omylem spuštěný workflow nic nezdvojí.
 
+## Pořadí v playlistu
+
+Na konci každého běhu skript seřadí playlisty zvolených jazyků podle čísla dílu (01, 02, … 09). Řadí jen playlist, ve kterém jsou výhradně videa evidovaná v `youtube.json` – tedy španělský a hindský. Český a anglický obsahují ručně nahraná videa, takže je nechá být.
+
+- Playlist s ručním řazením: videa jen přesune.
+- Playlist bez něj (jako ten španělský): video, které není na svém místě, přidá znovu na konec ve správném pořadí a starou položku smaže až potom, takže z playlistu nikdy nezmizí. Musí přitom zůstat vypnuté nastavení playlistu **Add new videos to top of playlist** („Přidávat nová videa na začátek“).
+
+Jen srovnat, bez nahrávání: **Run workflow** → Díl `09`, Jazyky `es` (nebo `hi`) → Run. Díl 09 už je nahraný, takže se jen přeskočí a srovná se playlist.
+
+Ručně: na stránce playlistu na YouTube video chytit a přetáhnout. Když YouTube nahoře hlásí „This is how your playlist looks in American English. Switch to Spanish to make changes“, je potřeba nejdřív přepnout jazyk YouTube (avatar → Language) na jazyk playlistu.
+
 ## Limity
 
-- YouTube Data API: až 100 nahrání denně na projekt; zařazení do playlistu bere 50 jednotek z denní kvóty 10 000 (sdílené se streamováním).
+- YouTube Data API: až 100 nahrání denně na projekt; zařazení, přesun i smazání položky playlistu bere 50 jednotek z denní kvóty 10 000 (sdílené se streamováním); srovnání celého španělského playlistu tak stojí nejvýš asi 700 jednotek.
 - Soubor `youtube.json`: název max. 100 znaků, popis max. 5 000 bajtů, bez znaků `<` a `>`.
