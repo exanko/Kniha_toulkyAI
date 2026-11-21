@@ -19,11 +19,19 @@ def sceny(path, k_plus=0.35):
         rec = intervaly(mp3)
     except Exception:
         rec = []
-    out, i = [], 0
+    par, i = [], 0
     for p in text.split("\n\n"):
         j = text.index(p, i); s0 = j + len(p) - len(p.lstrip()); k = j + len(p.rstrip()); i = k
-        a0, a1 = st[s0], en[k - 1]
-        uv = [(s, e) for s, e in rec if a0 - 0.15 <= (s + e) / 2 <= a1 + 0.15]
+        par.append((p, s0, k, st[s0], en[k - 1]))
+    # každý úsek řeči patří scéně, se kterou se v čase překrývá nejvíc (konec odstavce v časech
+    # písmen často zasahuje do pauzy až k další scéně)
+    kdo = {}
+    for n, (s, e) in enumerate(rec):
+        prekryv = [min(e, a1 + 0.15) - max(s, a0 - 0.15) for _, _, _, a0, a1 in par]
+        if max(prekryv) > 0: kdo.setdefault(max(range(len(par)), key=lambda q: (prekryv[q], q)), []).append((s, e))
+    out = []
+    for q, (p, s0, k, a0, a1) in enumerate(par):
+        uv = kdo.get(q, [])
         s, e = (uv[0][0], uv[-1][1]) if uv else (a0, a1)
         slova = [(m.group(), round(st[s0 + m.start()] - s + k_plus, 2))
                  for m in re.finditer(r"[^\s]+", text[s0:k])]

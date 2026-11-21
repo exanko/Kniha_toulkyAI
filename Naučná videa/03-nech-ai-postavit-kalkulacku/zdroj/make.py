@@ -22,10 +22,17 @@ T={"cs":dict(q=["Chceš, aby AI","spočítala","tvoje data?"],catch="Má to há�
         instead="Prueba otra cosa.",prompt=["«Escríbeme un programa","que lo calcule.»"],
         code=["datos = cargar('tabla.csv')","print(sum(datos))"],
         checks=["Lo revisas una vez","Calcula con exactitud","Siempre igual","Lo conservas"],
-        end1=["No uses la IA","como calculadora."],end2="Pídele que la construya.",num_ok="48,213",num_ai="48,312")}[LANG]
+        end1=["No uses la IA","como calculadora."],end2="Pídele que la construya.",num_ok="48,213",num_ai="48,312"),
+   "hi":dict(q=["क्या आप चाहते हैं","कि AI आपके आँकड़ों","का हिसाब लगाए?"],catch="लेकिन एक पेच है।",lm="लैंग्वेज मॉडल",calc="कैलकुलेटर",
+        pred=["वह अंदाज़ा लगाता है कि","सही जवाब कैसा दिखे।"],ok="सही:",ai="AI:",notice="और पहली नज़र में पता भी नहीं चलेगा।",
+        instead="यह आज़माइए।",prompt=["\"मेरे लिए एक प्रोग्राम लिखो,","जो इसका हिसाब लगाए।\""],
+        code=["data = load('sheet.csv')","print(sum(data))"],
+        checks=["एक बार जाँच लीजिए","बिल्कुल सही हिसाब","हर बार एक जैसा","हमेशा आपके पास"],
+        end1=["AI को अपना","कैलकुलेटर मत बनाइए।"],end2="उससे कैलकुलेटर बनवाइए।",num_ok="48,213",num_ai="48,312")}[LANG]
 K={"cs":dict(lm=1.56,pred=4.47,notice=2.71,tell=1.26,prog=2.01,c=[0.4,2.28,3.75,4.92],build=2.66),
    "en":dict(lm=1.65,pred=4.98,notice=3.36,tell=1.91,prog=2.66,c=[0.4,2.25,4.41,6.22],build=2.94),
-   "es":dict(lm=1.35,pred=4.99,notice=4.19,tell=1.50,prog=2.24,c=[0.4,2.65,4.86,6.12],build=3.99)}[LANG]
+   "es":dict(lm=1.35,pred=4.99,notice=4.19,tell=1.50,prog=2.24,c=[0.4,2.65,4.86,6.12],build=3.99),
+   "hi":dict(lm=2.29,pred=5.85,notice=3.90,tell=2.32,prog=3.52,c=[0.4,4.90,6.30,8.46],build=3.15)}[LANG]
 D=durations(SEG)
 def calc_icon(d,cx,cy,s,a,nbtn=12):
     if a<=0: return

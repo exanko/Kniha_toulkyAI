@@ -24,10 +24,18 @@ T={"cs":dict(q=["Je každá AI","stejně chytrá?"],sizes=["malý","střední","
         mid="Modelo mediano",cards="unas cuantas tarjetas",code="sabe programar",loop="Prueba y corrige más veces.",
         big="Los más grandes",dc="centro de datos",see="Ven más allá.",finds=["conexiones","errores"],
         exp=["12 IA evaluaron","el mismo texto."],smallest="más pequeña",score="9/10",nofind="…y no encontró ni un solo error.",
-        end=["Cuanto más pequeño","el modelo, más","debes comprobar."])}[LANG]
+        end=["Cuanto más pequeño","el modelo, más","debes comprobar."]),
+   "hi":dict(q=["क्या हर AI","उतना ही समझदार है?"],sizes=["छोटा","मध्यम","बड़ा"],
+        diff=["मॉडल अलग-अलग","आकार के होते हैं।"],grows="और साथ में क्षमता भी बढ़ती है।",
+        small="छोटा मॉडल",onecard="1 गेमिंग कार्ड",fast="तेज़",chat="बक-बक-बक…",made="बातूनी। बातें गढ़ लेता है।",
+        mid="मध्यम मॉडल",cards="कुछ कार्ड्स",code="कोड भी लिख लेता है",loop="ज़्यादा कोशिश, ज़्यादा सुधार।",
+        big="सबसे बड़े मॉडल",dc="डेटा सेंटर",see="दूर तक देखते हैं।",finds=["संबंध","गलतियाँ"],
+        exp=["12 AI ने एक ही","टेक्स्ट जाँचा।"],smallest="सबसे छोटा",score="9/10",nofind="…और उसे एक भी कमी नहीं मिली।",
+        end=["मॉडल जितना छोटा,","जवाब उतने ही","ज़्यादा जाँचिए।"])}[LANG]
 K={"cs":dict(grows=3.0,fast=3.0,made=5.23,tries=3.58,catch=3.39,twelve=1.35,smallest=3.95,nofind=6.09),
    "en":dict(grows=3.37,fast=3.06,made=5.37,tries=4.35,catch=4.56,twelve=1.41,smallest=4.18,nofind=6.67),
-   "es":dict(grows=3.74,fast=4.41,made=5.83,tries=4.67,catch=4.27,twelve=1.32,smallest=4.24,nofind=7.19)}[LANG]
+   "es":dict(grows=3.74,fast=4.41,made=5.83,tries=4.67,catch=4.27,twelve=1.32,smallest=4.24,nofind=7.19),
+   "hi":dict(grows=3.75,fast=3.84,made=5.44,tries=4.42,catch=5.51,twelve=1.88,smallest=5.24,nofind=8.44)}[LANG]
 D=durations(SEG)
 def gpu(d,cx,cy,w,h,a):
     if a<=0: return
