@@ -1,15 +1,26 @@
-# Poslední běh „Namluvit“ – 2026-11-21 22:25 UTC
+# Poslední běh „Namluvit“ – 2026-11-21 22:37 UTC
 
 | Úloha | Výsledek |
 |---|---|
-| pt → Naučná videa/01-jak-mysli-ai/zvuk/voz-PT.mp3 | ✅ 462 znaků, 464 kB |
-| pt → Naučná videa/02-mozek-spojeny-provazkem/zvuk/voz-PT.mp3 | ✅ 556 znaků, 518 kB |
-| pt → Naučná videa/03-nech-ai-postavit-kalkulacku/zvuk/voz-PT.mp3 | ✅ 503 znaků, 494 kB |
-| pt → Naučná videa/04-kecalek-vs-vidi-za-roh/zvuk/voz-PT.mp3 | ✅ 614 znaků, 599 kB |
-| pt → Naučná videa/05-ai-je-zesilovac/zvuk/voz-PT.mp3 | ✅ 509 znaků, 517 kB |
-| pt → Naučná videa/06-co-je-ai-agent/zvuk/voz-PT.mp3 | ✅ 529 znaků, 543 kB |
-| pt → Naučná videa/07-nase-nic-neni-dukaz/zvuk/voz-PT.mp3 | ✅ 630 znaků, 600 kB |
-| pt → Naučná videa/08-firma-v-gitu/zvuk/voz-PT.mp3 | ✅ 758 znaků, 742 kB |
-| pt → Naučná videa/09-projekt-je-strom/zvuk/voz-PT.mp3 | ✅ 737 znaků, 767 kB |
+| cs → Naučná videa/10-normy-jako-rady-zdarma/zvuk/hlas-CZ.mp3 | ✅ 430 znaků, 475 kB |
+| en → Naučná videa/10-normy-jako-rady-zdarma/zvuk/voice-EN.mp3 | ✅ 470 znaků, 522 kB |
+| es → Naučná videa/10-normy-jako-rady-zdarma/zvuk/voz-ES.mp3 | ✅ 483 znaků, 546 kB |
+| hi → Naučná videa/10-normy-jako-rady-zdarma/zvuk/awaz-HI.mp3 | ✅ 462 znaků, 577 kB |
+| pt → Naučná videa/10-normy-jako-rady-zdarma/zvuk/voz-PT.mp3 | ✅ 481 znaků, 459 kB |
+| cs → Naučná videa/11-dlouhy-chat/zvuk/hlas-CZ.mp3 | ✅ 476 znaků, 516 kB |
+| en → Naučná videa/11-dlouhy-chat/zvuk/voice-EN.mp3 | ✅ 542 znaků, 572 kB |
+| es → Naučná videa/11-dlouhy-chat/zvuk/voz-ES.mp3 | ✅ 515 znaků, 532 kB |
+| hi → Naučná videa/11-dlouhy-chat/zvuk/awaz-HI.mp3 | ✅ 500 znaků, 615 kB |
+| pt → Naučná videa/11-dlouhy-chat/zvuk/voz-PT.mp3 | ✅ 523 znaků, 479 kB |
+| cs → Naučná videa/12-boti-mluvi-s-boty/zvuk/hlas-CZ.mp3 | ✅ 461 znaků, 543 kB |
+| en → Naučná videa/12-boti-mluvi-s-boty/zvuk/voice-EN.mp3 | ✅ 491 znaků, 556 kB |
+| es → Naučná videa/12-boti-mluvi-s-boty/zvuk/voz-ES.mp3 | ✅ 526 znaků, 607 kB |
+| hi → Naučná videa/12-boti-mluvi-s-boty/zvuk/awaz-HI.mp3 | ✅ 509 znaků, 696 kB |
+| pt → Naučná videa/12-boti-mluvi-s-boty/zvuk/voz-PT.mp3 | ✅ 518 znaků, 548 kB |
+| cs → Naučná videa/13-mysleni-rychle-a-pomale/zvuk/hlas-CZ.mp3 | ✅ 413 znaků, 505 kB |
+| en → Naučná videa/13-mysleni-rychle-a-pomale/zvuk/voice-EN.mp3 | ✅ 460 znaků, 549 kB |
+| es → Naučná videa/13-mysleni-rychle-a-pomale/zvuk/voz-ES.mp3 | ✅ 514 znaků, 590 kB |
+| hi → Naučná videa/13-mysleni-rychle-a-pomale/zvuk/awaz-HI.mp3 | ✅ 488 znaků, 701 kB |
+| pt → Naučná videa/13-mysleni-rychle-a-pomale/zvuk/voz-PT.mp3 | ✅ 514 znaků, 510 kB |
 
-Zbývá kreditů: 116954 z 121629
+Zbývá kreditů: 112996 z 121629
