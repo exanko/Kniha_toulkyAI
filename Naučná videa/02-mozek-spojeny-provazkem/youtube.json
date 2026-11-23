@@ -6,6 +6,36 @@
     "containsSyntheticMedia": false
   },
   "jazyky": {
+    "cs": {
+      "soubor": "02-mozek-spojeny-provazkem-CZ.mp4",
+      "nazev": "Proč nemůžeš mít doma velkou AI? 🧠 Mozek spojený provázkem",
+      "popis": "Velký model se nevejde do jedné grafické karty. Když se rozdělí na víc karet, při každém slově si posílají data – doma přes základní desku, v datacentru po superrychlých linkách.\n\n#shorts #AI #umelainteligence",
+      "stitky": [
+        "AI",
+        "umělá inteligence",
+        "AI doma",
+        "grafická karta",
+        "datacentrum"
+      ],
+      "videoId": "v2ZLGJrFzNo",
+      "url": "https://www.youtube.com/shorts/v2ZLGJrFzNo",
+      "nahrano": "2026-11-05"
+    },
+    "en": {
+      "soubor": "02-brain-tied-with-string-EN.mp4",
+      "nazev": "Why can't you run a big AI at home? 🧠 A brain tied with string",
+      "popis": "A big model doesn't fit on a single graphics card. Split across several, the cards pass data back and forth with every word – at home over the motherboard, in a data center over ultra-fast links.\n\n#shorts #AI #artificialintelligence",
+      "stitky": [
+        "AI",
+        "artificial intelligence",
+        "AI at home",
+        "graphics card",
+        "data center"
+      ],
+      "videoId": "ybliGOra7F8",
+      "url": "https://www.youtube.com/shorts/ybliGOra7F8",
+      "nahrano": "2026-11-05"
+    },
     "es": {
       "soubor": "02-un-cerebro-atado-con-un-cordel-ES.mp4",
       "nazev": "¿Por qué no puedes tener una IA grande en casa? 🧠 Un cerebro atado con un cordel",

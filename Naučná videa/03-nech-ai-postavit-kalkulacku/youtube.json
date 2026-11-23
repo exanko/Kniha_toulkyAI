@@ -6,6 +6,36 @@
     "containsSyntheticMedia": false
   },
   "jazyky": {
+    "cs": {
+      "soubor": "03-nech-ai-postavit-kalkulacku-CZ.mp4",
+      "nazev": "Nedělej z AI kalkulačku 🧮 Nech ji kalkulačku postavit",
+      "popis": "Jazykový model nepočítá – předpovídá, jak by měla vypadat správná odpověď. U velké tabulky se snadno splete. Požádej ho o program, který to spočítá: zkontroluješ ho jednou a počítá přesně, pokaždé stejně.\n\n#shorts #AI #umelainteligence",
+      "stitky": [
+        "AI",
+        "umělá inteligence",
+        "tabulka",
+        "programování s AI",
+        "jazykový model"
+      ],
+      "videoId": "ziN3PkZQTeQ",
+      "url": "https://www.youtube.com/shorts/ziN3PkZQTeQ",
+      "nahrano": "2026-11-05"
+    },
+    "en": {
+      "soubor": "03-have-ai-build-the-calculator-EN.mp4",
+      "nazev": "Don't use AI as a calculator 🧮 Have it build you one",
+      "popis": "A language model doesn't calculate – it predicts what the right answer should look like. With a big spreadsheet it can easily get it wrong. Ask it for a program that does the math: you check it once, and it calculates exactly, the same way every time.\n\n#shorts #AI #artificialintelligence",
+      "stitky": [
+        "AI",
+        "artificial intelligence",
+        "spreadsheet",
+        "coding with AI",
+        "language model"
+      ],
+      "videoId": "58CW2JycjLc",
+      "url": "https://www.youtube.com/shorts/58CW2JycjLc",
+      "nahrano": "2026-11-05"
+    },
     "es": {
       "soubor": "03-que-la-ia-te-construya-la-calculadora-ES.mp4",
       "nazev": "No uses la IA como calculadora 🧮 Pídele que te construya una",

@@ -78,6 +78,10 @@ U starších dílů (01–08), jejichž české a anglické verze byly nahrané 
 
 Skript nikdy nenahraje jazyk, který už má v `youtube.json` vyplněné `videoId` (pokud se mu výslovně neřekne `--znovu`), takže omylem spuštěný workflow nic nezdvojí.
 
+## Úprava už nahraných videí
+
+Název, jazyk názvu a jazyk zvuku nahraných videí srovná podle `youtube.json` volba **Srovnat už nahraná videa s youtube.json** (Run workflow → Díl, Jazyky, zaškrtnout volbu). Popis a štítky doplní jen tam, kde na YouTube chybí; ručně napsaný popis nepřepisuje. Se zaškrtnutou **Jen zkouškou** jen vypíše, co by se změnilo (jde spustit i z jiné větve než `main`). Každé změněné video stojí 50 jednotek kvóty. Z příkazové řádky: `python3 aktualizuj.py 01 02 cs en --zkouska`.
+
 ## Playlisty
 
 Každý běh projde playlisty dotčených jazyků (po sloučení a v denním běhu všech) a:

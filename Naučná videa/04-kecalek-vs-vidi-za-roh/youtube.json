@@ -6,6 +6,36 @@
     "containsSyntheticMedia": false
   },
   "jazyky": {
+    "cs": {
+      "soubor": "04-kecalek-vs-vidi-za-roh-CZ.mp4",
+      "nazev": "Je každá AI stejně chytrá? 🔍 Kecálek vs. vidí za roh",
+      "popis": "Modely mají různou velikost. Malý je rychlý, ale vymýšlí si; větší najdou souvislosti a chyby, které malým uniknou. Čím menší model, tím víc jeho odpovědi ověřuj.\n\n#shorts #AI #umelainteligence",
+      "stitky": [
+        "AI",
+        "umělá inteligence",
+        "AI modely",
+        "lokální AI",
+        "halucinace AI"
+      ],
+      "videoId": "grvQIQbKfiQ",
+      "url": "https://www.youtube.com/shorts/grvQIQbKfiQ",
+      "nahrano": "2026-11-05"
+    },
+    "en": {
+      "soubor": "04-chatterbox-vs-sees-around-corners-EN.mp4",
+      "nazev": "Are all AIs equally smart? 🔍 Chatterbox vs. sees around corners",
+      "popis": "Models come in different sizes. A small one is fast but makes things up; bigger ones find connections and mistakes the small ones miss. The smaller the model, the more you should check its answers.\n\n#shorts #AI #artificialintelligence",
+      "stitky": [
+        "AI",
+        "artificial intelligence",
+        "AI models",
+        "local AI",
+        "AI hallucinations"
+      ],
+      "videoId": "nognrzRpWXQ",
+      "url": "https://www.youtube.com/shorts/nognrzRpWXQ",
+      "nahrano": "2026-11-05"
+    },
     "es": {
       "soubor": "04-parlanchin-vs-ve-mas-alla-ES.mp4",
       "nazev": "¿Todas las IA son igual de inteligentes? 🤖 Parlanchín vs. ve más allá",
