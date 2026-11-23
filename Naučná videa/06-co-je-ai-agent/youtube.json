@@ -6,6 +6,36 @@
     "containsSyntheticMedia": false
   },
   "jazyky": {
+    "cs": {
+      "soubor": "06-co-je-ai-agent-CZ.mp4",
+      "nazev": "Co je AI agent? 🤖 Nástroje, paměť a skilly",
+      "popis": "Jazykový model je jen mozek – chytrý, ale bez rukou a bez paměti. Agent mu dá nástroje, paměť a uložené postupy (skilly) a zkouší, kontroluje a opravuje, dokud nesplní cíl. Pozor ale: jde přesně tam, kam ho nasměruješ.\n\n#shorts #AI #AIagent",
+      "stitky": [
+        "AI",
+        "AI agent",
+        "AI agenti",
+        "umělá inteligence",
+        "automatizace s AI"
+      ],
+      "videoId": "bhdgzPrcdvg",
+      "url": "https://www.youtube.com/shorts/bhdgzPrcdvg",
+      "nahrano": "2026-11-06"
+    },
+    "en": {
+      "soubor": "06-what-is-an-ai-agent-EN.mp4",
+      "nazev": "What is an AI agent? 🤖 Tools, memory and skills",
+      "popis": "A language model is just a brain – smart, but with no hands and no memory. An agent gives it tools, memory and saved procedures (skills), and it tries, checks and fixes until the goal is met. But careful: it goes exactly where you point it.\n\n#shorts #AI #AIagents",
+      "stitky": [
+        "AI",
+        "AI agent",
+        "AI agents",
+        "artificial intelligence",
+        "AI automation"
+      ],
+      "videoId": "fbhVIJkBhlM",
+      "url": "https://www.youtube.com/shorts/fbhVIJkBhlM",
+      "nahrano": "2026-11-06"
+    },
     "es": {
       "soubor": "06-que-es-un-agente-de-ia-ES.mp4",
       "nazev": "¿Qué es un agente de IA? 🤖 Herramientas, memoria y skills",

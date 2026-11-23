@@ -6,6 +6,36 @@
     "containsSyntheticMedia": false
   },
   "jazyky": {
+    "cs": {
+      "soubor": "05-ai-je-zesilovac-CZ.mp4",
+      "nazev": "AI je zesilovač 🔊 Zesílí všechno, co do ní dáš",
+      "popis": "Když víš, co chceš, uděláš za hodiny, co dřív trvalo týdny. Když nevíš, kam jdeš, AI zesílí chaos – i tvoje chyby. Než ji zapneš, ujasni si směr.\n\n#shorts #AI #umelainteligence",
+      "stitky": [
+        "AI",
+        "umělá inteligence",
+        "produktivita s AI",
+        "jak používat AI",
+        "práce s AI"
+      ],
+      "videoId": "rqVHtyh4nHo",
+      "url": "https://www.youtube.com/shorts/rqVHtyh4nHo",
+      "nahrano": "2026-11-05"
+    },
+    "en": {
+      "soubor": "05-ai-is-an-amplifier-EN.mp4",
+      "nazev": "AI is an amplifier 🔊 It amplifies whatever you put in",
+      "popis": "If you know what you want, you'll do in hours what used to take weeks. If you don't know where you're going, AI amplifies the chaos – and your mistakes too. Before you switch it on, get clear on the direction.\n\n#shorts #AI #artificialintelligence",
+      "stitky": [
+        "AI",
+        "artificial intelligence",
+        "AI productivity",
+        "how to use AI",
+        "working with AI"
+      ],
+      "videoId": "ArwTM7oGpmk",
+      "url": "https://www.youtube.com/shorts/ArwTM7oGpmk",
+      "nahrano": "2026-11-05"
+    },
     "es": {
       "soubor": "05-la-ia-es-un-amplificador-ES.mp4",
       "nazev": "La IA es un amplificador 🔊 Amplifica todo lo que le metes",

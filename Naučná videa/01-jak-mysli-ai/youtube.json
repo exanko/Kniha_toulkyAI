@@ -6,6 +6,36 @@
     "containsSyntheticMedia": false
   },
   "jazyky": {
+    "cs": {
+      "soubor": "01-jak-mysli-ai-CZ.mp4",
+      "nazev": "Jak „myslí“ AI? 🤖 Jen hádá další slovo",
+      "popis": "AI nemyslí: počítá, jaké slovo nejspíš přijde dál. Proto umí znít přesvědčivě, i když se plete. Důležité věci si vždycky ověř.\n\n#shorts #AI #umelainteligence",
+      "stitky": [
+        "AI",
+        "umělá inteligence",
+        "jak funguje AI",
+        "jazykový model",
+        "AI pro začátečníky"
+      ],
+      "videoId": "8IEzo9-Xqv4",
+      "url": "https://www.youtube.com/shorts/8IEzo9-Xqv4",
+      "nahrano": "2026-11-05"
+    },
+    "en": {
+      "soubor": "01-how-ai-thinks-EN.mp4",
+      "nazev": "How does AI “think”? 🤖 It just guesses the next word",
+      "popis": "AI doesn't think: it calculates which word most likely comes next. That's why it can sound convincing even when it's wrong. Always double-check what matters.\n\n#shorts #AI #artificialintelligence",
+      "stitky": [
+        "AI",
+        "artificial intelligence",
+        "how AI works",
+        "language model",
+        "learn AI"
+      ],
+      "videoId": "YAOh3Sn772E",
+      "url": "https://www.youtube.com/shorts/YAOh3Sn772E",
+      "nahrano": "2026-11-05"
+    },
     "es": {
       "soubor": "01-como-piensa-la-ia-ES.mp4",
       "nazev": "¿Cómo «piensa» la IA? 🤖 Solo adivina la siguiente palabra",

@@ -44,6 +44,10 @@ on:
         description: "Jen přehled kanálu – jazyky všech videí a playlistů (nic nenahrává ani nemění)"
         type: boolean
         default: false
+      aktualizovat:
+        description: "Srovnat už nahraná videa s youtube.json (název, jazyk; chybějící popis a štítky) – se zkouškou jen vypíše změny"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -76,6 +80,7 @@ jobs:
           VEREJNE: ${{ inputs.verejne }}
           ZKOUSKA: ${{ inputs.zkouska }}
           PREHLED: ${{ inputs.prehled }}
+          AKTUALIZOVAT: ${{ inputs.aktualizovat }}
         run: |
           if [ "$PREHLED" = "true" ]; then
             python3 "Naučná videa/nastroje/youtube/prehled.py"; exit
@@ -95,6 +100,15 @@ jobs:
             [ "$NAPLANOVAT_IN" = "true" ] && opts+=("--naplanovat")
             [ "$VEREJNE" = "true" ] && opts+=("--verejne")
             [ "$ZKOUSKA" = "true" ] && opts+=("--zkouska")
+            if [ "$AKTUALIZOVAT" = "true" ]; then
+              a=()
+              for o in "${opts[@]}"; do case "$o" in --naplanovat|--verejne) ;; *) a+=("$o") ;; esac; done
+              for j in $JAZYKY; do
+                case "$j" in cs|en|es|hi|pt) a+=("$j") ;; *) echo "Neznámý jazyk: $j"; exit 1 ;; esac
+              done
+              echo "aktualizuj.py ${a[*]}"
+              python3 "Naučná videa/nastroje/youtube/aktualizuj.py" "${a[@]}"; exit
+            fi
           else
             # po sloučení i denní běh: všechny díly, naplánovaně
             opts+=("--vse" "--naplanovat")

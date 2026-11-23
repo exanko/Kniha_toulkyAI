@@ -6,6 +6,38 @@
     "containsSyntheticMedia": false
   },
   "jazyky": {
+    "cs": {
+      "soubor": "08-firma-v-gitu-CZ.mp4",
+      "nazev": "Jak dostat malou firmu do éry AI? 🗂️ Firma v Gitu",
+      "popis": "Jedno místo na všechno: repozitář v Gitu jako jediný zdroj pravdy. Nahraj data, nech agenta zorientovat se a stav od základů – kalkulace, smlouvy, produkty i historii firmy. Git zaznamená každou změnu, takže se nic neztratí. Pro velkou firmu je ale potřeba robustnější systém.\n\n#shorts #AI #Git",
+      "stitky": [
+        "AI",
+        "AI agent",
+        "Git",
+        "malá firma",
+        "podnikání",
+        "umělá inteligence"
+      ],
+      "videoId": "JlkHNAaaxms",
+      "url": "https://www.youtube.com/shorts/JlkHNAaaxms",
+      "nahrano": "2026-11-06"
+    },
+    "en": {
+      "soubor": "08-a-company-in-git-EN.mp4",
+      "nazev": "How to bring a small business into the AI era? 🗂️ A company in Git",
+      "popis": "One place for everything: a Git repository as the single source of truth. Upload your data, let the agent find its way around, and build from the ground up – calculations, contracts, products and your company's history. Git records every change, so nothing gets lost. For a big company, though, you need a more robust system.\n\n#shorts #AI #smallbusiness",
+      "stitky": [
+        "AI",
+        "AI agent",
+        "Git",
+        "small business",
+        "startup",
+        "artificial intelligence"
+      ],
+      "videoId": "7UaxEIZ9Yj0",
+      "url": "https://www.youtube.com/shorts/7UaxEIZ9Yj0",
+      "nahrano": "2026-11-06"
+    },
     "es": {
       "soubor": "08-una-empresa-en-git-ES.mp4",
       "nazev": "¿Cómo llevar una pequeña empresa a la era de la IA? 🗂️ Una empresa en Git",

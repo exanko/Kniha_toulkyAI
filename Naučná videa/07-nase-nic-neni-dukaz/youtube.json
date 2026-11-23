@@ -6,6 +6,38 @@
     "containsSyntheticMedia": false
   },
   "jazyky": {
+    "cs": {
+      "soubor": "07-nase-nic-neni-dukaz-CZ.mp4",
+      "nazev": "Co nevidíme, to není? 📡 Naše „nic“ není důkaz",
+      "popis": "Rádiové vlny tu byly vždycky – jen chyběl přístroj, který je zachytí. Naše „nic“ často nedokazuje, že něco neexistuje, ale že ještě nemáme nástroj, jak to uvidět. AI najde vzory, které nám unikají… i vzory, které neexistují. Proto každý objev potřebuje ověřit.\n\n#shorts #AI #veda",
+      "stitky": [
+        "AI",
+        "umělá inteligence",
+        "věda",
+        "vědecká metoda",
+        "vzory v datech",
+        "ověřování"
+      ],
+      "videoId": "cMYBEwxvKFs",
+      "url": "https://www.youtube.com/shorts/cMYBEwxvKFs",
+      "nahrano": "2026-11-06"
+    },
+    "en": {
+      "soubor": "07-our-nothing-is-not-proof-EN.mp4",
+      "nazev": "If we can't see it, does it not exist? 📡 Our “nothing” is not proof",
+      "popis": "Radio waves were always here – we just lacked the device to pick them up. Often our “nothing” doesn't prove that something doesn't exist, only that we don't have the tool to see it yet. AI finds patterns we miss… and patterns that aren't there. That's why every discovery needs checking.\n\n#shorts #AI #science",
+      "stitky": [
+        "AI",
+        "artificial intelligence",
+        "science",
+        "scientific method",
+        "patterns in data",
+        "verification"
+      ],
+      "videoId": "yd3AKZb09iM",
+      "url": "https://www.youtube.com/shorts/yd3AKZb09iM",
+      "nahrano": "2026-11-06"
+    },
     "es": {
       "soubor": "07-nuestra-nada-no-es-una-prueba-ES.mp4",
       "nazev": "¿Lo que no vemos no existe? 📡 Nuestra «nada» no es una prueba",
