@@ -8,11 +8,16 @@ Co zůstává ruční (YouTube to přes API nedovolí): **související video** 
 
 ## Jednorázové nastavení (asi 15 minut)
 
-Použijte stávající projekt v Google Cloud, ve kterém už máte zapnuté **YouTube Data API v3**.
+**Nahrávání potřebuje vlastní projekt v Google Cloud.** Denní kvóta YouTube API (10 000 jednotek) patří projektu, ne kanálu – kdyby projekt sdílel jiný nástroj (např. služba pro livestream, která si čte chat), spotřebuje kvótu sám a na playlisty nezbude (tak se to stalo v listopadu 2026).
 
-### 1. Stav publikování na „In production“
+### 0. Nový projekt a YouTube Data API
 
-Google Cloud Console → **Google Auth Platform → Audience** (dříve „OAuth consent screen“).
+1. Google Cloud Console (https://console.cloud.google.com) → výběr projektu nahoře → **New project** → název např. `Naucna videa` → Create a přepnout se do něj.
+2. **APIs & Services → Library** → vyhledat **YouTube Data API v3** → **Enable**.
+
+### 1. Přihlašovací obrazovka a stav „In production“
+
+Google Cloud Console → **Google Auth Platform** (dříve „OAuth consent screen“). V novém projektu nejdřív **Get started**: název aplikace (např. `Naucna videa – nahravani`), e-mail podpory, Audience **External**, kontaktní e-mail → Create. Pak **Audience**:
 
 - Pokud je **Publishing status: Testing**, klikněte na **Publish app**. V režimu Testing přihlášení po 7 dnech vyprší a nahrávání by přestalo fungovat.
 - Ověřování aplikace u Googlu není potřeba – pro vlastní účet stačí, že se při přihlášení jednou odklikne varování „Google tuto aplikaci neověřil“.
@@ -25,7 +30,7 @@ Google Cloud Console → **Google Auth Platform → Audience** (dříve „OAuth
 - **Name:** např. `GitHub Actions – nahrávání`
 - **Authorized redirect URIs:** `https://developers.google.com/oauthplayground`
 
-Po vytvoření si zkopírujte **Client ID** a **Client secret**. (Klienta pro streamování nechte, jak je – každý nástroj má svého.)
+Po vytvoření si zkopírujte **Client ID** a **Client secret**. (Služba pro streamování zůstane ve svém původním projektu – každý projekt má svou kvótu.)
 
 ### 3. Obnovovací token (refresh token) přes OAuth Playground
 
@@ -37,7 +42,7 @@ Po vytvoření si zkopírujte **Client ID** a **Client secret**. (Klienta pro st
 
 ### 4. Tajemství v GitHubu
 
-Repozitář na GitHubu → **Settings → Secrets and variables → Actions → New repository secret**, třikrát:
+Repozitář na GitHubu → **Settings → Secrets and variables → Actions** → u existujícího tajemství tužka (**Update**), u nového **New repository secret**, třikrát:
 
 | Name | Hodnota |
 |---|---|
@@ -58,7 +63,7 @@ GitHub uložená tajemství zpátky neukáže – pokud hodnoty nemáte, Client 
 
 ### 5. Zkouška
 
-GitHub → **Actions → Nahrát na YouTube → Run workflow** → Díl nechat prázdný, zaškrtnout **Jen zkouška** → Run. Zkouška nic nenahraje ani nezmění, ale přihlásí se k YouTube, vypíše název kanálu, ověří, že existují všechny playlisty z `kanal.json`, a vypíše jejich obsah čísly dílů, např. `hi: 09 09 01 02 03 04 05 07 · zdvojené: 09 · chybí: 06 08` (`?` = video, které repo nezná). Výsledek je v detailu běhu, v kroku „Nahrát na YouTube“.
+GitHub → **Actions → Nahrát na YouTube → Run workflow** → Díl nechat prázdný, zaškrtnout **Jen zkouška** (nebo **Jen přehled kanálu** – vypíše jazyky všech videí a playlistů) → Run. Zkouška nic nenahraje ani nezmění, ale přihlásí se k YouTube, vypíše název kanálu, ověří, že existují všechny playlisty z `kanal.json`, a vypíše jejich obsah čísly dílů, např. `hi: 09 09 01 02 03 04 05 07 · zdvojené: 09 · chybí: 06 08` (`?` = video, které repo nezná). Výsledek je v detailu běhu, v kroku „Nahrát na YouTube“.
 
 ## Běžné použití – nová jazyková verze
 
@@ -93,6 +98,6 @@ Jen údržba, bez nahrávání: **Run workflow** → Díl prázdný → Run (nah
 
 ## Limity
 
-- YouTube Data API: nahrávání videí má vlastní limit (asi 100 denně na projekt). Ostatní volání sdílí denní kvótu 10 000 jednotek (i se streamováním): výpis playlistu 1 jednotka, zařazení, přesun i smazání položky 50 – i když je požadavek odmítnutý. Kvóta se obnovuje o půlnoci kalifornského času (9:00 našeho času v zimě).
+- YouTube Data API: nahrávání videí má vlastní limit (asi 100 denně na projekt). Ostatní volání sdílí denní kvótu 10 000 jednotek celého projektu (proto vlastní projekt jen pro nahrávání): výpis playlistu 1 jednotka, zařazení, přesun i smazání položky 50 – i když je požadavek odmítnutý. Kvóta se obnovuje o půlnoci kalifornského času (9:00 našeho času v zimě).
 - Orientačně: běh s 29 novými videy v pěti jazycích ≈ 1 700 jednotek, denní běh bez novinek ≈ 20–70 jednotek. Spotřebu odhaduje skript na konci výpisu. Při vyčerpání kvóty počká minutu, zkusí to ještě jednou a pak další volání vynechá (dodělá je příští běh).
 - Soubor `youtube.json`: název max. 100 znaků, popis max. 5 000 bajtů, bez znaků `<` a `>`.
