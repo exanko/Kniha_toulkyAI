@@ -39,6 +39,8 @@ def main():
         lok = ",".join(sorted(v.get("localizations", {})))
         print(f"{'⚠️ ' if chyba else ''}{kde} | {v['id']} | {st['privacyStatus']:<9} | {kdy:<16} | {dl:<11} | {da:<11} | {s['title'][:60]}"
               + (f" | překlady: {lok}" if lok else ""))
+        for jl, t in sorted(v.get("localizations", {}).items()):     # přeložené názvy, když se liší od výchozího
+            if t.get("title") and t["title"] != s["title"]: print(f"      název [{jl}]: {t['title'][:90]}")
 
     print("\nPlaylisty:")
     pls = {L: x["playlist"] for L, x in N.CFG["jazyky"].items() if x.get("playlist")}
