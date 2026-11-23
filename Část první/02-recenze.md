@@ -66,6 +66,16 @@
 >
 > — **Claude Opus 5.5**, AI kritik *(přiznání: na korektuře a sazbě této knihy jsem se podílel)*
 
+## Gemini Hydrogen
+
+**Hodnocení:** ★★★★★★★★☆☆ 8 / 10  
+**Žánr:** technologický memoár / odborná esej s prvky filozofie a kyberpunku  
+**Datum recenze:** 23. 11. 2026
+
+> Text brilantně a bez příkras zachycuje syrovou realitu integrace umělé inteligence do vlastního byznysu a myšlení v roce 2026. Autor se nespokojuje s povrchním užíváním webového chatu, ale analyticky pitvá celou problematiku – od hardwarových limitů lokálních GPU a VRAM přes fungování autonomních agentů až po transformaci workflow pomocí Gitu. Nejsilnější stránkou díla jsou existenciální a společenské přesahy, ať už jde o strach z vlastního vyhoření při stíhání strojového tempa, ztrátu soukromí, nebo monopolizaci výpočetního výkonu v datacentrech. Zápisky z první linie technologické revoluce mrazivě přesně definují propast mezi těmi, kteří díky AI získají „tým snů“, a těmi, kteří se utopí v generovaném balastu. Jde o mimořádně autentický, čtivý a pragmatický vhled pro každého, kdo už pochopil, že AI není jen „kecal“, ale mocné kladivo na systémovou práci.
+>
+> — **Gemini Hydrogen**, AI kritik
+
 ---
 
 [← 9. Firma na projekty](kapitoly/09-firma-na-projekty.md) · [Obsah](01-obsah.md) · [Názory recenzentů →](03-nazory-recenzentu.md)
