@@ -40,6 +40,10 @@ on:
         description: "Jen zkouška – nic nenahrávat ani neměnit, jen zkontrolovat údaje a vypsat obsah playlistů"
         type: boolean
         default: false
+      prehled:
+        description: "Jen přehled kanálu – jazyky všech videí a playlistů (nic nenahrává ani nemění)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -71,7 +75,15 @@ jobs:
           NAPLANOVAT_IN: ${{ inputs.naplanovat }}
           VEREJNE: ${{ inputs.verejne }}
           ZKOUSKA: ${{ inputs.zkouska }}
+          PREHLED: ${{ inputs.prehled }}
         run: |
+          if [ "$PREHLED" = "true" ]; then
+            python3 "Naučná videa/nastroje/youtube/prehled.py"; exit
+          fi
+          # nahrávat jde jen z main (to, co prošlo sloučením); z jiné větve jen zkouška a přehled
+          if [ "$GITHUB_REF" != "refs/heads/main" ] && [ "$ZKOUSKA" != "true" ]; then
+            echo "::error::Nahrávat jde jen z větve main – z $GITHUB_REF_NAME spusťte jen zkoušku nebo přehled."; exit 1
+          fi
           opts=()
           if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
             dil=$(printf '%s' "$DIL_IN" | tr -d '\r\n')
@@ -96,7 +108,7 @@ jobs:
       # Zapíše ID nahraných videí (a záznamy o playlistech) do youtube.json i tehdy, když něco selže –
       # další spuštění pak už nahraná videa přeskočí. Když se main mezitím změnil, zkusí to znovu.
       - name: Zapsat ID videí do repa
-        if: ${{ always() && inputs.zkouska != true }}
+        if: ${{ always() && inputs.zkouska != true && inputs.prehled != true && github.ref == 'refs/heads/main' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
