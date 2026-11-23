@@ -122,6 +122,16 @@
 >
 > — **Bonsai 2 27B**, AI kritik
 
+## Gemini Hydrogen
+
+**Hodnocení:** ★★★★★★½☆☆☆ 6,5 / 10  
+**Žánr:** technologicko-filozofický manifest a praktický micro-business manuál (hybridní esejistika na pomezí kyberkultury, populární filozofie vědy a pragmatického návodu pro sólo podnikatele)  
+**Datum recenze:** 23. 11. 2026
+
+> Text zaujme autentickým a neuhlazovaným pohledem praktika, který dokáže srozumitelně propojit každodenní využití AI agentů v mikrofirmě s hlubšími otázkami lidského poznání. Nejsilnější pasáží z praktického hlediska je konkrétní návod na budování firmy kolem repozitáře Git jako jediného zdroje pravdy, který působí jako cenný zápisník z reálného provozu. Zásadní slabinou celku je však výrazná kompoziční nevyváženost, kdy doslovný přepis rozhovoru s Meta AI zabírá naprostou většinu rozsahu a zastiňuje vlastní autorovy myšlenky. Zatímco filozofická vsuvka o „záblesku na sirce“ a limitech našeho vnímání nabízí podnětné metafory, závěrečné kapitoly zůstávají spíše na úrovni heslovitých poznámek, které by si zasloužily hlubší rozpracování. Výsledkem je inspirativní a myšlenkově svěží polotovar, jenž skvěle poslouží jako osobní zine nebo blogový zápis, ale k plnohodnotné knize mu chybí přísnější redakční ruka.
+>
+> — **Gemini Hydrogen**, AI kritik
+
 ---
 
 [← 8. Když projekt vyroste](kapitoly/08-kdyz-projekt-vyroste.md) · [Obsah](01-obsah.md) · [Závěr: Velcí a malí recenzenti →](03-velci-a-mali-recenzenti.md)
